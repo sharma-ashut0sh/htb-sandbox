@@ -1,8 +1,8 @@
 # CyberActivity Engine
-*Last system update: 2026-05-26 02:58:43*
+*Last system update: 2026-05-26 03:09:41*
 
 ## Hack The Box: Active Labs
-> **Status:** System Offline (HTTP 404: HTB server rejected the request.)
+> **Status:** System Offline (Connection Failed: Expecting value: line 1 column 1 (char 0))
 
 ## 🎓 HTB Academy Progress
 *Module pending API endpoint discovery.*
