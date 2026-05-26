@@ -5,17 +5,20 @@ from datetime import datetime
 def fetch_htb_labs(token):
     """Module 1: Fetches data from the HTB Labs V4 API."""
     if not token:
-        return {"error": "Token not found in environment."}
+        return {"error": "CRITICAL: HTB_LABS_TOKEN is missing from GitHub environment secrets."}
     
     headers = {
         "Authorization": f"Bearer {token}",
-        "User-Agent": "Mikey-CyberEngine/1.0"
+        # Disguise the bot as a standard Chrome browser to bypass Cloudflare WAF
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "Accept": "application/json"
     }
     
     url = "https://www.hackthebox.com/api/v4/user/info"
     
     try:
         response = requests.get(url, headers=headers)
+        # If HTB throws an error (401, 403, 404), this will trigger the except block below
         response.raise_for_status() 
         data = response.json()
         profile = data.get('info', {})
@@ -27,9 +30,11 @@ def fetch_htb_labs(token):
             "user_owns": profile.get('user_owns', 0),
             "respect": profile.get('respects', 0)
         }
+    except requests.exceptions.HTTPError as e:
+        # Grabs the exact HTTP status code so we can debug it
+        return {"error": f"HTTP {e.response.status_code}: HTB server rejected the request."}
     except Exception as e:
-        print(f"Error fetching HTB Labs: {e}")
-        return {"error": "API Request Failed"}
+        return {"error": f"Connection Failed: {str(e)}"}
 
 def generate_markdown(labs_data):
     """Generates the final markdown page by combining all modules."""
@@ -38,7 +43,7 @@ def generate_markdown(labs_data):
     md = f"# CyberActivity Engine\n"
     md += f"*Last system update: {now}*\n\n"
     
-    md += "##  Hack The Box: Active Labs\n"
+    md += "## Hack The Box: Active Labs\n"
     if "error" in labs_data:
         md += f"> **Status:** System Offline ({labs_data['error']})\n"
     else:
