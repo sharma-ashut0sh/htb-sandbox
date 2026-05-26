@@ -1,0 +1,859 @@
+---
+layout: default
+title: HTB Progress
+permalink: /htb/
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HTB Progress — Abhishek Sharma</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root {
+    --bg:        #0a0e0f;
+    --surface:   #0f1417;
+    --card:      #141a1e;
+    --border:    #1e2a30;
+    --htb-green: #9fef00;
+    --htb-dim:   #6aac00;
+    --cyan:      #00c4cc;
+    --red:       #ff3e3e;
+    --orange:    #ff9f43;
+    --text:      #c8d6db;
+    --muted:     #4a6370;
+    --mono:      'Share Tech Mono', monospace;
+    --sans:      'Rajdhani', sans-serif;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--sans);
+    font-size: 16px;
+    min-height: 100vh;
+    padding: 0 0 80px;
+  }
+
+  /* ── SCANLINE OVERLAY ── */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(0,0,0,0.08) 2px,
+      rgba(0,0,0,0.08) 4px
+    );
+    pointer-events: none;
+    z-index: 999;
+  }
+
+  /* ── HEADER ── */
+  .htb-header {
+    position: relative;
+    border-bottom: 1px solid var(--border);
+    padding: 40px 48px 32px;
+    overflow: hidden;
+  }
+  .htb-header::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--htb-green), transparent);
+  }
+  .htb-header-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+  .htb-logo-mark {
+    width: 52px; height: 52px;
+    border: 2px solid var(--htb-green);
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    font-family: var(--mono);
+    font-size: 18px;
+    color: var(--htb-green);
+    text-shadow: 0 0 12px var(--htb-green);
+    box-shadow: 0 0 16px rgba(159,239,0,0.15), inset 0 0 16px rgba(159,239,0,0.04);
+    flex-shrink: 0;
+  }
+  .htb-header h1 {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #fff;
+  }
+  .htb-header h1 span { color: var(--htb-green); }
+  .htb-header-sub {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--muted);
+    margin-top: 4px;
+    letter-spacing: 1px;
+  }
+  #last-updated {
+    margin-left: auto;
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--muted);
+    text-align: right;
+    line-height: 1.6;
+  }
+  #last-updated strong { color: var(--htb-green); display: block; font-size: 10px; letter-spacing: 2px; }
+
+  /* ── LAYOUT ── */
+  .htb-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 48px 0;
+  }
+
+  /* ── STAT CARDS (top row) ── */
+  .stat-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 16px;
+    margin-bottom: 40px;
+  }
+  .stat-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 20px 20px 16px;
+    position: relative;
+    overflow: hidden;
+    transition: border-color 0.2s;
+  }
+  .stat-card:hover { border-color: var(--htb-dim); }
+  .stat-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: var(--accent, var(--htb-green));
+    opacity: 0.7;
+  }
+  .stat-label {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: var(--muted);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  .stat-value {
+    font-family: var(--mono);
+    font-size: 30px;
+    color: #fff;
+    line-height: 1;
+    font-weight: normal;
+  }
+  .stat-value.green { color: var(--htb-green); text-shadow: 0 0 16px rgba(159,239,0,0.4); }
+  .stat-value.cyan  { color: var(--cyan); text-shadow: 0 0 16px rgba(0,196,204,0.3); }
+  .stat-value.orange{ color: var(--orange); }
+  .stat-sub {
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--muted);
+    margin-top: 6px;
+  }
+
+  /* XP Progress Bar */
+  .xp-bar-wrap {
+    margin-top: 10px;
+  }
+  .xp-bar-bg {
+    height: 4px;
+    background: var(--border);
+    border-radius: 2px;
+    overflow: hidden;
+  }
+  .xp-bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--htb-dim), var(--htb-green));
+    border-radius: 2px;
+    transition: width 1.2s cubic-bezier(.4,0,.2,1);
+    box-shadow: 0 0 6px rgba(159,239,0,0.5);
+  }
+
+  /* ── GRID SECTIONS ── */
+  .section-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-bottom: 24px;
+  }
+  .section-grid.full { grid-template-columns: 1fr; }
+  .section-grid.three { grid-template-columns: 1fr 1fr 1fr; }
+
+  @media (max-width: 900px) {
+    .section-grid, .section-grid.three { grid-template-columns: 1fr; }
+    .htb-container { padding: 24px 20px 0; }
+    .htb-header { padding: 24px 20px 20px; }
+    .stat-row { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  /* ── PANEL ── */
+  .panel {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .panel-header {
+    padding: 16px 20px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .panel-title {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--htb-green);
+  }
+  .panel-dot {
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: var(--htb-green);
+    box-shadow: 0 0 6px var(--htb-green);
+    animation: blink 2s infinite;
+  }
+  @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.3} }
+
+  .panel-body { padding: 20px; }
+
+  /* ── CHART WRAPPERS ── */
+  .chart-wrap {
+    position: relative;
+    width: 100%;
+  }
+  .chart-wrap canvas { width: 100% !important; }
+
+  /* ── ACTIVITY FEED ── */
+  .activity-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .activity-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .activity-item:last-child { border-bottom: none; }
+  .activity-type {
+    font-family: var(--mono);
+    font-size: 9px;
+    letter-spacing: 1.5px;
+    padding: 2px 6px;
+    border-radius: 3px;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+  .type-user   { background: rgba(0,196,204,0.12); color: var(--cyan); border: 1px solid rgba(0,196,204,0.25); }
+  .type-root   { background: rgba(159,239,0,0.1);  color: var(--htb-green); border: 1px solid rgba(159,239,0,0.2); }
+  .type-chall  { background: rgba(255,159,67,0.12); color: var(--orange); border: 1px solid rgba(255,159,67,0.25); }
+  .type-blood  { background: rgba(255,62,62,0.12);  color: var(--red); border: 1px solid rgba(255,62,62,0.25); }
+  .activity-name {
+    font-family: var(--sans);
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 1.3;
+  }
+  .activity-meta {
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--muted);
+    margin-top: 2px;
+  }
+
+  /* ── CHALLENGE TABLE ── */
+  .chall-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .chall-table th {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: var(--muted);
+    text-align: left;
+    padding: 0 8px 12px;
+    text-transform: uppercase;
+  }
+  .chall-table td {
+    padding: 7px 8px;
+    border-top: 1px solid var(--border);
+    font-size: 14px;
+  }
+  .chall-table td:last-child { text-align: right; font-family: var(--mono); color: var(--htb-green); }
+  .chall-bar-wrap { width: 100%; background: var(--border); border-radius: 2px; height: 3px; }
+  .chall-bar-fill { height: 100%; background: var(--htb-green); border-radius: 2px; }
+
+  /* ── ACADEMY SECTION ── */
+  .academy-modules {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .acad-module {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .acad-module-name {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text);
+    width: 180px;
+    flex-shrink: 0;
+  }
+  .acad-module-bar {
+    flex: 1;
+    height: 6px;
+    background: var(--border);
+    border-radius: 3px;
+    overflow: hidden;
+  }
+  .acad-module-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #1a6b3a, var(--htb-green));
+    border-radius: 3px;
+  }
+  .acad-module-pct {
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--htb-green);
+    width: 36px;
+    text-align: right;
+    flex-shrink: 0;
+  }
+
+  /* ── LOADING / ERROR ── */
+  .loading-state {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 160px;
+    font-family: var(--mono);
+    font-size: 13px;
+    color: var(--muted);
+    letter-spacing: 2px;
+  }
+  .loading-state::before {
+    content: '▋';
+    color: var(--htb-green);
+    margin-right: 8px;
+    animation: blink 0.8s infinite;
+  }
+  .error-note {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--red);
+    padding: 12px;
+    border: 1px solid rgba(255,62,62,0.2);
+    border-radius: 4px;
+    background: rgba(255,62,62,0.04);
+  }
+
+  /* ── FOOTER ── */
+  .htb-footer {
+    max-width: 1200px;
+    margin: 48px auto 0;
+    padding: 0 48px;
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--muted);
+    letter-spacing: 1px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
+  .htb-footer a { color: var(--htb-green); text-decoration: none; }
+  .htb-footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════ HEADER -->
+<header class="htb-header">
+  <div class="htb-header-inner">
+    <div class="htb-logo-mark">HTB</div>
+    <div>
+      <h1>HACK <span>THE BOX</span></h1>
+      <div class="htb-header-sub">// LIVE PROGRESS DASHBOARD — AUTO-SYNCED VIA GITHUB ACTIONS</div>
+    </div>
+    <div id="last-updated">
+      <strong>LAST SYNC</strong>
+      <span id="sync-time">loading...</span>
+    </div>
+  </div>
+</header>
+
+<div class="htb-container">
+
+  <!-- ═══════════════════════════════════════════════════ STAT ROW -->
+  <div class="stat-row" id="stat-row">
+    <div class="stat-card" style="--accent: var(--htb-green)">
+      <div class="stat-label">Rank</div>
+      <div class="stat-value green" id="s-rank">—</div>
+      <div class="stat-sub" id="s-level">Level —</div>
+    </div>
+    <div class="stat-card" style="--accent: var(--cyan)">
+      <div class="stat-label">Total XP</div>
+      <div class="stat-value cyan" id="s-xp">—</div>
+      <div class="xp-bar-wrap">
+        <div class="xp-bar-bg"><div class="xp-bar-fill" id="xp-bar" style="width:0%"></div></div>
+      </div>
+    </div>
+    <div class="stat-card" style="--accent: var(--htb-green)">
+      <div class="stat-label">Machines Owned</div>
+      <div class="stat-value green" id="s-machines">—</div>
+      <div class="stat-sub" id="s-root">0 root + 0 user</div>
+    </div>
+    <div class="stat-card" style="--accent: var(--orange)">
+      <div class="stat-label">Challenges</div>
+      <div class="stat-value orange" id="s-challenges">—</div>
+      <div class="stat-sub">solved</div>
+    </div>
+    <div class="stat-card" style="--accent: var(--cyan)">
+      <div class="stat-label">Streak</div>
+      <div class="stat-value cyan" id="s-streak">—</div>
+      <div class="stat-sub">days</div>
+    </div>
+    <div class="stat-card" style="--accent: #9b59b6">
+      <div class="stat-label">Academy Modules</div>
+      <div class="stat-value" id="s-academy" style="color:#c39bd3">—</div>
+      <div class="stat-sub" id="s-academy-sub">completed</div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════ MACHINES ROW -->
+  <div class="section-grid">
+    <div class="panel">
+      <div class="panel-header">
+        <div class="panel-dot"></div>
+        <div class="panel-title">Machines by Difficulty</div>
+      </div>
+      <div class="panel-body">
+        <div class="chart-wrap" style="height:220px">
+          <canvas id="chart-difficulty"></canvas>
+        </div>
+      </div>
+    </div>
+    <div class="panel">
+      <div class="panel-header">
+        <div class="panel-dot"></div>
+        <div class="panel-title">Machines by OS</div>
+      </div>
+      <div class="panel-body">
+        <div class="chart-wrap" style="height:220px">
+          <canvas id="chart-os"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═════════════════════════════════════════ CHALLENGES + ACTIVITY -->
+  <div class="section-grid">
+    <div class="panel">
+      <div class="panel-header">
+        <div class="panel-dot" style="background:var(--orange);box-shadow:0 0 6px var(--orange)"></div>
+        <div class="panel-title" style="color:var(--orange)">Challenges by Category</div>
+      </div>
+      <div class="panel-body" style="padding:12px 20px">
+        <div id="chall-content">
+          <div class="loading-state">FETCHING DATA</div>
+        </div>
+      </div>
+    </div>
+    <div class="panel">
+      <div class="panel-header">
+        <div class="panel-dot" style="background:var(--cyan);box-shadow:0 0 6px var(--cyan)"></div>
+        <div class="panel-title" style="color:var(--cyan)">Recent Activity</div>
+      </div>
+      <div class="panel-body" style="padding:8px 16px">
+        <ul class="activity-list" id="activity-list">
+          <li><div class="loading-state">FETCHING DATA</div></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════════════════════ ACADEMY ROW -->
+  <div class="section-grid full">
+    <div class="panel">
+      <div class="panel-header">
+        <div class="panel-dot" style="background:#c39bd3;box-shadow:0 0 6px #9b59b6"></div>
+        <div class="panel-title" style="color:#c39bd3">HTB Academy Progress</div>
+      </div>
+      <div class="panel-body">
+        <div id="academy-content">
+          <div class="loading-state">FETCHING DATA</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /.htb-container -->
+
+<div class="htb-footer">
+  <span>DATA SOURCE: HACKTHEBOX API v4</span>
+  <span>·</span>
+  <a href="https://github.com/sharma-abhi9av/Cybersec-journey/" target="_blank">GITHUB PORTFOLIO</a>
+  <span>·</span>
+  <span>AUTO-UPDATES EVERY 6H</span>
+</div>
+
+<!-- ════════════════════════════════════════════════════ SCRIPT -->
+<script>
+// ── DATA SOURCE ──────────────────────────────────────────────────────────────
+// Fetches data.json produced by htb_engine.py from the htb-sandbox repo.
+// On your real portfolio, change this URL to point at your main account's repo.
+const DATA_URL =
+  'https://raw.githubusercontent.com/sharma-ashut0sh/htb-sandbox/main/data.json';
+
+// ── CHART DEFAULTS ────────────────────────────────────────────────────────────
+Chart.defaults.color = '#4a6370';
+Chart.defaults.borderColor = '#1e2a30';
+Chart.defaults.font.family = "'Share Tech Mono', monospace";
+
+const GREEN  = '#9fef00';
+const CYAN   = '#00c4cc';
+const ORANGE = '#ff9f43';
+const RED    = '#ff3e3e';
+const PURPLE = '#c39bd3';
+
+function glowPlugin(color) {
+  return {
+    id: 'glow',
+    beforeDatasetsDraw(chart) {
+      const ctx = chart.ctx;
+      ctx.save();
+      ctx.shadowColor = color;
+      ctx.shadowBlur = 10;
+    },
+    afterDatasetsDraw(chart) {
+      chart.ctx.restore();
+    }
+  };
+}
+
+// ── RENDER HELPERS ────────────────────────────────────────────────────────────
+function fmt(n) {
+  if (n === undefined || n === null) return '—';
+  return Number(n).toLocaleString();
+}
+
+function renderStats(data) {
+  const exp     = data.experience || {};
+  const profile = data.profile    || {};
+  const academy = data.academy    || {};
+
+  // Rank
+  document.getElementById('s-rank').textContent  = exp.rank  || '—';
+  document.getElementById('s-level').textContent = `Level ${exp.level || '—'}`;
+
+  // XP
+  const xp     = exp.xp || 0;
+  const xpNext = exp.xp_next_level || 0;
+  document.getElementById('s-xp').textContent = fmt(xp);
+  if (xpNext > 0) {
+    const pct = Math.min(100, Math.round((xp / xpNext) * 100));
+    document.getElementById('xp-bar').style.width = pct + '%';
+  }
+
+  // Machines
+  const root = profile.system_owns || 0;
+  const user = profile.user_owns   || 0;
+  document.getElementById('s-machines').textContent = fmt(root + user);
+  document.getElementById('s-root').textContent     = `${root} root + ${user} user`;
+
+  // Challenges total
+  const challenges = data.challenges || [];
+  const challTotal = Array.isArray(challenges)
+    ? challenges.reduce((a, c) => a + (c.solved || 0), 0)
+    : 0;
+  document.getElementById('s-challenges').textContent = fmt(challTotal);
+
+  // Streak
+  document.getElementById('s-streak').textContent = fmt(exp.streak);
+
+  // Academy
+  const done  = academy.modules_completed;
+  const total = academy.modules_total;
+  document.getElementById('s-academy').textContent =
+    (done !== undefined && done !== null) ? fmt(done) : '—';
+  document.getElementById('s-academy-sub').textContent =
+    (total > 0) ? `of ${total} modules` : 'completed';
+
+  // Sync time
+  document.getElementById('sync-time').textContent =
+    data.generated_at
+      ? new Date(data.generated_at).toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' }) + ' IST'
+      : 'unknown';
+}
+
+function renderMachineCharts(data) {
+  const byDiff = data.machines?.by_difficulty?.by_difficulty || {};
+  const byOS   = data.machines?.by_os || {};
+
+  // ── Difficulty (Bar) ──────────────────────────────────────────────────────
+  const diffOrder  = ['Easy', 'Medium', 'Hard', 'Insane'];
+  const diffColors = [GREEN, CYAN, ORANGE, RED];
+  const diffData   = diffOrder.map(d => {
+    // API returns system_owns + user_owns per difficulty; take system (root) as proxy
+    const k = d.toLowerCase();
+    return byDiff[k] || byDiff[d] || 0;
+  });
+
+  if (diffData.some(v => v > 0)) {
+    new Chart(document.getElementById('chart-difficulty'), {
+      type: 'bar',
+      plugins: [glowPlugin(GREEN)],
+      data: {
+        labels: diffOrder,
+        datasets: [{
+          data: diffData,
+          backgroundColor: diffColors.map(c => c + '33'),
+          borderColor: diffColors,
+          borderWidth: 1.5,
+          borderRadius: 3,
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: { legend: { display: false } },
+        scales: {
+          x: { grid: { color: '#1e2a3044' } },
+          y: { grid: { color: '#1e2a3044' }, beginAtZero: true, ticks: { precision: 0 } }
+        }
+      }
+    });
+  } else {
+    document.getElementById('chart-difficulty').closest('.chart-wrap').innerHTML =
+      '<div class="loading-state">NO DATA YET</div>';
+  }
+
+  // ── OS (Doughnut) ─────────────────────────────────────────────────────────
+  const osMap = {
+    linux:   { label: 'Linux',   color: GREEN  },
+    windows: { label: 'Windows', color: CYAN   },
+    freebsd: { label: 'FreeBSD', color: ORANGE },
+    openbsd: { label: 'OpenBSD', color: RED    },
+    android: { label: 'Android', color: '#f7dc6f' },
+    other:   { label: 'Other',   color: '#888' },
+  };
+
+  const osKeys   = Object.keys(osMap).filter(k => byOS[k] > 0);
+  const osLabels = osKeys.map(k => osMap[k].label);
+  const osData   = osKeys.map(k => byOS[k] || 0);
+  const osColors = osKeys.map(k => osMap[k].color);
+
+  if (osData.some(v => v > 0)) {
+    new Chart(document.getElementById('chart-os'), {
+      type: 'doughnut',
+      plugins: [glowPlugin(GREEN)],
+      data: {
+        labels: osLabels,
+        datasets: [{
+          data: osData,
+          backgroundColor: osColors.map(c => c + '33'),
+          borderColor: osColors,
+          borderWidth: 1.5,
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        cutout: '65%',
+        plugins: {
+          legend: {
+            position: 'right',
+            labels: { boxWidth: 12, padding: 12, color: '#c8d6db' }
+          }
+        }
+      }
+    });
+  } else {
+    document.getElementById('chart-os').closest('.chart-wrap').innerHTML =
+      '<div class="loading-state">NO DATA YET</div>';
+  }
+}
+
+function renderChallenges(challenges) {
+  const el = document.getElementById('chall-content');
+  if (!Array.isArray(challenges) || challenges.length === 0) {
+    el.innerHTML = '<div class="error-note">Challenge data unavailable or no solves yet.</div>';
+    return;
+  }
+
+  const maxSolved = Math.max(...challenges.map(c => c.solved || 0), 1);
+  const sorted    = [...challenges].sort((a, b) => (b.solved || 0) - (a.solved || 0));
+
+  let html = '<table class="chall-table"><thead><tr><th>Category</th><th>Progress</th><th>Solved</th></tr></thead><tbody>';
+  for (const c of sorted) {
+    const solved = c.solved || 0;
+    const pct    = Math.round((solved / maxSolved) * 100);
+    html += `
+      <tr>
+        <td style="color:#c8d6db;font-weight:600">${c.name || c.category || '?'}</td>
+        <td style="min-width:80px">
+          <div class="chall-bar-wrap">
+            <div class="chall-bar-fill" style="width:${pct}%;background:${ORANGE}"></div>
+          </div>
+        </td>
+        <td>${solved}</td>
+      </tr>`;
+  }
+  html += '</tbody></table>';
+  el.innerHTML = html;
+}
+
+function renderActivity(activity) {
+  const el = document.getElementById('activity-list');
+  if (!Array.isArray(activity) || activity.length === 0) {
+    el.innerHTML = '<li><div class="error-note">No recent activity data.</div></li>';
+    return;
+  }
+
+  const typeMap = {
+    user:       { cls: 'type-user',  label: 'USER' },
+    root:       { cls: 'type-root',  label: 'ROOT' },
+    challenge:  { cls: 'type-chall', label: 'CHALL' },
+    blood:      { cls: 'type-blood', label: 'BLOOD' },
+  };
+
+  let html = '';
+  for (const item of activity.slice(0, 12)) {
+    const t   = item.type || 'user';
+    const map = typeMap[t] || { cls: 'type-user', label: t.toUpperCase().slice(0,5) };
+    const name = item.name || item.object_type || 'Unknown';
+    const date = item.date
+      ? new Date(item.date).toLocaleDateString('en-IN', { month:'short', day:'numeric' })
+      : '';
+    const pts  = item.points ? `+${item.points} pts` : '';
+
+    html += `
+      <li class="activity-item">
+        <span class="activity-type ${map.cls}">${map.label}</span>
+        <div>
+          <div class="activity-name">${name}</div>
+          <div class="activity-meta">${[date, pts].filter(Boolean).join(' · ')}</div>
+        </div>
+      </li>`;
+  }
+  el.innerHTML = html;
+}
+
+function renderAcademy(academy) {
+  const el = document.getElementById('academy-content');
+
+  if (academy.error) {
+    // Academy API not confirmed yet — show a graceful placeholder
+    el.innerHTML = `
+      <div style="display:flex;align-items:center;gap:24px;flex-wrap:wrap">
+        <div style="flex:1;min-width:200px">
+          <div class="error-note" style="color:var(--muted);border-color:var(--border);background:transparent">
+            Academy API endpoint still being mapped. To enable this section:<br><br>
+            1. Intercept <code style="color:#c39bd3">academy.hackthebox.com</code> requests in Burp.<br>
+            2. Find your session token in the Authorization header.<br>
+            3. Add it as <code style="color:#c39bd3">HTB_ACADEMY_TOKEN</code> in GitHub Secrets.
+          </div>
+        </div>
+        <div style="font-family:var(--mono);font-size:11px;color:var(--muted);line-height:2">
+          <div>// MANUAL OVERRIDE AVAILABLE</div>
+          <div>// See: htb_engine.py → fetch_academy()</div>
+        </div>
+      </div>`;
+    return;
+  }
+
+  const done  = academy.modules_completed || 0;
+  const total = academy.modules_total     || 0;
+  const pct   = total > 0 ? Math.round((done / total) * 100) : 0;
+
+  const paths = academy.current_paths || [];
+
+  let html = `
+    <div style="display:flex;align-items:center;gap:32px;flex-wrap:wrap;margin-bottom:${paths.length?'24px':'0'}">
+      <div>
+        <div class="stat-label">MODULES COMPLETE</div>
+        <div class="stat-value" style="color:#c39bd3;font-size:40px">${done}</div>
+        ${total > 0 ? `<div class="stat-sub">of ${total} total (${pct}%)</div>` : ''}
+      </div>
+      ${total > 0 ? `
+      <div style="flex:1;min-width:200px">
+        <div class="xp-bar-bg" style="height:8px;border-radius:4px">
+          <div class="xp-bar-fill" style="width:${pct}%;background:linear-gradient(90deg,#6c3483,#c39bd3)"></div>
+        </div>
+        <div style="font-family:var(--mono);font-size:10px;color:var(--muted);margin-top:6px">${pct}% OF CURRICULUM COMPLETE</div>
+      </div>` : ''}
+      ${academy.cubes ? `
+      <div>
+        <div class="stat-label">CUBES</div>
+        <div class="stat-value" style="color:#c39bd3">${academy.cubes}</div>
+      </div>` : ''}
+    </div>`;
+
+  if (paths.length > 0) {
+    html += '<div class="academy-modules">';
+    for (const path of paths) {
+      const pathName = path.name || path.title || 'Path';
+      const pathPct  = path.completion || path.percent || 0;
+      html += `
+        <div class="acad-module">
+          <div class="acad-module-name">${pathName}</div>
+          <div class="acad-module-bar"><div class="acad-module-fill" style="width:${pathPct}%"></div></div>
+          <div class="acad-module-pct">${pathPct}%</div>
+        </div>`;
+    }
+    html += '</div>';
+  }
+
+  el.innerHTML = html;
+}
+
+// ── MAIN FETCH ────────────────────────────────────────────────────────────────
+async function loadDashboard() {
+  try {
+    const res  = await fetch(DATA_URL + '?t=' + Date.now());
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const data = await res.json();
+
+    renderStats(data);
+    renderMachineCharts(data);
+    renderChallenges(data.challenges);
+    renderActivity(data.activity);
+    renderAcademy(data.academy);
+  } catch (err) {
+    document.getElementById('sync-time').textContent = 'fetch failed';
+    console.error('HTB dashboard load error:', err);
+  }
+}
+
+loadDashboard();
+</script>
+</body>
+</html>
