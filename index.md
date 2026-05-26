@@ -1,18 +1,35 @@
-# CyberActivity Engine
-*Last system update: 2026-05-26 03:35:45*
+---
+layout: htb_dashboard
+title: HTB Progress
+---
 
-## Hack The Box: Active Labs
+# HackTheBox Progress Dashboard
+*Last updated: 2026-05-26 03:47 UTC*
+
+## Rank & XP
 
 | Metric | Value |
 | :--- | :--- |
-| **Current Rank** | `Professional` (Level 47) |
-| **Total XP** | 28680 |
-| **Active Streak** | 2 Days |
+| **Rank** | `Professional` (Level 47) |
+| **Total XP** | 28,680 |
+| **Active Streak** | 2 days |
+| **Points** | 0 |
 
-## HTB Academy Progress
+## Machines
 
-*Module pending API endpoint discovery.*
+| Metric | Value |
+| :--- | :--- |
+| **User Owns** | 0 |
+| **Root/System Owns** | 0 |
 
-## 💻 GitHub Engineering
+## Challenges
 
-*Module pending GraphQL integration.*
+| Metric | Value |
+| :--- | :--- |
+| **Total Solved** | 0 |
+
+## HTB Academy
+
+| Metric | Value |
+| :--- | :--- |
+| **Modules Completed** | ? / ? |
