@@ -304,44 +304,6 @@
   .chall-bar-wrap { width: 100%; background: var(--border); border-radius: 2px; height: 3px; }
   .chall-bar-fill { height: 100%; background: var(--htb-green); border-radius: 2px; }
 
-  /* ── ACADEMY SECTION ── */
-  .academy-modules {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  .acad-module {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-  }
-  .acad-module-name {
-    font-size: 13px;
-    font-weight: 600;
-    color: var(--text);
-    width: 180px;
-    flex-shrink: 0;
-  }
-  .acad-module-bar {
-    flex: 1;
-    height: 6px;
-    background: var(--border);
-    border-radius: 3px;
-    overflow: hidden;
-  }
-  .acad-module-fill {
-    height: 100%;
-    background: linear-gradient(90deg, #1a6b3a, var(--htb-green));
-    border-radius: 3px;
-  }
-  .acad-module-pct {
-    font-family: var(--mono);
-    font-size: 10px;
-    color: var(--htb-green);
-    width: 36px;
-    text-align: right;
-    flex-shrink: 0;
-  }
 
   /* ── LOADING / ERROR ── */
   .loading-state {
@@ -435,11 +397,7 @@
       <div class="stat-value cyan" id="s-streak">—</div>
       <div class="stat-sub">days</div>
     </div>
-    <div class="stat-card" style="--accent: #9b59b6">
-      <div class="stat-label">Academy Modules</div>
-      <div class="stat-value" id="s-academy" style="color:#c39bd3">—</div>
-      <div class="stat-sub" id="s-academy-sub">completed</div>
-    </div>
+
   </div>
 
   <!-- ═══════════════════════════════════════════════ MACHINES ROW -->
@@ -494,20 +452,7 @@
     </div>
   </div>
 
-  <!-- ════════════════════════════════════════════════ ACADEMY ROW -->
-  <div class="section-grid full">
-    <div class="panel">
-      <div class="panel-header">
-        <div class="panel-dot" style="background:#c39bd3;box-shadow:0 0 6px #9b59b6"></div>
-        <div class="panel-title" style="color:#c39bd3">HTB Academy Progress</div>
-      </div>
-      <div class="panel-body">
-        <div id="academy-content">
-          <div class="loading-state">FETCHING DATA</div>
-        </div>
-      </div>
-    </div>
-  </div>
+
 
 </div><!-- /.htb-container -->
 
@@ -562,7 +507,7 @@ function fmt(n) {
 function renderStats(data) {
   const exp     = data.experience || {};
   const profile = data.profile    || {};
-  const academy = data.academy    || {};
+  const derived = data.derived    || {};
 
   // Rank
   document.getElementById('s-rank').textContent  = exp.rank  || '—';
@@ -577,29 +522,22 @@ function renderStats(data) {
     document.getElementById('xp-bar').style.width = pct + '%';
   }
 
-  // Machines
-  const root = profile.system_owns || 0;
-  const user = profile.user_owns   || 0;
+  // Machines — use profile if non-zero, else fall back to activity-derived
+  const root = profile.system_owns || derived.system_owns || 0;
+  const user = profile.user_owns   || derived.user_owns   || 0;
   document.getElementById('s-machines').textContent = fmt(root + user);
   document.getElementById('s-root').textContent     = `${root} root + ${user} user`;
 
-  // Challenges total
+  // Challenges — from API list if available, else derived
   const challenges = data.challenges || [];
-  const challTotal = Array.isArray(challenges)
+  const challFromAPI = Array.isArray(challenges)
     ? challenges.reduce((a, c) => a + (c.solved || 0), 0)
     : 0;
+  const challTotal = challFromAPI || derived.challenge_solves || 0;
   document.getElementById('s-challenges').textContent = fmt(challTotal);
 
   // Streak
   document.getElementById('s-streak').textContent = fmt(exp.streak);
-
-  // Academy
-  const done  = academy.modules_completed;
-  const total = academy.modules_total;
-  document.getElementById('s-academy').textContent =
-    (done !== undefined && done !== null) ? fmt(done) : '—';
-  document.getElementById('s-academy-sub').textContent =
-    (total > 0) ? `of ${total} modules` : 'completed';
 
   // Sync time
   document.getElementById('sync-time').textContent =
@@ -609,8 +547,12 @@ function renderStats(data) {
 }
 
 function renderMachineCharts(data) {
-  const byDiff = data.machines?.by_difficulty?.by_difficulty || {};
-  const byOS   = data.machines?.by_os || {};
+  const derived = data.derived || {};
+  // Use API data if populated, else fall back to activity-derived
+  const byDiff = (Object.keys(data.machines?.by_difficulty || {}).length > 0 ? data.machines.by_difficulty : null)
+              || derived.diff_from_activity || {};
+  const byOS   = (Object.keys(data.machines?.by_os || {}).some(k => data.machines.by_os[k] > 0) ? data.machines.by_os : null)
+              || derived.os_from_activity || {};
 
   // ── Difficulty (Bar) ──────────────────────────────────────────────────────
   const diffOrder  = ['Easy', 'Medium', 'Hard', 'Insane'];
@@ -761,73 +703,6 @@ function renderActivity(activity) {
   el.innerHTML = html;
 }
 
-function renderAcademy(academy) {
-  const el = document.getElementById('academy-content');
-
-  if (academy.error) {
-    // Academy API not confirmed yet — show a graceful placeholder
-    el.innerHTML = `
-      <div style="display:flex;align-items:center;gap:24px;flex-wrap:wrap">
-        <div style="flex:1;min-width:200px">
-          <div class="error-note" style="color:var(--muted);border-color:var(--border);background:transparent">
-            Academy API endpoint still being mapped. To enable this section:<br><br>
-            1. Intercept <code style="color:#c39bd3">academy.hackthebox.com</code> requests in Burp.<br>
-            2. Find your session token in the Authorization header.<br>
-            3. Add it as <code style="color:#c39bd3">HTB_ACADEMY_TOKEN</code> in GitHub Secrets.
-          </div>
-        </div>
-        <div style="font-family:var(--mono);font-size:11px;color:var(--muted);line-height:2">
-          <div>// MANUAL OVERRIDE AVAILABLE</div>
-          <div>// See: htb_engine.py → fetch_academy()</div>
-        </div>
-      </div>`;
-    return;
-  }
-
-  const done  = academy.modules_completed || 0;
-  const total = academy.modules_total     || 0;
-  const pct   = total > 0 ? Math.round((done / total) * 100) : 0;
-
-  const paths = academy.current_paths || [];
-
-  let html = `
-    <div style="display:flex;align-items:center;gap:32px;flex-wrap:wrap;margin-bottom:${paths.length?'24px':'0'}">
-      <div>
-        <div class="stat-label">MODULES COMPLETE</div>
-        <div class="stat-value" style="color:#c39bd3;font-size:40px">${done}</div>
-        ${total > 0 ? `<div class="stat-sub">of ${total} total (${pct}%)</div>` : ''}
-      </div>
-      ${total > 0 ? `
-      <div style="flex:1;min-width:200px">
-        <div class="xp-bar-bg" style="height:8px;border-radius:4px">
-          <div class="xp-bar-fill" style="width:${pct}%;background:linear-gradient(90deg,#6c3483,#c39bd3)"></div>
-        </div>
-        <div style="font-family:var(--mono);font-size:10px;color:var(--muted);margin-top:6px">${pct}% OF CURRICULUM COMPLETE</div>
-      </div>` : ''}
-      ${academy.cubes ? `
-      <div>
-        <div class="stat-label">CUBES</div>
-        <div class="stat-value" style="color:#c39bd3">${academy.cubes}</div>
-      </div>` : ''}
-    </div>`;
-
-  if (paths.length > 0) {
-    html += '<div class="academy-modules">';
-    for (const path of paths) {
-      const pathName = path.name || path.title || 'Path';
-      const pathPct  = path.completion || path.percent || 0;
-      html += `
-        <div class="acad-module">
-          <div class="acad-module-name">${pathName}</div>
-          <div class="acad-module-bar"><div class="acad-module-fill" style="width:${pathPct}%"></div></div>
-          <div class="acad-module-pct">${pathPct}%</div>
-        </div>`;
-    }
-    html += '</div>';
-  }
-
-  el.innerHTML = html;
-}
 
 // ── MAIN FETCH ────────────────────────────────────────────────────────────────
 async function loadDashboard() {
@@ -840,7 +715,6 @@ async function loadDashboard() {
     renderMachineCharts(data);
     renderChallenges(data.challenges);
     renderActivity(data.activity);
-    renderAcademy(data.academy);
   } catch (err) {
     document.getElementById('sync-time').textContent = 'fetch failed';
     console.error('HTB dashboard load error:', err);
