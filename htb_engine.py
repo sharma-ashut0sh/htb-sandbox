@@ -7,9 +7,10 @@ def fetch_htb_labs(token):
     if not token:
         return {"error": "CRITICAL: HTB_LABS_TOKEN is missing from GitHub environment secrets."}
     
+    clean_token = token.strip()
+    
     headers = {
-        "Authorization": f"Bearer {token}",
-        # Disguise the bot as a standard Chrome browser to bypass Cloudflare WAF
+        "Authorization": f"Bearer {clean_token}",
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
         "Accept": "application/json"
     }
