@@ -1,8 +1,12 @@
 # CyberActivity Engine
-*Last system update: 2026-05-26 03:09:41*
+*Last system update: 2026-05-26 03:24:52*
 
 ## Hack The Box: Active Labs
-> **Status:** System Offline (Connection Failed: Expecting value: line 1 column 1 (char 0))
+| Metric | Value |
+| :--- | :--- |
+| **Current Rank** | `Professional` (Level 47) |
+| **Total XP** | 28680 |
+| **Active Streak** | 2 Days |
 
 ## 🎓 HTB Academy Progress
 *Module pending API endpoint discovery.*
