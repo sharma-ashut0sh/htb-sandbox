@@ -3,7 +3,7 @@ import requests
 from datetime import datetime
 
 def fetch_htb_labs(token):
-    """Module 1: Fetches data from the core HTB V4 API."""
+    """Module 1: Fetches data from the live HTB Experience API."""
     if not token:
         return {"error": "CRITICAL: HTB_LABS_TOKEN is missing from GitHub environment secrets."}
     
@@ -14,21 +14,19 @@ def fetch_htb_labs(token):
         "Accept": "application/json"
     }
     
-    # Going back to the correct API endpoint for Machine/User Owns
-    url = "https://www.hackthebox.com/api/v4/user/info"
+    # REVERTED: Back to the working endpoint you found
+    url = "https://labs.hackthebox.com/api/experience/v1/account/9d7ea1a6-d26f-4522-b039-146c00b8b27b"
     
     try:
         response = requests.get(url, headers=headers)
         response.raise_for_status() 
         data = response.json()
-        profile = data.get('info', {})
         
         return {
-            "username": profile.get('name', 'Unknown'),
-            "rank": profile.get('rankText', 'Unknown'),
-            "system_owns": profile.get('system_owns', 0),
-            "user_owns": profile.get('user_owns', 0),
-            "respect": profile.get('respects', 0)
+            "rank": data.get('levelTitle', 'Unknown'),
+            "level": data.get('level', 0),
+            "xp": data.get('totalExperiencePoints', 0),
+            "streak": data.get('streakData', {}).get('counter', 0)
         }
     except requests.exceptions.HTTPError as e:
         return {"error": f"HTTP {e.response.status_code}: HTB server rejected the request."}
@@ -42,24 +40,22 @@ def generate_markdown(labs_data):
     md = f"# CyberActivity Engine\n"
     md += f"*Last system update: {now}*\n\n"
     
-    # THE FORMATTING FIX: Added double newlines (\n\n) to force proper Markdown rendering.
     md += "## Hack The Box: Active Labs\n\n"
     
     if "error" in labs_data:
         md += f"> **Status:** System Offline ({labs_data['error']})\n\n"
     else:
+        # THE FIX: Proper Markdown table spacing restored
         md += "| Metric | Value |\n"
         md += "| :--- | :--- |\n"
-        md += f"| **Operator** | `{labs_data['username']}` |\n"
-        md += f"| **Current Rank** | {labs_data['rank']} |\n"
-        md += f"| **System Owns (Root)** | {labs_data['system_owns']} |\n"
-        md += f"| **User Owns** | {labs_data['user_owns']} |\n"
-        md += f"| **Respect** | {labs_data['respect']} |\n\n"
+        md += f"| **Current Rank** | `{labs_data['rank']}` (Level {labs_data['level']}) |\n"
+        md += f"| **Total XP** | {labs_data['xp']} |\n"
+        md += f"| **Active Streak** | {labs_data['streak']} Days |\n\n"
         
     md += "## HTB Academy Progress\n\n"
     md += "*Module pending API endpoint discovery.*\n\n"
     
-    md += "## GitHub Engineering\n\n"
+    md += "## 💻 GitHub Engineering\n\n"
     md += "*Module pending GraphQL integration.*\n"
     
     return md
@@ -75,7 +71,7 @@ def main():
     
     with open("index.md", "w", encoding="utf-8") as f:
         f.write(md_content)
-    print("✅ Build complete.")
+    print("Build complete.")
 
 if __name__ == "__main__":
     main()
