@@ -1,14 +1,18 @@
 # CyberActivity Engine
-*Last system update: 2026-05-26 03:31:54*
+*Last system update: 2026-05-26 03:35:18*
 
 ## Hack The Box: Active Labs
 
-> **Status:** System Offline (HTTP 404: HTB server rejected the request.)
+| Metric | Value |
+| :--- | :--- |
+| **Current Rank** | `Professional` (Level 47) |
+| **Total XP** | 28680 |
+| **Active Streak** | 2 Days |
 
 ## HTB Academy Progress
 
 *Module pending API endpoint discovery.*
 
-## GitHub Engineering
+## 💻 GitHub Engineering
 
 *Module pending GraphQL integration.*
