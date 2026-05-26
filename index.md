@@ -1,8 +1,8 @@
 # CyberActivity Engine
-*Last system update: 2026-05-26 02:50:17*
+*Last system update: 2026-05-26 02:56:57*
 
 ## Hack The Box: Active Labs
-> **Status:** System Offline (Connection Failed: Invalid leading whitespace, reserved character(s), or return character(s) in header value: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI1IiwianRpIjoiZTBhZTYyZWEzYzUxZDdlOGRhNmY3YzNkNDI0YjFjMDQxYWFlZTM1YzFjYzIyMjVjMzUyNWIyZDUxZDcxYzNhNTQ3ZDIyMzEzOTBlYjE3ZDAiLCJpYXQiOjE3Nzk3NjEwMTAuMTgzMDI0LCJuYmYiOjE3Nzk3NjEwMTAuMTgzMDI2LCJleHAiOjE4MTEyOTcwMTAuMTc2MjcyLCJzdWIiOiIyMTQyMDIyIiwic2NvcGVzIjpbXX0.A6GO8--p8so1ujB3on6U8_GLR3RQzZZPiMrbAc-n0xWmWuXbJMrInUvf5keqKbRkGH0y4LxzAMpCBESjZgtYMv1K_hWvBTyGOe52IOu_8drgt66vaHA4iJOi8O-erWtu5nDJUugfI6Q8YSR_628ZP1Z7ZhRh9CRNQIZjtrKU0ySiJo987GAw2c_h6p6mxgS-J-SxUmohdfxc5bunltSPbLXn_Xi047gkH7dpjr9eIV7XxvD3cZ2ys0xvgp9j0uX3Vh9_eBT_zH5yF2Nr7WQzp7JQ0v6QOY_p2dYhyXd-ZCnDW3Mlwp18U9YPpjYVNyZhvyVe8ySssC1sMmQ4Yz6r0eGyVOoHCJAIwM1CBOSL9ETsYVdlPhMVG1tblhIN-0E6WZrcNhjwBtBslO4n6Bg6zpkuxQJiV0H6hL9I7yKESCGbW28_PO_5oDR5Hqbhdz8jro824nR06Ib4a_OOZ7nHM2J6gb7-xg3Psj9Bmf52UEShUEhxszMNVxFRUsuy63NDfkjqqstt126DTbxrP5gnq_BuPnZZquJ2ukWn1UUlvXUhMWtpciI6CupDrTaJpw6EPwnzJz6SqB7w5ZaH1OrBFcBTfg8WOWPGZvGNfMGADcHyJwlWJm_h-J3SWPqTFtUsbaq2KFtFh8FlZloR9GyJApO8anTy5uEYx1o6SamN32Y\n\n\n')
+> **Status:** System Offline (HTTP 404: HTB server rejected the request.)
 
 ## 🎓 HTB Academy Progress
 *Module pending API endpoint discovery.*
