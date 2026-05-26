@@ -1,0 +1,256 @@
+{
+  "generated_at": "2026-05-26T04:34:01Z",
+  "experience": {
+    "rank": "Professional",
+    "level": 47,
+    "xp": 28680,
+    "xp_next_level": 0,
+    "streak": 2
+  },
+  "profile": {
+    "user_id": 2142022,
+    "username": "0xMikey",
+    "avatar": "https://htb-sso-prod-public-storage.s3.eu-central-1.amazonaws.com/users/aed3a3c0-fafc-4bda-9475-36e2bd4e8280-avatar.png",
+    "user_owns": 0,
+    "system_owns": 0,
+    "points": 0,
+    "user_bloods": 0,
+    "system_bloods": 0
+  },
+  "machines": {
+    "by_difficulty": {
+      "by_difficulty": {},
+      "user_owns_by_difficulty": {}
+    },
+    "by_os": {
+      "error": "404 Client Error: Not Found for url: https://labs.hackthebox.com/api/v4/user/profile/progress/machines/os/2142022"
+    }
+  },
+  "challenges": [],
+  "activity": [
+    {
+      "date": "2026-05-24T05:56:09.000000Z",
+      "date_diff": "1 day ago",
+      "object_type": "machine",
+      "type": "root",
+      "first_blood": false,
+      "id": 900,
+      "name": "Reactor",
+      "points": 20,
+      "machine_avatar": "/avatars/56868ca419111fc0721393a2ffa0cefe_thumb.png"
+    },
+    {
+      "date": "2026-05-24T05:15:39.000000Z",
+      "date_diff": "1 day ago",
+      "object_type": "machine",
+      "type": "user",
+      "first_blood": false,
+      "id": 900,
+      "name": "Reactor",
+      "points": 10,
+      "machine_avatar": "/avatars/56868ca419111fc0721393a2ffa0cefe_thumb.png"
+    },
+    {
+      "date": "2026-04-18T16:45:22.000000Z",
+      "date_diff": "1 month ago",
+      "object_type": "machine",
+      "type": "root",
+      "first_blood": false,
+      "id": 867,
+      "name": "Silentium",
+      "points": 20,
+      "machine_avatar": "/avatars/601d72b592e6b78aee56dbc086ec7089_thumb.png"
+    },
+    {
+      "date": "2026-04-12T10:03:49.000000Z",
+      "date_diff": "1 month ago",
+      "object_type": "machine",
+      "type": "user",
+      "first_blood": false,
+      "id": 867,
+      "name": "Silentium",
+      "points": 10,
+      "machine_avatar": "/avatars/601d72b592e6b78aee56dbc086ec7089_thumb.png"
+    },
+    {
+      "date": "2026-04-06T07:01:55.000000Z",
+      "date_diff": "1 month ago",
+      "object_type": "machine",
+      "type": "user",
+      "first_blood": false,
+      "id": 862,
+      "name": "Garfield",
+      "points": 20,
+      "machine_avatar": "/avatars/a7ee5b5ec5cb4c2bf96545fda71ea8e6_thumb.png"
+    },
+    {
+      "date": "2026-04-06T05:02:47.000000Z",
+      "date_diff": "1 month ago",
+      "object_type": "machine",
+      "type": "root",
+      "first_blood": false,
+      "id": 862,
+      "name": "Garfield",
+      "points": 40,
+      "machine_avatar": "/avatars/a7ee5b5ec5cb4c2bf96545fda71ea8e6_thumb.png"
+    },
+    {
+      "date": "2026-04-04T14:53:04.000000Z",
+      "date_diff": "1 month ago",
+      "object_type": "machine",
+      "type": "root",
+      "first_blood": false,
+      "id": 859,
+      "name": "DevArea",
+      "points": 30,
+      "machine_avatar": "/avatars/88d6d295a9624c91cbdae1e0215cb354_thumb.png"
+    },
+    {
+      "date": "2026-04-04T13:47:27.000000Z",
+      "date_diff": "1 month ago",
+      "object_type": "machine",
+      "type": "user",
+      "first_blood": false,
+      "id": 859,
+      "name": "DevArea",
+      "points": 15,
+      "machine_avatar": "/avatars/88d6d295a9624c91cbdae1e0215cb354_thumb.png"
+    },
+    {
+      "date": "2026-03-28T17:49:21.000000Z",
+      "date_diff": "1 month ago",
+      "object_type": "machine",
+      "type": "root",
+      "first_blood": false,
+      "id": 856,
+      "name": "Kobold",
+      "points": 20,
+      "machine_avatar": "/avatars/2ff7f3683782c3525c5ac9ed275cc989_thumb.png"
+    },
+    {
+      "date": "2026-03-28T17:08:25.000000Z",
+      "date_diff": "1 month ago",
+      "object_type": "machine",
+      "type": "user",
+      "first_blood": false,
+      "id": 856,
+      "name": "Kobold",
+      "points": 10,
+      "machine_avatar": "/avatars/2ff7f3683782c3525c5ac9ed275cc989_thumb.png"
+    },
+    {
+      "date": "2026-03-14T22:10:05.000000Z",
+      "date_diff": "2 months ago",
+      "object_type": "machine",
+      "type": "root",
+      "first_blood": false,
+      "id": 850,
+      "name": "VariaType",
+      "points": 30,
+      "machine_avatar": "/avatars/1c63aff74baeaf6afdb5f35519756ab1_thumb.png"
+    },
+    {
+      "date": "2026-03-14T21:46:51.000000Z",
+      "date_diff": "2 months ago",
+      "object_type": "machine",
+      "type": "user",
+      "first_blood": false,
+      "id": 850,
+      "name": "VariaType",
+      "points": 15,
+      "machine_avatar": "/avatars/1c63aff74baeaf6afdb5f35519756ab1_thumb.png"
+    },
+    {
+      "date": "2026-03-07T20:45:41.000000Z",
+      "date_diff": "2 months ago",
+      "object_type": "machine",
+      "type": "root",
+      "first_blood": false,
+      "id": 847,
+      "name": "CCTV",
+      "points": 20,
+      "machine_avatar": "/avatars/9867e8b14b7602881160973ebb50b2c4_thumb.png"
+    },
+    {
+      "date": "2026-03-07T20:39:24.000000Z",
+      "date_diff": "2 months ago",
+      "object_type": "machine",
+      "type": "user",
+      "first_blood": false,
+      "id": 847,
+      "name": "CCTV",
+      "points": 10,
+      "machine_avatar": "/avatars/9867e8b14b7602881160973ebb50b2c4_thumb.png"
+    },
+    {
+      "date": "2026-02-24T18:05:16.000000Z",
+      "date_diff": "3 months ago",
+      "object_type": "machine",
+      "type": "root",
+      "first_blood": false,
+      "id": 841,
+      "name": "Interpreter",
+      "points": 30,
+      "machine_avatar": "/avatars/09ad7380d2a445fff16a31fadcd35ff6_thumb.png"
+    },
+    {
+      "date": "2026-02-24T18:05:12.000000Z",
+      "date_diff": "3 months ago",
+      "object_type": "machine",
+      "type": "user",
+      "first_blood": false,
+      "id": 841,
+      "name": "Interpreter",
+      "points": 15,
+      "machine_avatar": "/avatars/09ad7380d2a445fff16a31fadcd35ff6_thumb.png"
+    },
+    {
+      "date": "2026-02-14T21:12:42.000000Z",
+      "date_diff": "3 months ago",
+      "object_type": "machine",
+      "type": "root",
+      "first_blood": false,
+      "id": 835,
+      "name": "WingData",
+      "points": 20,
+      "machine_avatar": "/avatars/d419202507a3bbf06e764c1c4a524f66_thumb.png"
+    },
+    {
+      "date": "2026-02-14T20:55:54.000000Z",
+      "date_diff": "3 months ago",
+      "object_type": "machine",
+      "type": "user",
+      "first_blood": false,
+      "id": 835,
+      "name": "WingData",
+      "points": 10,
+      "machine_avatar": "/avatars/d419202507a3bbf06e764c1c4a524f66_thumb.png"
+    },
+    {
+      "date": "2026-02-14T15:14:24.000000Z",
+      "date_diff": "3 months ago",
+      "object_type": "machine",
+      "type": "root",
+      "first_blood": false,
+      "id": 832,
+      "name": "Pterodactyl",
+      "points": 0,
+      "machine_avatar": "/avatars/c9b2b698f60a9ab8da6c444a9f80e9bc_thumb.png"
+    },
+    {
+      "date": "2026-02-14T13:20:04.000000Z",
+      "date_diff": "3 months ago",
+      "object_type": "machine",
+      "type": "user",
+      "first_blood": false,
+      "id": 832,
+      "name": "Pterodactyl",
+      "points": 0,
+      "machine_avatar": "/avatars/c9b2b698f60a9ab8da6c444a9f80e9bc_thumb.png"
+    }
+  ],
+  "academy": {
+    "error": "404 Client Error: Not Found for url: https://academy.hackthebox.com/api/v1/user/dashboard",
+    "note": "Academy endpoint not yet confirmed. Set HTB_ACADEMY_TOKEN secret if separate."
+  }
+}
