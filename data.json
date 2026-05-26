@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-26T04:34:01Z",
+  "generated_at": "2026-05-26T04:50:39Z",
   "experience": {
     "rank": "Professional",
     "level": 47,
@@ -10,21 +10,15 @@
   "profile": {
     "user_id": 2142022,
     "username": "0xMikey",
-    "avatar": "https://htb-sso-prod-public-storage.s3.eu-central-1.amazonaws.com/users/aed3a3c0-fafc-4bda-9475-36e2bd4e8280-avatar.png",
-    "user_owns": 0,
-    "system_owns": 0,
+    "user_owns": 29,
+    "system_owns": 30,
     "points": 0,
     "user_bloods": 0,
     "system_bloods": 0
   },
   "machines": {
-    "by_difficulty": {
-      "by_difficulty": {},
-      "user_owns_by_difficulty": {}
-    },
-    "by_os": {
-      "error": "404 Client Error: Not Found for url: https://labs.hackthebox.com/api/v4/user/profile/progress/machines/os/2142022"
-    }
+    "by_difficulty": {},
+    "by_os": {}
   },
   "challenges": [],
   "activity": [
@@ -249,8 +243,44 @@
       "machine_avatar": "/avatars/c9b2b698f60a9ab8da6c444a9f80e9bc_thumb.png"
     }
   ],
-  "academy": {
-    "error": "404 Client Error: Not Found for url: https://academy.hackthebox.com/api/v1/user/dashboard",
-    "note": "Academy endpoint not yet confirmed. Set HTB_ACADEMY_TOKEN secret if separate."
+  "derived": {
+    "user_owns": 29,
+    "system_owns": 30,
+    "challenge_solves": 18,
+    "diff_from_activity": {},
+    "os_from_activity": {},
+    "unique_machines": [
+      "Pterodactyl",
+      "Imagery",
+      "VariaType",
+      "Conversor",
+      "Meow",
+      "Giveback",
+      "Eighteen",
+      "Expressway",
+      "Signed",
+      "Gavel",
+      "Facts",
+      "Previous",
+      "Reactor",
+      "MonitorsFour",
+      "Garfield",
+      "Interpreter",
+      "DevArea",
+      "DarkZero",
+      "Cap",
+      "Kobold",
+      "NanoCorp",
+      "Soulmate",
+      "Nocturnal",
+      "CCTV",
+      "Guardian",
+      "WingData",
+      "CodePartTwo",
+      "Silentium",
+      "Fries",
+      "Fawn",
+      "Outbound"
+    ]
   }
 }
