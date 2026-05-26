@@ -15,7 +15,7 @@ def fetch_htb_labs(token):
         "Accept": "application/json"
     }
     
-    url = "https://www.hackthebox.com/api/v4/user/info"
+    url = "https://app.hackthebox.com/api/v4/user/info"
     
     try:
         response = requests.get(url, headers=headers)
