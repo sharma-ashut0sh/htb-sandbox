@@ -247,62 +247,6 @@ def main():
     with open("data.json", "w", encoding="utf-8") as f:
         json.dump(payload, f, indent=2)
     print("  ✓ data.json written")
-
-    # ── Write index.md (fallback human-readable view) ─────────────────────
-    rank   = exp.get("rank", "Unknown") if "error" not in exp else "N/A"
-    level  = exp.get("level", 0)        if "error" not in exp else 0
-    xp     = exp.get("xp", 0)           if "error" not in exp else 0
-    streak = exp.get("streak", 0)       if "error" not in exp else 0
-
-    u_owns = profile.get("user_owns", 0)    if "error" not in profile else 0
-    r_owns = profile.get("system_owns", 0)  if "error" not in profile else 0
-    points = profile.get("points", 0)       if "error" not in profile else 0
-
-    chall_total = sum(c.get("solved", 0) for c in challenges) if isinstance(challenges, list) else 0
-
-    acad_done  = academy.get("modules_completed", "?")
-    acad_total = academy.get("modules_total", "?")
-
-    md = f"""---
-layout: htb_dashboard
-title: HTB Progress
----
-
-# HackTheBox Progress Dashboard
-*Last updated: {now_fmt}*
-
-## Rank & XP
-
-| Metric | Value |
-| :--- | :--- |
-| **Rank** | `{rank}` (Level {level}) |
-| **Total XP** | {xp:,} |
-| **Active Streak** | {streak} days |
-| **Points** | {points} |
-
-## Machines
-
-| Metric | Value |
-| :--- | :--- |
-| **User Owns** | {u_owns} |
-| **Root/System Owns** | {r_owns} |
-
-## Challenges
-
-| Metric | Value |
-| :--- | :--- |
-| **Total Solved** | {chall_total} |
-
-## HTB Academy
-
-| Metric | Value |
-| :--- | :--- |
-| **Modules Completed** | {acad_done} / {acad_total} |
-"""
-
-    with open("index.md", "w", encoding="utf-8") as f:
-        f.write(md)
-    print("  ✓ index.md written")
     print("Build complete.")
 
 
