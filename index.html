@@ -684,8 +684,8 @@ function renderTeam(team) {
   if (members.length > 0) {
     html += `<div style="border-top:1px solid var(--border);padding-top:14px">
       <div class="stat-label" style="margin-bottom:10px">TOP MEMBERS</div>`;
-    for (const m of members.slice(0, 6)) {
-      const crown = m.is_captain ? '👑 ' : '';
+    for (const m of members.slice(0, 10)) {
+      const crown = '';
       html += `
         <div style="display:flex;align-items:center;gap:10px;padding:6px 0;border-bottom:1px solid #1e2a3033">
           <div style="font-size:13px;font-weight:600;color:#fff;flex:1">${crown}${m.name}</div>
