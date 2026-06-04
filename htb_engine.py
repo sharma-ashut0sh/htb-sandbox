@@ -152,42 +152,89 @@ def fetch_attack_paths(token, user_id):
 
 def fetch_team_full(token, team_id):
     """
-    Try /team/profile/{id} for full members list.
-    Fallback: we already have basics from profile endpoint.
+    Confirmed working on labs.hackthebox.com/api/v4:
+      GET /team/info/{id}                  — flat JSON: name, points, discord etc
+      GET /team/members/{id}               — array of members with owns/points/role
+      GET /team/graph/{id}?duration=1M     — {"status":true,"data":{"points":[...],"rank":[...]}}
+      GET /team/chart/machines/attack/{id} — {"machine_owns":{...},"machine_attack_paths":{...}}
+      GET /rankings/teams?page=1           — leaderboard with root_owns/user_owns/challenge_owns
     """
-    d = safe_get(token, f"{BASE}/team/profile/{team_id}", "team/profile")
-    if not d:
-        return {}
+    result = {}
 
-    # unwrap any nesting
-    for key in ("profile", "team", "data"):
-        if key in d and isinstance(d[key], dict):
-            d = d[key]
-            break
+    # ── 1. Team info (name, points, social links) ─────────────────────────
+    d = safe_get(token, f"{BASE}/team/info/{team_id}", "team/info")
+    if d and isinstance(d, dict) and "name" in d:
+        result.update({
+            "id":      team_id,
+            "name":    d.get("name", ""),
+            "points":  d.get("points", 0),
+            "discord": d.get("discord", ""),
+            "country": d.get("country_name", ""),
+            "avatar":  d.get("avatar_url", ""),
+        })
+        print(f"  [team/info] name={result['name']}  pts={result['points']}")
 
-    members_raw = d.get("members") or d.get("users") or []
-    members = sorted([
-        {
-            "name":       m.get("name") or m.get("username", "?"),
-            "rank":       m.get("rank") or m.get("level", ""),
-            "points":     m.get("points", 0),
-            "root_owns":  m.get("root_owns") or m.get("system_owns", 0),
-            "is_captain": bool(m.get("is_captain") or m.get("captain")),
+    # ── 2. Members list ───────────────────────────────────────────────────
+    # Confirmed shape: flat array [{id, name, points, root_owns, user_owns, role, rank_text, ...}]
+    m = safe_get(token, f"{BASE}/team/members/{team_id}", "team/members")
+    if isinstance(m, list):
+        members = sorted([
+            {
+                "name":       mb.get("name", "?"),
+                "rank":       mb.get("rank_text", ""),
+                "points":     mb.get("points", 0),
+                "root_owns":  mb.get("root_owns", 0),
+                "user_owns":  mb.get("user_owns", 0),
+                "country":    mb.get("country_code", ""),
+                "is_captain": mb.get("role", "") == "captain",
+            }
+            for mb in m if isinstance(mb, dict)
+        ], key=lambda x: x["points"], reverse=True)
+        result["members"]      = members
+        result["member_count"] = len(members)
+        print(f"  [team/members] count={len(members)}")
+
+    # ── 3. Rank graph (last 1 month) ──────────────────────────────────────
+    # Confirmed shape: {"status":true,"data":{"points":[...],"rank":[...],"respect":[...]}}
+    g = safe_get(token, f"{BASE}/team/graph/{team_id}?duration=1M", "team/graph")
+    if g and g.get("status"):
+        data = g.get("data", {})
+        result["graph"] = {
+            "points": data.get("points", []),
+            "rank":   data.get("rank", []),
         }
-        for m in members_raw
-    ], key=lambda x: x["points"], reverse=True)
+        print(f"  [team/graph] pts_series={len(result['graph']['points'])}  rank_series={len(result['graph']['rank'])}")
 
-    return {
-        "id":             team_id,
-        "name":           d.get("name", ""),
-        "points":         d.get("points", 0),
-        "root_owns":      d.get("root_owns", 0),
-        "user_owns":      d.get("user_owns", 0),
-        "challenge_owns": d.get("challenge_owns", 0),
-        "ranking":        d.get("ranking") or d.get("rank", 0),
-        "member_count":   d.get("member_count") or len(members),
-        "members":        members,
-    }
+    # ── 4. Team attack paths ──────────────────────────────────────────────
+    # Confirmed shape: {"machine_owns":{"solved":191,"total":532},"machine_attack_paths":{...}}
+    a = safe_get(token, f"{BASE}/team/chart/machines/attack/{team_id}", "team/attack")
+    if a and "machine_attack_paths" in a:
+        paths_raw = a["machine_attack_paths"]
+        result["attack_paths"] = sorted(
+            [{"name": k, "solved": v.get("solved", 0), "total": v.get("total", 0)}
+             for k, v in paths_raw.items() if v.get("solved", 0) > 0],
+            key=lambda x: x["solved"], reverse=True
+        )[:8]
+        result["team_machine_owns"] = a.get("machine_owns", {})
+        print(f"  [team/attack] paths={len(result['attack_paths'])}  total_solved={result['team_machine_owns'].get('solved')}")
+
+    # ── 5. Global ranking (root/user/challenge owns) ──────────────────────
+    # Confirmed shape: {"data":[{"rank":1,"points":...,"root_owns":...,"id":...,"name":...},...]}
+    r = safe_get(token, f"{BASE}/rankings/teams?page=1", "rankings/teams")
+    if r and "data" in r:
+        for entry in r["data"]:
+            if entry.get("id") == team_id:
+                result["ranking"]        = entry.get("rank", 0)
+                result["root_owns"]      = entry.get("root_owns", 0)
+                result["user_owns"]      = entry.get("user_owns", 0)
+                result["challenge_owns"] = entry.get("challenge_owns", 0)
+                print(f"  [rankings] rank={result['ranking']}  root={result['root_owns']}  user={result['user_owns']}  chall={result['challenge_owns']}")
+                break
+        else:
+            print(f"  [rankings] team {team_id} not on page 1 — trying page scan")
+            # Team might be past page 1 — use profile-provided ranking as fallback
+
+    return result
 
 
 # ─────────────────────────────────────────────
