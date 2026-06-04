@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-04T10:45:33Z",
+  "generated_at": "2026-06-04T14:50:38Z",
   "experience": {
     "rank": "Professional",
     "level": 50,
-    "xp": 32145,
+    "xp": 32285,
     "xp_next_level": 0,
     "streak": 3
   },
@@ -105,7 +105,7 @@
   "activity": [
     {
       "date": "2026-06-03T11:31:59.000000Z",
-      "date_diff": "23 hours ago",
+      "date_diff": "1 day ago",
       "object_type": "challenge",
       "type": "challenge",
       "first_blood": false,
@@ -116,7 +116,7 @@
     },
     {
       "date": "2026-06-03T10:54:34.000000Z",
-      "date_diff": "23 hours ago",
+      "date_diff": "1 day ago",
       "object_type": "challenge",
       "type": "challenge",
       "first_blood": false,
@@ -248,7 +248,7 @@
     },
     {
       "date": "2026-04-04T13:47:27.000000Z",
-      "date_diff": "1 month ago",
+      "date_diff": "2 months ago",
       "object_type": "machine",
       "type": "user",
       "first_blood": false,
@@ -385,12 +385,12 @@
     "user_owns": 191,
     "challenge_owns": 241,
     "ranking": 50,
-    "member_count": 18,
+    "member_count": 19,
     "members": [
       {
         "name": "SOOBIKv2",
         "rank": "Elite Hacker",
-        "points": 1009,
+        "points": 1015,
         "root_owns": 35,
         "user_owns": 35,
         "country": "FR",
@@ -529,6 +529,15 @@
         "root_owns": 2,
         "user_owns": 2,
         "country": "IN",
+        "is_captain": false
+      },
+      {
+        "name": "cheerybliss",
+        "rank": "Hacker",
+        "points": 0,
+        "root_owns": 7,
+        "user_owns": 8,
+        "country": "JP",
         "is_captain": false
       },
       {
