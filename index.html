@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HTB Progress — Abhinav Sharma</title>
+<title>HTB Progress — Abhishek Sharma</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
@@ -638,6 +638,49 @@ function renderTeam(team) {
     </div>`;
   }
 
+  // ── Rank trend graph (from team/graph) ───────────────────────────────────
+  const graph = team.graph || {};
+  const rankSeries = graph.rank || [];
+  if (rankSeries.length > 1) {
+    const sparkId = 'team-rank-spark';
+    html += `<div style="border-top:1px solid var(--border);padding-top:14px;margin-bottom:16px">
+      <div class="stat-label" style="margin-bottom:8px">RANK TREND (30 DAYS)</div>
+      <div style="height:60px"><canvas id="${sparkId}"></canvas></div>
+    </div>`;
+    // Render after innerHTML set — use setTimeout
+    setTimeout(() => {
+      const c = document.getElementById(sparkId);
+      if (!c) return;
+      // Rank: lower = better, so invert for visual (higher line = better rank)
+      new Chart(c, {
+        type: 'line',
+        data: {
+          labels: rankSeries.map((_, i) => ''),
+          datasets: [{
+            data: rankSeries,
+            borderColor: '#f7dc6f',
+            backgroundColor: 'rgba(247,220,111,0.07)',
+            borderWidth: 1.5,
+            pointRadius: 0,
+            tension: 0.4,
+            fill: true,
+          }]
+        },
+        options: {
+          responsive: true, maintainAspectRatio: false,
+          plugins: { legend: { display: false }, tooltip: {
+            callbacks: { label: ctx => ` Rank #${ctx.parsed.y}` }
+          }},
+          scales: {
+            x: { display: false },
+            y: { display: false, reverse: true }  // lower rank number = better = top of chart
+          }
+        }
+      });
+    }, 50);
+  }
+
+  // ── Members list ──────────────────────────────────────────────────────────
   if (members.length > 0) {
     html += `<div style="border-top:1px solid var(--border);padding-top:14px">
       <div class="stat-label" style="margin-bottom:10px">TOP MEMBERS</div>`;
@@ -652,9 +695,8 @@ function renderTeam(team) {
     }
     html += '</div>';
   } else {
-    // Only basics available (from profile endpoint fallback)
     html += `<div style="border-top:1px solid var(--border);padding-top:14px;font-family:var(--mono);font-size:10px;color:var(--muted)">
-      MEMBER DETAILS REQUIRE TEAM API ACCESS
+      MEMBER LIST LOADING — TRIGGER ACTION TO REFRESH
     </div>`;
   }
 
