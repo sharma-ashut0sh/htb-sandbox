@@ -29,6 +29,10 @@ jobs:
           HTB_LABS_TOKEN:    ${{ secrets.HTB_LABS_TOKEN }}
           HTB_ACADEMY_TOKEN: ${{ secrets.HTB_ACADEMY_TOKEN }}
         run: python htb_engine.py
+      - name: Probe team endpoints
+        env:
+          HTB_LABS_TOKEN: ${{ secrets.HTB_LABS_TOKEN }}
+        run: python probe_team.py
 
       - name: Commit updated data
         run: |
