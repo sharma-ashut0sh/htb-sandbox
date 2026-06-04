@@ -400,43 +400,32 @@
 
   </div>
 
-  <!-- ═══════════════════════════════════════════════ MACHINES ROW -->
-  <div class="section-grid">
+  <!-- ══════════════════════════════════════════════ XP TIMELINE ROW -->
+  <div class="section-grid full">
     <div class="panel">
       <div class="panel-header">
-        <div class="panel-dot"></div>
-        <div class="panel-title">Machines by Difficulty</div>
+        <div class="panel-dot" style="background:var(--cyan);box-shadow:0 0 6px var(--cyan)"></div>
+        <div class="panel-title" style="color:var(--cyan)">XP Progress Over Time</div>
+        <span style="margin-left:auto;font-family:var(--mono);font-size:10px;color:var(--muted)">CUMULATIVE — FROM ACTIVITY FEED</span>
       </div>
       <div class="panel-body">
         <div class="chart-wrap" style="height:220px">
-          <canvas id="chart-difficulty"></canvas>
-        </div>
-      </div>
-    </div>
-    <div class="panel">
-      <div class="panel-header">
-        <div class="panel-dot"></div>
-        <div class="panel-title">Machines by OS</div>
-      </div>
-      <div class="panel-body">
-        <div class="chart-wrap" style="height:220px">
-          <canvas id="chart-os"></canvas>
+          <canvas id="chart-xp-timeline"></canvas>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- ═════════════════════════════════════════ CHALLENGES + ACTIVITY -->
+  <!-- ════════════════════════════════════════ TEAM + ACTIVITY ROW -->
   <div class="section-grid">
     <div class="panel">
       <div class="panel-header">
-        <div class="panel-dot" style="background:var(--orange);box-shadow:0 0 6px var(--orange)"></div>
-        <div class="panel-title" style="color:var(--orange)">Challenges by Category</div>
+        <div class="panel-dot" style="background:#f7dc6f;box-shadow:0 0 6px #f7dc6f88"></div>
+        <div class="panel-title" style="color:#f7dc6f">Team Stats</div>
+        <span style="margin-left:auto;font-family:var(--mono);font-size:10px;color:var(--muted)" id="team-name-header">LOADING...</span>
       </div>
-      <div class="panel-body" style="padding:12px 20px">
-        <div id="chall-content">
-          <div class="loading-state">FETCHING DATA</div>
-        </div>
+      <div class="panel-body">
+        <div id="team-content"><div class="loading-state">FETCHING DATA</div></div>
       </div>
     </div>
     <div class="panel">
@@ -546,124 +535,149 @@ function renderStats(data) {
       : 'unknown';
 }
 
-function renderMachineCharts(data) {
-  const derived = data.derived || {};
-  // Use API data if populated, else fall back to activity-derived
-  const byDiff = (Object.keys(data.machines?.by_difficulty || {}).length > 0 ? data.machines.by_difficulty : null)
-              || derived.diff_from_activity || {};
-  const byOS   = (Object.keys(data.machines?.by_os || {}).some(k => data.machines.by_os[k] > 0) ? data.machines.by_os : null)
-              || derived.os_from_activity || {};
+function renderXPTimeline(activity) {
+  const canvas = document.getElementById('chart-xp-timeline');
+  if (!canvas) return;
 
-  // ── Difficulty (Bar) ──────────────────────────────────────────────────────
-  const diffOrder  = ['Easy', 'Medium', 'Hard', 'Insane'];
-  const diffColors = [GREEN, CYAN, ORANGE, RED];
-  const diffData   = diffOrder.map(d => {
-    // API returns system_owns + user_owns per difficulty; take system (root) as proxy
-    const k = d.toLowerCase();
-    return byDiff[k] || byDiff[d] || 0;
-  });
-
-  if (diffData.some(v => v > 0)) {
-    new Chart(document.getElementById('chart-difficulty'), {
-      type: 'bar',
-      plugins: [glowPlugin(GREEN)],
-      data: {
-        labels: diffOrder,
-        datasets: [{
-          data: diffData,
-          backgroundColor: diffColors.map(c => c + '33'),
-          borderColor: diffColors,
-          borderWidth: 1.5,
-          borderRadius: 3,
-        }]
-      },
-      options: {
-        responsive: true,
-        maintainAspectRatio: false,
-        plugins: { legend: { display: false } },
-        scales: {
-          x: { grid: { color: '#1e2a3044' } },
-          y: { grid: { color: '#1e2a3044' }, beginAtZero: true, ticks: { precision: 0 } }
-        }
-      }
-    });
-  } else {
-    document.getElementById('chart-difficulty').closest('.chart-wrap').innerHTML =
-      '<div class="loading-state">NO DATA YET</div>';
-  }
-
-  // ── OS (Doughnut) ─────────────────────────────────────────────────────────
-  const osMap = {
-    linux:   { label: 'Linux',   color: GREEN  },
-    windows: { label: 'Windows', color: CYAN   },
-    freebsd: { label: 'FreeBSD', color: ORANGE },
-    openbsd: { label: 'OpenBSD', color: RED    },
-    android: { label: 'Android', color: '#f7dc6f' },
-    other:   { label: 'Other',   color: '#888' },
-  };
-
-  const osKeys   = Object.keys(osMap).filter(k => byOS[k] > 0);
-  const osLabels = osKeys.map(k => osMap[k].label);
-  const osData   = osKeys.map(k => byOS[k] || 0);
-  const osColors = osKeys.map(k => osMap[k].color);
-
-  if (osData.some(v => v > 0)) {
-    new Chart(document.getElementById('chart-os'), {
-      type: 'doughnut',
-      plugins: [glowPlugin(GREEN)],
-      data: {
-        labels: osLabels,
-        datasets: [{
-          data: osData,
-          backgroundColor: osColors.map(c => c + '33'),
-          borderColor: osColors,
-          borderWidth: 1.5,
-        }]
-      },
-      options: {
-        responsive: true,
-        maintainAspectRatio: false,
-        cutout: '65%',
-        plugins: {
-          legend: {
-            position: 'right',
-            labels: { boxWidth: 12, padding: 12, color: '#c8d6db' }
-          }
-        }
-      }
-    });
-  } else {
-    document.getElementById('chart-os').closest('.chart-wrap').innerHTML =
-      '<div class="loading-state">NO DATA YET</div>';
-  }
-}
-
-function renderChallenges(challenges) {
-  const el = document.getElementById('chall-content');
-  if (!Array.isArray(challenges) || challenges.length === 0) {
-    el.innerHTML = '<div class="error-note">Challenge data unavailable or no solves yet.</div>';
+  if (!Array.isArray(activity) || activity.length === 0) {
+    canvas.closest('.chart-wrap').innerHTML = '<div class="loading-state">NO ACTIVITY DATA</div>';
     return;
   }
 
-  const maxSolved = Math.max(...challenges.map(c => c.solved || 0), 1);
-  const sorted    = [...challenges].sort((a, b) => (b.solved || 0) - (a.solved || 0));
+  // Build cumulative XP over time from activity points
+  // Sort oldest first
+  const sorted = [...activity]
+    .filter(a => a.date && a.points)
+    .sort((a, b) => new Date(a.date) - new Date(b.date));
 
-  let html = '<table class="chall-table"><thead><tr><th>Category</th><th>Progress</th><th>Solved</th></tr></thead><tbody>';
-  for (const c of sorted) {
-    const solved = c.solved || 0;
-    const pct    = Math.round((solved / maxSolved) * 100);
-    html += `
-      <tr>
-        <td style="color:#c8d6db;font-weight:600">${c.name || c.category || '?'}</td>
-        <td style="min-width:80px">
-          <div class="chall-bar-wrap">
-            <div class="chall-bar-fill" style="width:${pct}%;background:${ORANGE}"></div>
-          </div>
-        </td>
-        <td>${solved}</td>
-      </tr>`;
+  if (sorted.length < 2) {
+    canvas.closest('.chart-wrap').innerHTML = '<div class="loading-state">NOT ENOUGH DATA YET</div>';
+    return;
   }
-  html += '</tbody></table>';
+
+  // Group by month, sum points
+  const byMonth = {};
+  for (const item of sorted) {
+    const d   = new Date(item.date);
+    const key = `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}`;
+    byMonth[key] = (byMonth[key] || 0) + (item.points || 0);
+  }
+
+  const months = Object.keys(byMonth).sort();
+  // Build cumulative
+  let cumulative = 0;
+  const cumulData = months.map(m => { cumulative += byMonth[m]; return cumulative; });
+
+  const labels = months.map(m => {
+    const [y, mo] = m.split('-');
+    return new Date(+y, +mo-1).toLocaleString('en', { month:'short', year:'2-digit' });
+  });
+
+  new Chart(canvas, {
+    type: 'line',
+    plugins: [glowPlugin(CYAN)],
+    data: {
+      labels,
+      datasets: [{
+        data: cumulData,
+        borderColor: CYAN,
+        backgroundColor: 'rgba(0,196,204,0.08)',
+        borderWidth: 2,
+        pointRadius: 4,
+        pointBackgroundColor: CYAN,
+        pointBorderColor: '#0a0e0f',
+        pointBorderWidth: 2,
+        tension: 0.4,
+        fill: true,
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          callbacks: {
+            label: ctx => ` ${ctx.parsed.y.toLocaleString()} pts cumulative`
+          }
+        }
+      },
+      scales: {
+        x: { grid: { color: '#1e2a3044' }, ticks: { maxRotation: 0 } },
+        y: {
+          grid: { color: '#1e2a3044' },
+          beginAtZero: true,
+          ticks: { callback: v => v >= 1000 ? (v/1000).toFixed(1)+'k' : v }
+        }
+      }
+    }
+  });
+}
+
+function renderTeam(team) {
+  const el     = document.getElementById('team-content');
+  const header = document.getElementById('team-name-header');
+  if (!team || team.error) {
+    el.innerHTML = '<div class="error-note">Team data unavailable.</div>';
+    return;
+  }
+
+  if (header) header.textContent = (team.name || 'TEAM').toUpperCase();
+
+  const members = Array.isArray(team.members) ? team.members : [];
+
+  let html = `
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:20px">
+      <div>
+        <div class="stat-label">GLOBAL RANK</div>
+        <div style="font-family:var(--mono);font-size:26px;color:#f7dc6f;text-shadow:0 0 12px #f7dc6f88">#${team.ranking || team.rank || '—'}</div>
+      </div>
+      <div>
+        <div class="stat-label">TEAM POINTS</div>
+        <div style="font-family:var(--mono);font-size:26px;color:var(--htb-green)">${fmt(team.points)}</div>
+      </div>
+      <div>
+        <div class="stat-label">MEMBERS</div>
+        <div style="font-family:var(--mono);font-size:26px;color:var(--cyan)">${team.member_count || members.length || '—'}</div>
+      </div>
+    </div>`;
+
+  // Team owns row
+  if (team.root_owns || team.user_owns) {
+    html += `
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:20px;padding-top:16px;border-top:1px solid var(--border)">
+      <div>
+        <div class="stat-label">ROOT OWNS</div>
+        <div style="font-family:var(--mono);font-size:20px;color:var(--htb-green)">${fmt(team.root_owns)}</div>
+      </div>
+      <div>
+        <div class="stat-label">USER OWNS</div>
+        <div style="font-family:var(--mono);font-size:20px;color:var(--cyan)">${fmt(team.user_owns)}</div>
+      </div>
+      <div>
+        <div class="stat-label">CHALLENGES</div>
+        <div style="font-family:var(--mono);font-size:20px;color:var(--orange)">${fmt(team.challenge_owns)}</div>
+      </div>
+    </div>`;
+  }
+
+  // Top members list
+  if (members.length > 0) {
+    html += `<div style="border-top:1px solid var(--border);padding-top:14px">
+      <div class="stat-label" style="margin-bottom:10px">TOP MEMBERS</div>`;
+    for (const m of members.slice(0, 5)) {
+      const pts  = m.points || m.root_owns || 0;
+      const role = m.is_captain ? '👑 ' : '';
+      html += `
+        <div style="display:flex;align-items:center;gap:10px;padding:6px 0;border-bottom:1px solid var(--border)22">
+          <div style="font-size:13px;font-weight:600;color:#fff;flex:1">${role}${m.name || m.username || '?'}</div>
+          <div style="font-family:var(--mono);font-size:10px;color:var(--muted)">${m.rank || ''}</div>
+          <div style="font-family:var(--mono);font-size:11px;color:var(--htb-green)">${fmt(pts)} pts</div>
+        </div>`;
+    }
+    html += '</div>';
+  }
+
   el.innerHTML = html;
 }
 
@@ -712,8 +726,8 @@ async function loadDashboard() {
     const data = await res.json();
 
     renderStats(data);
-    renderMachineCharts(data);
-    renderChallenges(data.challenges);
+    renderXPTimeline(data.activity);
+    renderTeam(data.team);
     renderActivity(data.activity);
   } catch (err) {
     document.getElementById('sync-time').textContent = 'fetch failed';
