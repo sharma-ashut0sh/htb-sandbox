@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-04T09:51:19Z",
+  "generated_at": "2026-06-04T10:42:27Z",
   "experience": {
     "rank": "Professional",
     "level": 50,
@@ -105,7 +105,7 @@
   "activity": [
     {
       "date": "2026-06-03T11:31:59.000000Z",
-      "date_diff": "22 hours ago",
+      "date_diff": "23 hours ago",
       "object_type": "challenge",
       "type": "challenge",
       "first_blood": false,
@@ -116,7 +116,7 @@
     },
     {
       "date": "2026-06-03T10:54:34.000000Z",
-      "date_diff": "22 hours ago",
+      "date_diff": "23 hours ago",
       "object_type": "challenge",
       "type": "challenge",
       "first_blood": false,
@@ -380,13 +380,176 @@
   "team": {
     "id": 7247,
     "name": "VXON",
-    "points": 0,
-    "root_owns": 0,
-    "user_owns": 0,
-    "challenge_owns": 0,
+    "points": 1837,
+    "root_owns": 181,
+    "user_owns": 191,
+    "challenge_owns": 241,
     "ranking": 50,
     "member_count": 18,
-    "members": [],
+    "members": [
+      {
+        "name": "SOOBIKv2",
+        "rank": "Elite Hacker",
+        "points": 1009,
+        "root_owns": 35,
+        "user_owns": 35,
+        "country": "FR",
+        "is_captain": false
+      },
+      {
+        "name": "knockingd00r",
+        "rank": "Pro Hacker",
+        "points": 863,
+        "root_owns": 57,
+        "user_owns": 64,
+        "country": "MA",
+        "is_captain": false
+      },
+      {
+        "name": "atoontoto",
+        "rank": "Pro Hacker",
+        "points": 514,
+        "root_owns": 74,
+        "user_owns": 74,
+        "country": "IQ",
+        "is_captain": false
+      },
+      {
+        "name": "ANameNotMine",
+        "rank": "Pro Hacker",
+        "points": 410,
+        "root_owns": 113,
+        "user_owns": 124,
+        "country": "HR",
+        "is_captain": false
+      },
+      {
+        "name": "0xMikey",
+        "rank": "Pro Hacker",
+        "points": 314,
+        "root_owns": 30,
+        "user_owns": 31,
+        "country": "IN",
+        "is_captain": true
+      },
+      {
+        "name": "w3nch",
+        "rank": "Pro Hacker",
+        "points": 289,
+        "root_owns": 43,
+        "user_owns": 46,
+        "country": "IN",
+        "is_captain": false
+      },
+      {
+        "name": "Papalo007",
+        "rank": "Pro Hacker",
+        "points": 212,
+        "root_owns": 67,
+        "user_owns": 67,
+        "country": "GR",
+        "is_captain": false
+      },
+      {
+        "name": "jbrgn",
+        "rank": "Pro Hacker",
+        "points": 174,
+        "root_owns": 85,
+        "user_owns": 86,
+        "country": "GB",
+        "is_captain": false
+      },
+      {
+        "name": "6cloudguy",
+        "rank": "Hacker",
+        "points": 49,
+        "root_owns": 24,
+        "user_owns": 24,
+        "country": "IN",
+        "is_captain": false
+      },
+      {
+        "name": "Marclos15",
+        "rank": "Hacker",
+        "points": 44,
+        "root_owns": 33,
+        "user_owns": 37,
+        "country": "ES",
+        "is_captain": false
+      },
+      {
+        "name": "c3n7",
+        "rank": "Script Kiddie",
+        "points": 36,
+        "root_owns": 12,
+        "user_owns": 13,
+        "country": "IN",
+        "is_captain": false
+      },
+      {
+        "name": "rootrose",
+        "rank": "Pro Hacker",
+        "points": 20,
+        "root_owns": 55,
+        "user_owns": 67,
+        "country": "GR",
+        "is_captain": false
+      },
+      {
+        "name": "kincurio",
+        "rank": "Script Kiddie",
+        "points": 14,
+        "root_owns": 4,
+        "user_owns": 5,
+        "country": "IN",
+        "is_captain": false
+      },
+      {
+        "name": "Thennavan",
+        "rank": "Hacker",
+        "points": 4,
+        "root_owns": 36,
+        "user_owns": 41,
+        "country": "IN",
+        "is_captain": false
+      },
+      {
+        "name": "XoXoRiTi",
+        "rank": "Hacker",
+        "points": 3,
+        "root_owns": 15,
+        "user_owns": 17,
+        "country": "IN",
+        "is_captain": false
+      },
+      {
+        "name": "Valkyri3x",
+        "rank": "Script Kiddie",
+        "points": 0,
+        "root_owns": 2,
+        "user_owns": 2,
+        "country": "IN",
+        "is_captain": false
+      },
+      {
+        "name": "Ivarhackme",
+        "rank": "Noob",
+        "points": 0,
+        "root_owns": 0,
+        "user_owns": 0,
+        "country": null,
+        "is_captain": false
+      },
+      {
+        "name": "owatron",
+        "rank": "Noob",
+        "points": 0,
+        "root_owns": 0,
+        "user_owns": 0,
+        "country": "IN",
+        "is_captain": false
+      }
+    ],
     "logo": "https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/teams/cf5ff72ca35f112b361de3e312c088f4_thumb.jpg"
   }
 }
