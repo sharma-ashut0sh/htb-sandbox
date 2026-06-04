@@ -293,15 +293,11 @@ if __name__ == "__main__":
 
 
 # ─────────────────────────────────────────────
-# TEAM DATA — appended module
+# TEAM DATA
 # ─────────────────────────────────────────────
 TEAM_ID = 7247
 
 def fetch_team(token):
-    """
-    GET /api/v4/team/profile/{team_id}   — profile, members, ranking
-    GET /api/v4/rankings/teams           — global leaderboard (find team rank)
-    """
     BASE = "https://labs.hackthebox.com/api/v4"
     headers = {
         "Authorization": f"Bearer {token.strip()}",
@@ -309,53 +305,96 @@ def fetch_team(token):
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
     }
 
-    team = {}
+    def unwrap(d):
+        if not d: return {}
+        if "profile" in d and isinstance(d["profile"], dict): return d["profile"]
+        if "team"    in d and isinstance(d["team"], dict):    return d["team"]
+        if "data"    in d:
+            data = d["data"]
+            if isinstance(data, dict): return data
+            if isinstance(data, list):
+                for item in data:
+                    if isinstance(item, dict) and item.get("id") == TEAM_ID:
+                        return item
+                return data[0] if data else {}
+        if "name" in d or "points" in d: return d
+        return d
 
-    # 1. Team profile
-    try:
-        r = requests.get(f"{BASE}/team/profile/{TEAM_ID}", headers=headers, timeout=15)
-        r.raise_for_status()
-        d = r.json()
-        print(f"  [team/profile] HTTP 200  keys={list(d.keys())}")
-        profile = d.get("profile", d.get("team", d))
-        team.update({
-            "id":           TEAM_ID,
-            "name":         profile.get("name", ""),
-            "points":       profile.get("points", 0),
-            "root_owns":    profile.get("root_owns", 0),
-            "user_owns":    profile.get("user_owns", 0),
-            "challenge_owns": profile.get("challenge_owns", 0),
-            "member_count": profile.get("member_count", 0),
-            "ranking":      profile.get("ranking", profile.get("rank", 0)),
-        })
-        # Members list
-        members = profile.get("members", profile.get("users", []))
-        team["members"] = [
-            {
-                "name":       m.get("name", m.get("username", "")),
-                "rank":       m.get("rank", ""),
-                "points":     m.get("points", 0),
-                "root_owns":  m.get("root_owns", m.get("system_owns", 0)),
-                "is_captain": m.get("is_captain", False),
-            }
-            for m in (members or [])
-        ]
-        print(f"  [team] name={team.get('name')}  rank={team.get('ranking')}  members={len(team['members'])}")
-    except Exception as e:
-        print(f"  [team/profile] ERROR: {e}")
-        team["error"] = str(e)
+    def get_members(profile):
+        for key in ("members", "users", "teammates"):
+            val = profile.get(key)
+            if val and isinstance(val, list):
+                return val
+        return []
 
-    # 2. If ranking still 0, try stats endpoint
-    if not team.get("ranking"):
+    # ── Try profile endpoint ───────────────────────────────────────────────
+    profile = {}
+    for url in [
+        f"{BASE}/team/profile/{TEAM_ID}",
+        f"https://www.hackthebox.com/api/v4/team/profile/{TEAM_ID}",
+    ]:
         try:
-            r = requests.get(f"{BASE}/team/stats/owns/{TEAM_ID}", headers=headers, timeout=15)
+            r = requests.get(url, headers=headers, timeout=15)
+            print(f"  [team] {r.status_code} {url}")
             if r.status_code == 200:
-                d = r.json()
-                print(f"  [team/stats] {json.dumps(d)[:200]}")
-                stats = d.get("stats", d)
-                if stats.get("ranking"):
-                    team["ranking"] = stats["ranking"]
+                raw = r.json()
+                print(f"  [team] raw keys: {list(raw.keys())}")
+                print(f"  [team] raw (600c): {json.dumps(raw)[:600]}")
+                profile = unwrap(raw)
+                break
+            else:
+                print(f"  [team] body: {r.text[:200]}")
         except Exception as e:
-            print(f"  [team/stats] {e}")
+            print(f"  [team] exception: {e}")
 
+    if not profile:
+        print("  [team] PROFILE EMPTY — trying rankings endpoint to find team")
+        # Scan global rankings for our team
+        try:
+            r = requests.get(
+                f"{BASE}/rankings/teams?page=1&per_page=100",
+                headers=headers, timeout=15
+            )
+            print(f"  [rankings] {r.status_code}")
+            if r.status_code == 200:
+                raw = r.json()
+                data = raw.get("data", raw.get("rankings", []))
+                if isinstance(data, list):
+                    for item in data:
+                        if item.get("id") == TEAM_ID:
+                            profile = item
+                            print(f"  [rankings] found team: {json.dumps(item)[:300]}")
+                            break
+        except Exception as e:
+            print(f"  [rankings] exception: {e}")
+
+    if not profile:
+        return {"error": "team endpoint returned no usable data", "id": TEAM_ID}
+
+    # ── Extract members ────────────────────────────────────────────────────
+    raw_members = get_members(profile)
+    members = []
+    for m in raw_members:
+        members.append({
+            "name":       m.get("name") or m.get("username") or "?",
+            "rank":       m.get("rank") or m.get("level") or "",
+            "points":     m.get("points", 0),
+            "root_owns":  m.get("root_owns") or m.get("system_owns", 0),
+            "is_captain": bool(m.get("is_captain") or m.get("captain")),
+        })
+    # Sort by points desc
+    members.sort(key=lambda x: x["points"], reverse=True)
+
+    team = {
+        "id":             TEAM_ID,
+        "name":           profile.get("name", ""),
+        "points":         profile.get("points", 0),
+        "root_owns":      profile.get("root_owns", 0),
+        "user_owns":      profile.get("user_owns", 0),
+        "challenge_owns": profile.get("challenge_owns", 0),
+        "ranking":        profile.get("ranking") or profile.get("rank") or 0,
+        "member_count":   profile.get("member_count") or profile.get("members_count") or len(members),
+        "members":        members,
+    }
+    print(f"  [team] FINAL: name={team['name']} rank={team['ranking']} pts={team['points']} members={len(members)}")
     return team
