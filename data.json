@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-03T20:52:10Z",
+  "generated_at": "2026-06-04T03:15:07Z",
   "experience": {
     "rank": "Professional",
     "level": 50,
@@ -11,20 +11,101 @@
     "user_id": 2142022,
     "username": "0xMikey",
     "user_owns": 31,
-    "system_owns": 32,
-    "points": 0,
+    "system_owns": 30,
+    "points": 314,
     "user_bloods": 0,
     "system_bloods": 0
   },
-  "machines": {
-    "by_difficulty": {},
-    "by_os": {}
+  "challenges": {
+    "total_solved": 20,
+    "categories": [
+      {
+        "name": "Reversing",
+        "solved": 3,
+        "total": 100,
+        "completion": 3
+      },
+      {
+        "name": "Web",
+        "solved": 6,
+        "total": 168,
+        "completion": 4
+      },
+      {
+        "name": "OSINT",
+        "solved": 6,
+        "total": 11,
+        "completion": 55
+      },
+      {
+        "name": "Hardware",
+        "solved": 1,
+        "total": 41,
+        "completion": 2
+      },
+      {
+        "name": "Coding",
+        "solved": 2,
+        "total": 16,
+        "completion": 13
+      },
+      {
+        "name": "Quantum",
+        "solved": 2,
+        "total": 6,
+        "completion": 33
+      }
+    ]
   },
-  "challenges": [],
+  "attack_paths": {
+    "total_solved": 30,
+    "paths": [
+      {
+        "name": "Reconnaissance",
+        "solved": 9,
+        "total": 251
+      },
+      {
+        "name": "Web Application",
+        "solved": 8,
+        "total": 321
+      },
+      {
+        "name": "Vulnerability Assessment",
+        "solved": 8,
+        "total": 385
+      },
+      {
+        "name": "Password Cracking",
+        "solved": 7,
+        "total": 162
+      },
+      {
+        "name": "Enterprise Network",
+        "solved": 5,
+        "total": 172
+      },
+      {
+        "name": "Password Reuse",
+        "solved": 5,
+        "total": 137
+      },
+      {
+        "name": "SUDO Exploitation",
+        "solved": 5,
+        "total": 82
+      },
+      {
+        "name": "Custom Applications",
+        "solved": 5,
+        "total": 89
+      }
+    ]
+  },
   "activity": [
     {
       "date": "2026-06-03T11:31:59.000000Z",
-      "date_diff": "9 hours ago",
+      "date_diff": "15 hours ago",
       "object_type": "challenge",
       "type": "challenge",
       "first_blood": false,
@@ -35,7 +116,7 @@
     },
     {
       "date": "2026-06-03T10:54:34.000000Z",
-      "date_diff": "9 hours ago",
+      "date_diff": "16 hours ago",
       "object_type": "challenge",
       "type": "challenge",
       "first_blood": false,
@@ -46,7 +127,7 @@
     },
     {
       "date": "2026-06-03T05:59:54.000000Z",
-      "date_diff": "14 hours ago",
+      "date_diff": "21 hours ago",
       "object_type": "machine",
       "type": "root",
       "first_blood": false,
@@ -57,7 +138,7 @@
     },
     {
       "date": "2026-06-03T05:29:46.000000Z",
-      "date_diff": "15 hours ago",
+      "date_diff": "21 hours ago",
       "object_type": "machine",
       "type": "user",
       "first_blood": false,
@@ -247,42 +328,65 @@
     "user_owns": 31,
     "system_owns": 32,
     "challenge_solves": 20,
-    "diff_from_activity": {},
-    "os_from_activity": {},
     "unique_machines": [
-      "Kobold",
-      "Garfield",
-      "Imagery",
-      "VariaType",
-      "Pterodactyl",
-      "Signed",
-      "Eighteen",
-      "Giveback",
-      "NanoCorp",
-      "Fawn",
-      "Nocturnal",
-      "Silentium",
-      "WingData",
-      "MonitorsFour",
-      "Expressway",
+      "CCTV",
       "Cap",
-      "Outbound",
+      "CodePartTwo",
       "Conversor",
-      "Interpreter",
+      "DarkZero",
+      "DevArea",
+      "DevHub",
+      "Eighteen",
+      "Expressway",
+      "Facts",
+      "Fawn",
+      "Fries",
+      "Garfield",
+      "Gavel",
+      "Giveback",
       "Guardian",
       "Helix",
-      "Fries",
-      "Soulmate",
+      "Imagery",
+      "Interpreter",
+      "Kobold",
       "Meow",
-      "DevHub",
-      "CodePartTwo",
-      "Gavel",
+      "MonitorsFour",
+      "NanoCorp",
+      "Nocturnal",
+      "Outbound",
       "Previous",
+      "Pterodactyl",
       "Reactor",
-      "DarkZero",
-      "Facts",
-      "DevArea",
-      "CCTV"
-    ]
+      "Signed",
+      "Silentium",
+      "Soulmate",
+      "VariaType",
+      "WingData"
+    ],
+    "points_by_month": {
+      "2025-07": 2,
+      "2025-08": 4,
+      "2025-09": 4,
+      "2025-10": 25,
+      "2025-11": 61,
+      "2025-12": 219,
+      "2026-02": 60,
+      "2026-03": 105,
+      "2026-04": 135,
+      "2026-05": 75,
+      "2026-06": 47
+    }
+  },
+  "team": {
+    "id": 7247,
+    "name": "VXON",
+    "points": 0,
+    "root_owns": 0,
+    "user_owns": 0,
+    "challenge_owns": 0,
+    "ranking": 50,
+    "member_count": 18,
+    "members": [],
+    "logo": "https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/teams/cf5ff72ca35f112b361de3e312c088f4_thumb.jpg"
   }
 }
