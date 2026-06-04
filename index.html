@@ -517,12 +517,10 @@ function renderStats(data) {
   document.getElementById('s-machines').textContent = fmt(root + user);
   document.getElementById('s-root').textContent     = `${root} root + ${user} user`;
 
-  // Challenges — from API list if available, else derived
-  const challenges = data.challenges || [];
-  const challFromAPI = Array.isArray(challenges)
-    ? challenges.reduce((a, c) => a + (c.solved || 0), 0)
-    : 0;
-  const challTotal = challFromAPI || derived.challenge_solves || 0;
+  // Challenges — use confirmed shape: data.challenges.total_solved
+  const challTotal = data.challenges?.total_solved
+                  || derived.challenge_solves
+                  || 0;
   document.getElementById('s-challenges').textContent = fmt(challTotal);
 
   // Streak
@@ -535,42 +533,25 @@ function renderStats(data) {
       : 'unknown';
 }
 
-function renderXPTimeline(activity) {
-  const canvas = document.getElementById('chart-xp-timeline');
+function renderXPTimeline(data) {
+  const canvas  = document.getElementById('chart-xp-timeline');
   if (!canvas) return;
 
-  if (!Array.isArray(activity) || activity.length === 0) {
-    canvas.closest('.chart-wrap').innerHTML = '<div class="loading-state">NO ACTIVITY DATA</div>';
-    return;
-  }
+  // Use pre-bucketed monthly points from derived object
+  const byMonth = data.derived?.points_by_month || {};
+  const months  = Object.keys(byMonth).sort();
 
-  // Build cumulative XP over time from activity points
-  // Sort oldest first
-  const sorted = [...activity]
-    .filter(a => a.date && a.points)
-    .sort((a, b) => new Date(a.date) - new Date(b.date));
-
-  if (sorted.length < 2) {
+  if (months.length < 2) {
     canvas.closest('.chart-wrap').innerHTML = '<div class="loading-state">NOT ENOUGH DATA YET</div>';
     return;
   }
 
-  // Group by month, sum points
-  const byMonth = {};
-  for (const item of sorted) {
-    const d   = new Date(item.date);
-    const key = `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}`;
-    byMonth[key] = (byMonth[key] || 0) + (item.points || 0);
-  }
-
-  const months = Object.keys(byMonth).sort();
-  // Build cumulative
-  let cumulative = 0;
-  const cumulData = months.map(m => { cumulative += byMonth[m]; return cumulative; });
-
-  const labels = months.map(m => {
+  // Build cumulative series
+  let cum = 0;
+  const cumData = months.map(m => { cum += byMonth[m]; return cum; });
+  const labels  = months.map(m => {
     const [y, mo] = m.split('-');
-    return new Date(+y, +mo-1).toLocaleString('en', { month:'short', year:'2-digit' });
+    return new Date(+y, +mo-1).toLocaleString('en', { month: 'short', year: '2-digit' });
   });
 
   new Chart(canvas, {
@@ -579,9 +560,9 @@ function renderXPTimeline(activity) {
     data: {
       labels,
       datasets: [{
-        data: cumulData,
+        data: cumData,
         borderColor: CYAN,
-        backgroundColor: 'rgba(0,196,204,0.08)',
+        backgroundColor: 'rgba(0,196,204,0.07)',
         borderWidth: 2,
         pointRadius: 4,
         pointBackgroundColor: CYAN,
@@ -596,11 +577,7 @@ function renderXPTimeline(activity) {
       maintainAspectRatio: false,
       plugins: {
         legend: { display: false },
-        tooltip: {
-          callbacks: {
-            label: ctx => ` ${ctx.parsed.y.toLocaleString()} pts cumulative`
-          }
-        }
+        tooltip: { callbacks: { label: ctx => ` ${ctx.parsed.y.toLocaleString()} pts cumulative` } }
       },
       scales: {
         x: { grid: { color: '#1e2a3044' }, ticks: { maxRotation: 0 } },
@@ -614,15 +591,16 @@ function renderXPTimeline(activity) {
   });
 }
 
+
 function renderTeam(team) {
   const el     = document.getElementById('team-content');
   const header = document.getElementById('team-name-header');
-  if (!team || team.error) {
+  if (!team || (!team.name && !team.ranking)) {
     el.innerHTML = '<div class="error-note">Team data unavailable.</div>';
     return;
   }
 
-  if (header) header.textContent = (team.name || 'TEAM').toUpperCase();
+  if (header) header.textContent = (team.name || 'VXON').toUpperCase();
 
   const members = Array.isArray(team.members) ? team.members : [];
 
@@ -630,22 +608,21 @@ function renderTeam(team) {
     <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:20px">
       <div>
         <div class="stat-label">GLOBAL RANK</div>
-        <div style="font-family:var(--mono);font-size:26px;color:#f7dc6f;text-shadow:0 0 12px #f7dc6f88">#${team.ranking || team.rank || '—'}</div>
-      </div>
-      <div>
-        <div class="stat-label">TEAM POINTS</div>
-        <div style="font-family:var(--mono);font-size:26px;color:var(--htb-green)">${fmt(team.points)}</div>
+        <div style="font-family:var(--mono);font-size:28px;color:#f7dc6f;text-shadow:0 0 12px #f7dc6f66;line-height:1">#${team.ranking || '—'}</div>
       </div>
       <div>
         <div class="stat-label">MEMBERS</div>
-        <div style="font-family:var(--mono);font-size:26px;color:var(--cyan)">${team.member_count || members.length || '—'}</div>
+        <div style="font-family:var(--mono);font-size:28px;color:var(--cyan);line-height:1">${team.member_count || members.length || '—'}</div>
+      </div>
+      <div>
+        <div class="stat-label">TEAM POINTS</div>
+        <div style="font-family:var(--mono);font-size:28px;color:var(--htb-green);line-height:1">${fmt(team.points)}</div>
       </div>
     </div>`;
 
-  // Team owns row
-  if (team.root_owns || team.user_owns) {
+  if (team.root_owns || team.user_owns || team.challenge_owns) {
     html += `
-    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:20px;padding-top:16px;border-top:1px solid var(--border)">
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:20px;padding-top:14px;border-top:1px solid var(--border)">
       <div>
         <div class="stat-label">ROOT OWNS</div>
         <div style="font-family:var(--mono);font-size:20px;color:var(--htb-green)">${fmt(team.root_owns)}</div>
@@ -661,25 +638,29 @@ function renderTeam(team) {
     </div>`;
   }
 
-  // Top members list
   if (members.length > 0) {
     html += `<div style="border-top:1px solid var(--border);padding-top:14px">
       <div class="stat-label" style="margin-bottom:10px">TOP MEMBERS</div>`;
-    for (const m of members.slice(0, 5)) {
-      const pts  = m.points || m.root_owns || 0;
-      const role = m.is_captain ? '👑 ' : '';
+    for (const m of members.slice(0, 6)) {
+      const crown = m.is_captain ? '👑 ' : '';
       html += `
-        <div style="display:flex;align-items:center;gap:10px;padding:6px 0;border-bottom:1px solid var(--border)22">
-          <div style="font-size:13px;font-weight:600;color:#fff;flex:1">${role}${m.name || m.username || '?'}</div>
+        <div style="display:flex;align-items:center;gap:10px;padding:6px 0;border-bottom:1px solid #1e2a3033">
+          <div style="font-size:13px;font-weight:600;color:#fff;flex:1">${crown}${m.name}</div>
           <div style="font-family:var(--mono);font-size:10px;color:var(--muted)">${m.rank || ''}</div>
-          <div style="font-family:var(--mono);font-size:11px;color:var(--htb-green)">${fmt(pts)} pts</div>
+          <div style="font-family:var(--mono);font-size:11px;color:var(--htb-green)">${fmt(m.points)} pts</div>
         </div>`;
     }
     html += '</div>';
+  } else {
+    // Only basics available (from profile endpoint fallback)
+    html += `<div style="border-top:1px solid var(--border);padding-top:14px;font-family:var(--mono);font-size:10px;color:var(--muted)">
+      MEMBER DETAILS REQUIRE TEAM API ACCESS
+    </div>`;
   }
 
   el.innerHTML = html;
 }
+
 
 function renderActivity(activity) {
   const el = document.getElementById('activity-list');
@@ -726,7 +707,7 @@ async function loadDashboard() {
     const data = await res.json();
 
     renderStats(data);
-    renderXPTimeline(data.activity);
+    renderXPTimeline(data);
     renderTeam(data.team);
     renderActivity(data.activity);
   } catch (err) {
