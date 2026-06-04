@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-06-04T14:50:38Z",
+  "generated_at": "2026-06-04T20:00:04Z",
   "experience": {
     "rank": "Professional",
-    "level": 50,
-    "xp": 32285,
+    "level": 51,
+    "xp": 33230,
     "xp_next_level": 0,
     "streak": 3
   },
   "profile": {
     "user_id": 2142022,
     "username": "0xMikey",
-    "user_owns": 31,
-    "system_owns": 30,
-    "points": 314,
+    "user_owns": 32,
+    "system_owns": 31,
+    "points": 357,
     "user_bloods": 0,
     "system_bloods": 0
   },
@@ -58,7 +58,7 @@
     ]
   },
   "attack_paths": {
-    "total_solved": 30,
+    "total_solved": 31,
     "paths": [
       {
         "name": "Reconnaissance",
@@ -103,6 +103,28 @@
     ]
   },
   "activity": [
+    {
+      "date": "2026-06-04T19:41:55.000000Z",
+      "date_diff": "18 minutes ago",
+      "object_type": "machine",
+      "type": "root",
+      "first_blood": false,
+      "id": 897,
+      "name": "SmartHire",
+      "points": 30,
+      "machine_avatar": "/avatars/26260a4f7f1e95d188a99210fb2ae693_thumb.png"
+    },
+    {
+      "date": "2026-06-04T19:40:03.000000Z",
+      "date_diff": "19 minutes ago",
+      "object_type": "machine",
+      "type": "user",
+      "first_blood": false,
+      "id": 897,
+      "name": "SmartHire",
+      "points": 15,
+      "machine_avatar": "/avatars/26260a4f7f1e95d188a99210fb2ae693_thumb.png"
+    },
     {
       "date": "2026-06-03T11:31:59.000000Z",
       "date_diff": "1 day ago",
@@ -237,7 +259,7 @@
     },
     {
       "date": "2026-04-04T14:53:04.000000Z",
-      "date_diff": "1 month ago",
+      "date_diff": "2 months ago",
       "object_type": "machine",
       "type": "root",
       "first_blood": false,
@@ -300,33 +322,11 @@
       "name": "VariaType",
       "points": 15,
       "machine_avatar": "/avatars/1c63aff74baeaf6afdb5f35519756ab1_thumb.png"
-    },
-    {
-      "date": "2026-03-07T20:45:41.000000Z",
-      "date_diff": "2 months ago",
-      "object_type": "machine",
-      "type": "root",
-      "first_blood": false,
-      "id": 847,
-      "name": "CCTV",
-      "points": 20,
-      "machine_avatar": "/avatars/9867e8b14b7602881160973ebb50b2c4_thumb.png"
-    },
-    {
-      "date": "2026-03-07T20:39:24.000000Z",
-      "date_diff": "2 months ago",
-      "object_type": "machine",
-      "type": "user",
-      "first_blood": false,
-      "id": 847,
-      "name": "CCTV",
-      "points": 10,
-      "machine_avatar": "/avatars/9867e8b14b7602881160973ebb50b2c4_thumb.png"
     }
   ],
   "derived": {
-    "user_owns": 31,
-    "system_owns": 32,
+    "user_owns": 32,
+    "system_owns": 33,
     "challenge_solves": 20,
     "unique_machines": [
       "CCTV",
@@ -359,6 +359,7 @@
       "Reactor",
       "Signed",
       "Silentium",
+      "SmartHire",
       "Soulmate",
       "VariaType",
       "WingData"
@@ -374,7 +375,7 @@
       "2026-03": 105,
       "2026-04": 135,
       "2026-05": 75,
-      "2026-06": 47
+      "2026-06": 92
     }
   },
   "team": {
@@ -390,7 +391,7 @@
       {
         "name": "SOOBIKv2",
         "rank": "Elite Hacker",
-        "points": 1015,
+        "points": 1020,
         "root_owns": 35,
         "user_owns": 35,
         "country": "FR",
@@ -426,9 +427,9 @@
       {
         "name": "0xMikey",
         "rank": "Pro Hacker",
-        "points": 314,
-        "root_owns": 30,
-        "user_owns": 31,
+        "points": 357,
+        "root_owns": 31,
+        "user_owns": 32,
         "country": "IN",
         "is_captain": true
       },
@@ -498,9 +499,9 @@
       {
         "name": "kincurio",
         "rank": "Script Kiddie",
-        "points": 14,
+        "points": 16,
         "root_owns": 4,
-        "user_owns": 5,
+        "user_owns": 6,
         "country": "IN",
         "is_captain": false
       },
