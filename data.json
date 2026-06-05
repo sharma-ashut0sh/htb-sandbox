@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-05T14:41:33Z",
+  "generated_at": "2026-06-05T19:49:11Z",
   "experience": {
     "rank": "Professional",
     "level": 51,
-    "xp": 33330,
+    "xp": 33430,
     "xp_next_level": 0,
     "streak": 3
   },
@@ -40,7 +40,7 @@
       {
         "name": "Hardware",
         "solved": 1,
-        "total": 41,
+        "total": 42,
         "completion": 2
       },
       {
@@ -105,7 +105,7 @@
   "activity": [
     {
       "date": "2026-06-04T19:41:55.000000Z",
-      "date_diff": "18 hours ago",
+      "date_diff": "1 day ago",
       "object_type": "machine",
       "type": "root",
       "first_blood": false,
@@ -116,7 +116,7 @@
     },
     {
       "date": "2026-06-04T19:40:03.000000Z",
-      "date_diff": "19 hours ago",
+      "date_diff": "1 day ago",
       "object_type": "machine",
       "type": "user",
       "first_blood": false,
@@ -420,7 +420,7 @@
         "rank": "Pro Hacker",
         "points": 410,
         "root_owns": 113,
-        "user_owns": 124,
+        "user_owns": 125,
         "country": "HR",
         "is_captain": false
       },
