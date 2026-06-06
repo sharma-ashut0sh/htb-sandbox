@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-06T02:46:16Z",
+  "generated_at": "2026-06-06T08:29:31Z",
   "experience": {
     "rank": "Professional",
     "level": 51,
-    "xp": 33430,
+    "xp": 33530,
     "xp_next_level": 0,
     "streak": 3
   },
@@ -17,7 +17,7 @@
     "system_bloods": 0
   },
   "challenges": {
-    "total_solved": 20,
+    "total_solved": 21,
     "categories": [
       {
         "name": "Reversing",
@@ -27,7 +27,7 @@
       },
       {
         "name": "Web",
-        "solved": 6,
+        "solved": 7,
         "total": 168,
         "completion": 4
       },
@@ -104,6 +104,17 @@
   },
   "activity": [
     {
+      "date": "2026-06-06T07:56:09.000000Z",
+      "date_diff": "33 minutes ago",
+      "object_type": "challenge",
+      "type": "challenge",
+      "first_blood": false,
+      "id": 1135,
+      "name": "OpenSecret",
+      "points": 0,
+      "challenge_category": "Web"
+    },
+    {
       "date": "2026-06-04T19:41:55.000000Z",
       "date_diff": "1 day ago",
       "object_type": "machine",
@@ -149,7 +160,7 @@
     },
     {
       "date": "2026-06-03T05:59:54.000000Z",
-      "date_diff": "2 days ago",
+      "date_diff": "3 days ago",
       "object_type": "machine",
       "type": "root",
       "first_blood": false,
@@ -160,7 +171,7 @@
     },
     {
       "date": "2026-06-03T05:29:46.000000Z",
-      "date_diff": "2 days ago",
+      "date_diff": "3 days ago",
       "object_type": "machine",
       "type": "user",
       "first_blood": false,
@@ -171,7 +182,7 @@
     },
     {
       "date": "2026-05-31T05:08:12.000000Z",
-      "date_diff": "5 days ago",
+      "date_diff": "6 days ago",
       "object_type": "machine",
       "type": "root",
       "first_blood": false,
@@ -182,7 +193,7 @@
     },
     {
       "date": "2026-05-31T03:49:16.000000Z",
-      "date_diff": "5 days ago",
+      "date_diff": "6 days ago",
       "object_type": "machine",
       "type": "user",
       "first_blood": false,
@@ -237,7 +248,7 @@
     },
     {
       "date": "2026-04-06T07:01:55.000000Z",
-      "date_diff": "1 month ago",
+      "date_diff": "2 months ago",
       "object_type": "machine",
       "type": "user",
       "first_blood": false,
@@ -248,7 +259,7 @@
     },
     {
       "date": "2026-04-06T05:02:47.000000Z",
-      "date_diff": "1 month ago",
+      "date_diff": "2 months ago",
       "object_type": "machine",
       "type": "root",
       "first_blood": false,
@@ -311,23 +322,12 @@
       "name": "VariaType",
       "points": 30,
       "machine_avatar": "/avatars/1c63aff74baeaf6afdb5f35519756ab1_thumb.png"
-    },
-    {
-      "date": "2026-03-14T21:46:51.000000Z",
-      "date_diff": "2 months ago",
-      "object_type": "machine",
-      "type": "user",
-      "first_blood": false,
-      "id": 850,
-      "name": "VariaType",
-      "points": 15,
-      "machine_avatar": "/avatars/1c63aff74baeaf6afdb5f35519756ab1_thumb.png"
     }
   ],
   "derived": {
     "user_owns": 32,
     "system_owns": 33,
-    "challenge_solves": 20,
+    "challenge_solves": 21,
     "unique_machines": [
       "CCTV",
       "Cap",
