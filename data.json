@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-06-06T13:23:32Z",
+  "generated_at": "2026-06-06T19:15:57Z",
   "experience": {
     "rank": "Professional",
-    "level": 51,
-    "xp": 33530,
+    "level": 52,
+    "xp": 34180,
     "xp_next_level": 0,
     "streak": 3
   },
   "profile": {
     "user_id": 2142022,
     "username": "0xMikey",
-    "user_owns": 32,
-    "system_owns": 31,
-    "points": 357,
+    "user_owns": 33,
+    "system_owns": 32,
+    "points": 331,
     "user_bloods": 0,
     "system_bloods": 0
   },
@@ -58,7 +58,7 @@
     ]
   },
   "attack_paths": {
-    "total_solved": 31,
+    "total_solved": 32,
     "paths": [
       {
         "name": "Reconnaissance",
@@ -104,8 +104,30 @@
   },
   "activity": [
     {
+      "date": "2026-06-06T18:08:30.000000Z",
+      "date_diff": "1 hour ago",
+      "object_type": "machine",
+      "type": "root",
+      "first_blood": false,
+      "id": 924,
+      "name": "Abducted",
+      "points": 0,
+      "machine_avatar": "/avatars/d37ae12e25136b4c11df12eeea52557f_thumb.png"
+    },
+    {
+      "date": "2026-06-06T16:11:35.000000Z",
+      "date_diff": "3 hours ago",
+      "object_type": "machine",
+      "type": "user",
+      "first_blood": false,
+      "id": 924,
+      "name": "Abducted",
+      "points": 0,
+      "machine_avatar": "/avatars/d37ae12e25136b4c11df12eeea52557f_thumb.png"
+    },
+    {
       "date": "2026-06-06T07:56:09.000000Z",
-      "date_diff": "5 hours ago",
+      "date_diff": "11 hours ago",
       "object_type": "challenge",
       "type": "challenge",
       "first_blood": false,
@@ -300,35 +322,14 @@
       "name": "Kobold",
       "points": 20,
       "machine_avatar": "/avatars/2ff7f3683782c3525c5ac9ed275cc989_thumb.png"
-    },
-    {
-      "date": "2026-03-28T17:08:25.000000Z",
-      "date_diff": "2 months ago",
-      "object_type": "machine",
-      "type": "user",
-      "first_blood": false,
-      "id": 856,
-      "name": "Kobold",
-      "points": 10,
-      "machine_avatar": "/avatars/2ff7f3683782c3525c5ac9ed275cc989_thumb.png"
-    },
-    {
-      "date": "2026-03-14T22:10:05.000000Z",
-      "date_diff": "2 months ago",
-      "object_type": "machine",
-      "type": "root",
-      "first_blood": false,
-      "id": 850,
-      "name": "VariaType",
-      "points": 30,
-      "machine_avatar": "/avatars/1c63aff74baeaf6afdb5f35519756ab1_thumb.png"
     }
   ],
   "derived": {
-    "user_owns": 32,
-    "system_owns": 33,
+    "user_owns": 33,
+    "system_owns": 34,
     "challenge_solves": 21,
     "unique_machines": [
+      "Abducted",
       "CCTV",
       "Cap",
       "CodePartTwo",
@@ -371,7 +372,7 @@
       "2025-10": 25,
       "2025-11": 61,
       "2025-12": 219,
-      "2026-02": 60,
+      "2026-02": 30,
       "2026-03": 105,
       "2026-04": 135,
       "2026-05": 75,
@@ -391,7 +392,7 @@
       {
         "name": "SOOBIKv2",
         "rank": "Elite Hacker",
-        "points": 1027,
+        "points": 994,
         "root_owns": 35,
         "user_owns": 35,
         "country": "FR",
@@ -400,7 +401,7 @@
       {
         "name": "knockingd00r",
         "rank": "Pro Hacker",
-        "points": 863,
+        "points": 824,
         "root_owns": 57,
         "user_owns": 64,
         "country": "MA",
@@ -409,7 +410,7 @@
       {
         "name": "atoontoto",
         "rank": "Pro Hacker",
-        "points": 514,
+        "points": 485,
         "root_owns": 74,
         "user_owns": 74,
         "country": "IQ",
@@ -418,7 +419,7 @@
       {
         "name": "ANameNotMine",
         "rank": "Pro Hacker",
-        "points": 410,
+        "points": 383,
         "root_owns": 114,
         "user_owns": 125,
         "country": "HR",
@@ -427,16 +428,16 @@
       {
         "name": "0xMikey",
         "rank": "Pro Hacker",
-        "points": 357,
-        "root_owns": 31,
-        "user_owns": 32,
+        "points": 331,
+        "root_owns": 32,
+        "user_owns": 33,
         "country": "IN",
         "is_captain": true
       },
       {
         "name": "w3nch",
         "rank": "Pro Hacker",
-        "points": 289,
+        "points": 264,
         "root_owns": 43,
         "user_owns": 46,
         "country": "IN",
@@ -445,7 +446,7 @@
       {
         "name": "Papalo007",
         "rank": "Pro Hacker",
-        "points": 212,
+        "points": 184,
         "root_owns": 67,
         "user_owns": 67,
         "country": "GR",
@@ -454,7 +455,7 @@
       {
         "name": "jbrgn",
         "rank": "Pro Hacker",
-        "points": 174,
+        "points": 146,
         "root_owns": 85,
         "user_owns": 86,
         "country": "GB",
@@ -463,7 +464,7 @@
       {
         "name": "6cloudguy",
         "rank": "Hacker",
-        "points": 49,
+        "points": 36,
         "root_owns": 24,
         "user_owns": 24,
         "country": "IN",
@@ -472,7 +473,7 @@
       {
         "name": "Marclos15",
         "rank": "Hacker",
-        "points": 44,
+        "points": 33,
         "root_owns": 33,
         "user_owns": 37,
         "country": "ES",
@@ -481,7 +482,7 @@
       {
         "name": "c3n7",
         "rank": "Script Kiddie",
-        "points": 36,
+        "points": 27,
         "root_owns": 12,
         "user_owns": 13,
         "country": "IN",
