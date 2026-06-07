@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-06-07T08:51:26Z",
+  "generated_at": "2026-06-07T13:44:37Z",
   "experience": {
     "rank": "Professional",
     "level": 52,
-    "xp": 34400,
+    "xp": 34985,
     "xp_next_level": 0,
     "streak": 3
   },
   "profile": {
     "user_id": 2142022,
     "username": "0xMikey",
-    "user_owns": 33,
-    "system_owns": 32,
-    "points": 331,
+    "user_owns": 34,
+    "system_owns": 33,
+    "points": 357,
     "user_bloods": 0,
     "system_bloods": 0
   },
@@ -58,7 +58,7 @@
     ]
   },
   "attack_paths": {
-    "total_solved": 32,
+    "total_solved": 33,
     "paths": [
       {
         "name": "Reconnaissance",
@@ -104,8 +104,30 @@
   },
   "activity": [
     {
+      "date": "2026-06-07T12:08:31.000000Z",
+      "date_diff": "1 hour ago",
+      "object_type": "machine",
+      "type": "root",
+      "first_blood": false,
+      "id": 906,
+      "name": "Connected",
+      "points": 20,
+      "machine_avatar": "/avatars/5f828febf436aa997dff714a184614fe_thumb.png"
+    },
+    {
+      "date": "2026-06-07T11:25:09.000000Z",
+      "date_diff": "2 hours ago",
+      "object_type": "machine",
+      "type": "user",
+      "first_blood": false,
+      "id": 906,
+      "name": "Connected",
+      "points": 10,
+      "machine_avatar": "/avatars/5f828febf436aa997dff714a184614fe_thumb.png"
+    },
+    {
       "date": "2026-06-06T18:08:30.000000Z",
-      "date_diff": "14 hours ago",
+      "date_diff": "19 hours ago",
       "object_type": "machine",
       "type": "root",
       "first_blood": false,
@@ -116,7 +138,7 @@
     },
     {
       "date": "2026-06-06T16:11:35.000000Z",
-      "date_diff": "16 hours ago",
+      "date_diff": "21 hours ago",
       "object_type": "machine",
       "type": "user",
       "first_blood": false,
@@ -160,7 +182,7 @@
     },
     {
       "date": "2026-06-03T11:31:59.000000Z",
-      "date_diff": "3 days ago",
+      "date_diff": "4 days ago",
       "object_type": "challenge",
       "type": "challenge",
       "first_blood": false,
@@ -171,7 +193,7 @@
     },
     {
       "date": "2026-06-03T10:54:34.000000Z",
-      "date_diff": "3 days ago",
+      "date_diff": "4 days ago",
       "object_type": "challenge",
       "type": "challenge",
       "first_blood": false,
@@ -300,39 +322,18 @@
       "name": "DevArea",
       "points": 30,
       "machine_avatar": "/avatars/88d6d295a9624c91cbdae1e0215cb354_thumb.png"
-    },
-    {
-      "date": "2026-04-04T13:47:27.000000Z",
-      "date_diff": "2 months ago",
-      "object_type": "machine",
-      "type": "user",
-      "first_blood": false,
-      "id": 859,
-      "name": "DevArea",
-      "points": 15,
-      "machine_avatar": "/avatars/88d6d295a9624c91cbdae1e0215cb354_thumb.png"
-    },
-    {
-      "date": "2026-03-28T17:49:21.000000Z",
-      "date_diff": "2 months ago",
-      "object_type": "machine",
-      "type": "root",
-      "first_blood": false,
-      "id": 856,
-      "name": "Kobold",
-      "points": 20,
-      "machine_avatar": "/avatars/2ff7f3683782c3525c5ac9ed275cc989_thumb.png"
     }
   ],
   "derived": {
-    "user_owns": 33,
-    "system_owns": 34,
+    "user_owns": 34,
+    "system_owns": 35,
     "challenge_solves": 21,
     "unique_machines": [
       "Abducted",
       "CCTV",
       "Cap",
       "CodePartTwo",
+      "Connected",
       "Conversor",
       "DarkZero",
       "DevArea",
@@ -376,7 +377,7 @@
       "2026-03": 105,
       "2026-04": 135,
       "2026-05": 75,
-      "2026-06": 92
+      "2026-06": 122
     }
   },
   "team": {
@@ -403,16 +404,16 @@
         "rank": "Pro Hacker",
         "points": 863,
         "root_owns": 58,
-        "user_owns": 65,
+        "user_owns": 66,
         "country": "MA",
         "is_captain": false
       },
       {
         "name": "atoontoto",
         "rank": "Pro Hacker",
-        "points": 485,
-        "root_owns": 74,
-        "user_owns": 74,
+        "points": 514,
+        "root_owns": 75,
+        "user_owns": 75,
         "country": "IQ",
         "is_captain": false
       },
@@ -428,9 +429,9 @@
       {
         "name": "0xMikey",
         "rank": "Pro Hacker",
-        "points": 331,
-        "root_owns": 32,
-        "user_owns": 33,
+        "points": 357,
+        "root_owns": 33,
+        "user_owns": 34,
         "country": "IN",
         "is_captain": true
       },
@@ -491,9 +492,9 @@
       {
         "name": "kincurio",
         "rank": "Script Kiddie",
-        "points": 22,
+        "points": 25,
         "root_owns": 5,
-        "user_owns": 6,
+        "user_owns": 7,
         "country": "IN",
         "is_captain": false
       },
