@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-06T19:15:57Z",
+  "generated_at": "2026-06-07T03:29:40Z",
   "experience": {
     "rank": "Professional",
     "level": 52,
@@ -105,7 +105,7 @@
   "activity": [
     {
       "date": "2026-06-06T18:08:30.000000Z",
-      "date_diff": "1 hour ago",
+      "date_diff": "9 hours ago",
       "object_type": "machine",
       "type": "root",
       "first_blood": false,
@@ -116,7 +116,7 @@
     },
     {
       "date": "2026-06-06T16:11:35.000000Z",
-      "date_diff": "3 hours ago",
+      "date_diff": "11 hours ago",
       "object_type": "machine",
       "type": "user",
       "first_blood": false,
@@ -127,7 +127,7 @@
     },
     {
       "date": "2026-06-06T07:56:09.000000Z",
-      "date_diff": "11 hours ago",
+      "date_diff": "19 hours ago",
       "object_type": "challenge",
       "type": "challenge",
       "first_blood": false,
@@ -138,7 +138,7 @@
     },
     {
       "date": "2026-06-04T19:41:55.000000Z",
-      "date_diff": "1 day ago",
+      "date_diff": "2 days ago",
       "object_type": "machine",
       "type": "root",
       "first_blood": false,
@@ -149,7 +149,7 @@
     },
     {
       "date": "2026-06-04T19:40:03.000000Z",
-      "date_diff": "1 day ago",
+      "date_diff": "2 days ago",
       "object_type": "machine",
       "type": "user",
       "first_blood": false,
@@ -383,27 +383,27 @@
     "id": 7247,
     "name": "VXON",
     "points": 1861,
-    "root_owns": 182,
-    "user_owns": 192,
+    "root_owns": 183,
+    "user_owns": 193,
     "challenge_owns": 245,
-    "ranking": 48,
+    "ranking": 42,
     "member_count": 19,
     "members": [
       {
         "name": "SOOBIKv2",
         "rank": "Elite Hacker",
-        "points": 994,
-        "root_owns": 35,
-        "user_owns": 35,
+        "points": 1027,
+        "root_owns": 37,
+        "user_owns": 37,
         "country": "FR",
         "is_captain": false
       },
       {
         "name": "knockingd00r",
         "rank": "Pro Hacker",
-        "points": 824,
-        "root_owns": 57,
-        "user_owns": 64,
+        "points": 863,
+        "root_owns": 58,
+        "user_owns": 65,
         "country": "MA",
         "is_captain": false
       },
@@ -419,9 +419,9 @@
       {
         "name": "ANameNotMine",
         "rank": "Pro Hacker",
-        "points": 383,
+        "points": 384,
         "root_owns": 114,
-        "user_owns": 125,
+        "user_owns": 126,
         "country": "HR",
         "is_captain": false
       },
