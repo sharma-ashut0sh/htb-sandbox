@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-07T19:16:41Z",
+  "generated_at": "2026-06-08T03:35:13Z",
   "experience": {
     "rank": "Professional",
     "level": 52,
@@ -105,7 +105,7 @@
   "activity": [
     {
       "date": "2026-06-07T12:08:31.000000Z",
-      "date_diff": "7 hours ago",
+      "date_diff": "15 hours ago",
       "object_type": "machine",
       "type": "root",
       "first_blood": false,
@@ -116,7 +116,7 @@
     },
     {
       "date": "2026-06-07T11:25:09.000000Z",
-      "date_diff": "7 hours ago",
+      "date_diff": "16 hours ago",
       "object_type": "machine",
       "type": "user",
       "first_blood": false,
@@ -160,7 +160,7 @@
     },
     {
       "date": "2026-06-04T19:41:55.000000Z",
-      "date_diff": "2 days ago",
+      "date_diff": "3 days ago",
       "object_type": "machine",
       "type": "root",
       "first_blood": false,
@@ -171,7 +171,7 @@
     },
     {
       "date": "2026-06-04T19:40:03.000000Z",
-      "date_diff": "2 days ago",
+      "date_diff": "3 days ago",
       "object_type": "machine",
       "type": "user",
       "first_blood": false,
@@ -387,7 +387,7 @@
     "root_owns": 183,
     "user_owns": 193,
     "challenge_owns": 245,
-    "ranking": 42,
+    "ranking": 43,
     "member_count": 20,
     "members": [
       {
@@ -438,9 +438,9 @@
       {
         "name": "w3nch",
         "rank": "Pro Hacker",
-        "points": 264,
-        "root_owns": 43,
-        "user_owns": 46,
+        "points": 289,
+        "root_owns": 44,
+        "user_owns": 47,
         "country": "IN",
         "is_captain": false
       },
@@ -463,21 +463,21 @@
         "is_captain": false
       },
       {
+        "name": "Marclos15",
+        "rank": "Hacker",
+        "points": 44,
+        "root_owns": 34,
+        "user_owns": 38,
+        "country": "ES",
+        "is_captain": false
+      },
+      {
         "name": "6cloudguy",
         "rank": "Hacker",
         "points": 36,
         "root_owns": 24,
         "user_owns": 24,
         "country": "IN",
-        "is_captain": false
-      },
-      {
-        "name": "Marclos15",
-        "rank": "Hacker",
-        "points": 36,
-        "root_owns": 33,
-        "user_owns": 38,
-        "country": "ES",
         "is_captain": false
       },
       {
