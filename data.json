@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-08T10:29:53Z",
+  "generated_at": "2026-06-08T15:41:35Z",
   "experience": {
     "rank": "Professional",
     "level": 52,
-    "xp": 34985,
+    "xp": 35045,
     "xp_next_level": 0,
     "streak": 3
   },
@@ -62,18 +62,28 @@
     "paths": [
       {
         "name": "Reconnaissance",
-        "solved": 9,
-        "total": 251
-      },
-      {
-        "name": "Web Application",
-        "solved": 8,
-        "total": 321
+        "solved": 11,
+        "total": 253
       },
       {
         "name": "Vulnerability Assessment",
-        "solved": 8,
-        "total": 385
+        "solved": 10,
+        "total": 387
+      },
+      {
+        "name": "Web Application",
+        "solved": 9,
+        "total": 322
+      },
+      {
+        "name": "Enterprise Network",
+        "solved": 7,
+        "total": 174
+      },
+      {
+        "name": "Password Reuse",
+        "solved": 7,
+        "total": 139
       },
       {
         "name": "Password Cracking",
@@ -81,31 +91,21 @@
         "total": 162
       },
       {
-        "name": "Enterprise Network",
-        "solved": 5,
-        "total": 172
-      },
-      {
-        "name": "Password Reuse",
-        "solved": 5,
-        "total": 137
-      },
-      {
         "name": "SUDO Exploitation",
-        "solved": 5,
-        "total": 82
+        "solved": 6,
+        "total": 83
       },
       {
         "name": "Custom Applications",
-        "solved": 5,
-        "total": 89
+        "solved": 6,
+        "total": 90
       }
     ]
   },
   "activity": [
     {
       "date": "2026-06-07T12:08:31.000000Z",
-      "date_diff": "22 hours ago",
+      "date_diff": "1 day ago",
       "object_type": "machine",
       "type": "root",
       "first_blood": false,
@@ -116,7 +116,7 @@
     },
     {
       "date": "2026-06-07T11:25:09.000000Z",
-      "date_diff": "23 hours ago",
+      "date_diff": "1 day ago",
       "object_type": "machine",
       "type": "user",
       "first_blood": false,
@@ -182,7 +182,7 @@
     },
     {
       "date": "2026-06-03T11:31:59.000000Z",
-      "date_diff": "4 days ago",
+      "date_diff": "5 days ago",
       "object_type": "challenge",
       "type": "challenge",
       "first_blood": false,
@@ -193,7 +193,7 @@
     },
     {
       "date": "2026-06-03T10:54:34.000000Z",
-      "date_diff": "4 days ago",
+      "date_diff": "5 days ago",
       "object_type": "challenge",
       "type": "challenge",
       "first_blood": false,
@@ -447,9 +447,9 @@
       {
         "name": "Papalo007",
         "rank": "Pro Hacker",
-        "points": 184,
+        "points": 187,
         "root_owns": 67,
-        "user_owns": 67,
+        "user_owns": 68,
         "country": "GR",
         "is_captain": false
       },
