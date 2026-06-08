@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-08T03:35:13Z",
+  "generated_at": "2026-06-08T10:29:53Z",
   "experience": {
     "rank": "Professional",
     "level": 52,
@@ -105,7 +105,7 @@
   "activity": [
     {
       "date": "2026-06-07T12:08:31.000000Z",
-      "date_diff": "15 hours ago",
+      "date_diff": "22 hours ago",
       "object_type": "machine",
       "type": "root",
       "first_blood": false,
@@ -116,7 +116,7 @@
     },
     {
       "date": "2026-06-07T11:25:09.000000Z",
-      "date_diff": "16 hours ago",
+      "date_diff": "23 hours ago",
       "object_type": "machine",
       "type": "user",
       "first_blood": false,
@@ -149,7 +149,7 @@
     },
     {
       "date": "2026-06-06T07:56:09.000000Z",
-      "date_diff": "1 day ago",
+      "date_diff": "2 days ago",
       "object_type": "challenge",
       "type": "challenge",
       "first_blood": false,
@@ -204,7 +204,7 @@
     },
     {
       "date": "2026-06-03T05:59:54.000000Z",
-      "date_diff": "4 days ago",
+      "date_diff": "5 days ago",
       "object_type": "machine",
       "type": "root",
       "first_blood": false,
@@ -215,7 +215,7 @@
     },
     {
       "date": "2026-06-03T05:29:46.000000Z",
-      "date_diff": "4 days ago",
+      "date_diff": "5 days ago",
       "object_type": "machine",
       "type": "user",
       "first_blood": false,
@@ -481,20 +481,20 @@
         "is_captain": false
       },
       {
+        "name": "c3n7",
+        "rank": "Script Kiddie",
+        "points": 36,
+        "root_owns": 13,
+        "user_owns": 14,
+        "country": "IN",
+        "is_captain": false
+      },
+      {
         "name": "kincurio",
         "rank": "Script Kiddie",
         "points": 32,
         "root_owns": 6,
         "user_owns": 7,
-        "country": "IN",
-        "is_captain": false
-      },
-      {
-        "name": "c3n7",
-        "rank": "Script Kiddie",
-        "points": 29,
-        "root_owns": 12,
-        "user_owns": 14,
         "country": "IN",
         "is_captain": false
       },
