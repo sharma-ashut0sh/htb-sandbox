@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-09T09:35:19Z",
+  "generated_at": "2026-06-09T14:41:08Z",
   "experience": {
     "rank": "Professional",
     "level": 52,
@@ -105,7 +105,7 @@
   "activity": [
     {
       "date": "2026-06-07T12:08:31.000000Z",
-      "date_diff": "1 day ago",
+      "date_diff": "2 days ago",
       "object_type": "machine",
       "type": "root",
       "first_blood": false,
@@ -116,7 +116,7 @@
     },
     {
       "date": "2026-06-07T11:25:09.000000Z",
-      "date_diff": "1 day ago",
+      "date_diff": "2 days ago",
       "object_type": "machine",
       "type": "user",
       "first_blood": false,
@@ -182,7 +182,7 @@
     },
     {
       "date": "2026-06-03T11:31:59.000000Z",
-      "date_diff": "5 days ago",
+      "date_diff": "6 days ago",
       "object_type": "challenge",
       "type": "challenge",
       "first_blood": false,
@@ -193,7 +193,7 @@
     },
     {
       "date": "2026-06-03T10:54:34.000000Z",
-      "date_diff": "5 days ago",
+      "date_diff": "6 days ago",
       "object_type": "challenge",
       "type": "challenge",
       "first_blood": false,
@@ -508,20 +508,20 @@
         "is_captain": false
       },
       {
+        "name": "deadlock00",
+        "rank": "Script Kiddie",
+        "points": 8,
+        "root_owns": 5,
+        "user_owns": 5,
+        "country": "IN",
+        "is_captain": false
+      },
+      {
         "name": "Thennavan",
         "rank": "Hacker",
         "points": 4,
         "root_owns": 36,
         "user_owns": 41,
-        "country": "IN",
-        "is_captain": false
-      },
-      {
-        "name": "deadlock00",
-        "rank": "Script Kiddie",
-        "points": 4,
-        "root_owns": 4,
-        "user_owns": 4,
         "country": "IN",
         "is_captain": false
       },
