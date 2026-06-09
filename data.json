@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-09T02:44:53Z",
+  "generated_at": "2026-06-09T09:35:19Z",
   "experience": {
     "rank": "Professional",
     "level": 52,
@@ -149,7 +149,7 @@
     },
     {
       "date": "2026-06-06T07:56:09.000000Z",
-      "date_diff": "2 days ago",
+      "date_diff": "3 days ago",
       "object_type": "challenge",
       "type": "challenge",
       "first_blood": false,
@@ -204,7 +204,7 @@
     },
     {
       "date": "2026-06-03T05:59:54.000000Z",
-      "date_diff": "5 days ago",
+      "date_diff": "6 days ago",
       "object_type": "machine",
       "type": "root",
       "first_blood": false,
@@ -215,7 +215,7 @@
     },
     {
       "date": "2026-06-03T05:29:46.000000Z",
-      "date_diff": "5 days ago",
+      "date_diff": "6 days ago",
       "object_type": "machine",
       "type": "user",
       "first_blood": false,
@@ -393,7 +393,7 @@
       {
         "name": "SOOBIKv2",
         "rank": "Elite Hacker",
-        "points": 1027,
+        "points": 1034,
         "root_owns": 37,
         "user_owns": 37,
         "country": "FR",
