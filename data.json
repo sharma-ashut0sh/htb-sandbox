@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-08T20:09:08Z",
+  "generated_at": "2026-06-09T02:44:53Z",
   "experience": {
     "rank": "Professional",
     "level": 52,
@@ -387,7 +387,7 @@
     "root_owns": 183,
     "user_owns": 193,
     "challenge_owns": 245,
-    "ranking": 43,
+    "ranking": 42,
     "member_count": 20,
     "members": [
       {
@@ -472,20 +472,20 @@
         "is_captain": false
       },
       {
-        "name": "6cloudguy",
-        "rank": "Hacker",
-        "points": 36,
-        "root_owns": 24,
-        "user_owns": 24,
-        "country": "IN",
-        "is_captain": false
-      },
-      {
         "name": "c3n7",
         "rank": "Script Kiddie",
         "points": 36,
         "root_owns": 13,
         "user_owns": 14,
+        "country": "IN",
+        "is_captain": false
+      },
+      {
+        "name": "6cloudguy",
+        "rank": "Hacker",
+        "points": 36,
+        "root_owns": 24,
+        "user_owns": 24,
         "country": "IN",
         "is_captain": false
       },
