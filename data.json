@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-10T02:58:08Z",
+  "generated_at": "2026-06-10T09:52:05Z",
   "experience": {
     "rank": "Professional",
     "level": 52,
@@ -149,7 +149,7 @@
     },
     {
       "date": "2026-06-06T07:56:09.000000Z",
-      "date_diff": "3 days ago",
+      "date_diff": "4 days ago",
       "object_type": "challenge",
       "type": "challenge",
       "first_blood": false,
@@ -204,7 +204,7 @@
     },
     {
       "date": "2026-06-03T05:59:54.000000Z",
-      "date_diff": "6 days ago",
+      "date_diff": "1 week ago",
       "object_type": "machine",
       "type": "root",
       "first_blood": false,
@@ -215,7 +215,7 @@
     },
     {
       "date": "2026-06-03T05:29:46.000000Z",
-      "date_diff": "6 days ago",
+      "date_diff": "1 week ago",
       "object_type": "machine",
       "type": "user",
       "first_blood": false,
