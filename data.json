@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-06-13T02:58:07Z",
+  "generated_at": "2026-06-13T08:53:02Z",
   "experience": {
     "rank": "Professional",
     "level": 53,
-    "xp": 35350,
+    "xp": 35740,
     "xp_next_level": 0,
     "streak": 4
   },
   "profile": {
     "user_id": 2142022,
     "username": "0xMikey",
-    "user_owns": 34,
+    "user_owns": 35,
     "system_owns": 33,
-    "points": 357,
+    "points": 372,
     "user_bloods": 0,
     "system_bloods": 0
   },
@@ -104,6 +104,17 @@
   },
   "activity": [
     {
+      "date": "2026-06-13T06:42:47.000000Z",
+      "date_diff": "2 hours ago",
+      "object_type": "machine",
+      "type": "user",
+      "first_blood": false,
+      "id": 888,
+      "name": "Logging",
+      "points": 15,
+      "machine_avatar": "/avatars/4905cd7ce220aa3405c4bac3e62929c9_thumb.png"
+    },
+    {
       "date": "2026-06-07T12:08:31.000000Z",
       "date_diff": "5 days ago",
       "object_type": "machine",
@@ -149,7 +160,7 @@
     },
     {
       "date": "2026-06-06T07:56:09.000000Z",
-      "date_diff": "6 days ago",
+      "date_diff": "1 week ago",
       "object_type": "challenge",
       "type": "challenge",
       "first_blood": false,
@@ -311,21 +322,10 @@
       "name": "Garfield",
       "points": 40,
       "machine_avatar": "/avatars/a7ee5b5ec5cb4c2bf96545fda71ea8e6_thumb.png"
-    },
-    {
-      "date": "2026-04-04T14:53:04.000000Z",
-      "date_diff": "2 months ago",
-      "object_type": "machine",
-      "type": "root",
-      "first_blood": false,
-      "id": 859,
-      "name": "DevArea",
-      "points": 30,
-      "machine_avatar": "/avatars/88d6d295a9624c91cbdae1e0215cb354_thumb.png"
     }
   ],
   "derived": {
-    "user_owns": 34,
+    "user_owns": 35,
     "system_owns": 35,
     "challenge_solves": 21,
     "unique_machines": [
@@ -351,6 +351,7 @@
       "Imagery",
       "Interpreter",
       "Kobold",
+      "Logging",
       "Meow",
       "MonitorsFour",
       "NanoCorp",
@@ -377,7 +378,7 @@
       "2026-03": 105,
       "2026-04": 135,
       "2026-05": 75,
-      "2026-06": 122
+      "2026-06": 137
     }
   },
   "team": {
@@ -429,9 +430,9 @@
       {
         "name": "0xMikey",
         "rank": "Pro Hacker",
-        "points": 357,
+        "points": 372,
         "root_owns": 33,
-        "user_owns": 34,
+        "user_owns": 35,
         "country": "IN",
         "is_captain": true
       },
