@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-14T03:36:00Z",
+  "generated_at": "2026-06-14T09:28:17Z",
   "experience": {
     "rank": "Professional",
     "level": 53,
@@ -105,7 +105,7 @@
   "activity": [
     {
       "date": "2026-06-13T06:42:47.000000Z",
-      "date_diff": "20 hours ago",
+      "date_diff": "1 day ago",
       "object_type": "machine",
       "type": "user",
       "first_blood": false,
@@ -237,7 +237,7 @@
     },
     {
       "date": "2026-05-31T05:08:12.000000Z",
-      "date_diff": "1 week ago",
+      "date_diff": "2 weeks ago",
       "object_type": "machine",
       "type": "root",
       "first_blood": false,
@@ -248,7 +248,7 @@
     },
     {
       "date": "2026-05-31T03:49:16.000000Z",
-      "date_diff": "1 week ago",
+      "date_diff": "2 weeks ago",
       "object_type": "machine",
       "type": "user",
       "first_blood": false,
@@ -259,7 +259,7 @@
     },
     {
       "date": "2026-05-24T05:56:09.000000Z",
-      "date_diff": "2 weeks ago",
+      "date_diff": "3 weeks ago",
       "object_type": "machine",
       "type": "root",
       "first_blood": false,
@@ -270,7 +270,7 @@
     },
     {
       "date": "2026-05-24T05:15:39.000000Z",
-      "date_diff": "2 weeks ago",
+      "date_diff": "3 weeks ago",
       "object_type": "machine",
       "type": "user",
       "first_blood": false,
@@ -421,9 +421,9 @@
       {
         "name": "ANameNotMine",
         "rank": "Pro Hacker",
-        "points": 376,
-        "root_owns": 115,
-        "user_owns": 126,
+        "points": 411,
+        "root_owns": 116,
+        "user_owns": 127,
         "country": "HR",
         "is_captain": false
       },
