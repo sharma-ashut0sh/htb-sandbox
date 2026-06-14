@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-13T19:19:33Z",
+  "generated_at": "2026-06-14T03:36:00Z",
   "experience": {
     "rank": "Professional",
     "level": 53,
@@ -105,7 +105,7 @@
   "activity": [
     {
       "date": "2026-06-13T06:42:47.000000Z",
-      "date_diff": "12 hours ago",
+      "date_diff": "20 hours ago",
       "object_type": "machine",
       "type": "user",
       "first_blood": false,
@@ -384,19 +384,19 @@
   "team": {
     "id": 7247,
     "name": "VXON",
-    "points": 1895,
-    "root_owns": 188,
-    "user_owns": 196,
-    "challenge_owns": 252,
-    "ranking": 49,
+    "points": 1902,
+    "root_owns": 189,
+    "user_owns": 197,
+    "challenge_owns": 253,
+    "ranking": 44,
     "member_count": 22,
     "members": [
       {
         "name": "SOOBIKv2",
         "rank": "Elite Hacker",
-        "points": 1006,
-        "root_owns": 37,
-        "user_owns": 37,
+        "points": 1050,
+        "root_owns": 38,
+        "user_owns": 38,
         "country": "FR",
         "is_captain": false
       },
@@ -439,9 +439,9 @@
       {
         "name": "kanyo",
         "rank": "Pro Hacker",
-        "points": 323,
-        "root_owns": 51,
-        "user_owns": 51,
+        "points": 313,
+        "root_owns": 52,
+        "user_owns": 52,
         "country": "DZ",
         "is_captain": false
       },
