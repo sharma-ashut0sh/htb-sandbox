@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-14T19:20:21Z",
+  "generated_at": "2026-06-15T03:47:53Z",
   "experience": {
     "rank": "Professional",
     "level": 53,
@@ -388,7 +388,7 @@
     "root_owns": 189,
     "user_owns": 197,
     "challenge_owns": 253,
-    "ranking": 44,
+    "ranking": 45,
     "member_count": 22,
     "members": [
       {
@@ -428,6 +428,15 @@
         "is_captain": false
       },
       {
+        "name": "kanyo",
+        "rank": "Pro Hacker",
+        "points": 356,
+        "root_owns": 53,
+        "user_owns": 53,
+        "country": "DZ",
+        "is_captain": false
+      },
+      {
         "name": "0xMikey",
         "rank": "Pro Hacker",
         "points": 339,
@@ -435,15 +444,6 @@
         "user_owns": 35,
         "country": "IN",
         "is_captain": true
-      },
-      {
-        "name": "kanyo",
-        "rank": "Pro Hacker",
-        "points": 327,
-        "root_owns": 52,
-        "user_owns": 53,
-        "country": "DZ",
-        "is_captain": false
       },
       {
         "name": "w3nch",
