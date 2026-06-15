@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-15T11:56:33Z",
+  "generated_at": "2026-06-15T17:13:35Z",
   "experience": {
     "rank": "Professional",
     "level": 53,
@@ -403,8 +403,8 @@
       {
         "name": "knockingd00r",
         "rank": "Pro Hacker",
-        "points": 814,
-        "root_owns": 58,
+        "points": 863,
+        "root_owns": 59,
         "user_owns": 67,
         "country": "MA",
         "is_captain": false
@@ -412,9 +412,9 @@
       {
         "name": "atoontoto",
         "rank": "Pro Hacker",
-        "points": 476,
-        "root_owns": 75,
-        "user_owns": 75,
+        "points": 514,
+        "root_owns": 76,
+        "user_owns": 76,
         "country": "IQ",
         "is_captain": false
       },
@@ -431,8 +431,8 @@
         "name": "kanyo",
         "rank": "Pro Hacker",
         "points": 356,
-        "root_owns": 54,
-        "user_owns": 54,
+        "root_owns": 55,
+        "user_owns": 55,
         "country": "DZ",
         "is_captain": false
       },
