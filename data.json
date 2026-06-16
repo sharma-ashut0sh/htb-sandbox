@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-16T16:43:23Z",
+  "generated_at": "2026-06-16T20:45:53Z",
   "experience": {
     "rank": "Professional",
-    "level": 53,
-    "xp": 36390,
+    "level": 54,
+    "xp": 36845,
     "xp_next_level": 0,
     "streak": 5
   },
@@ -11,8 +11,8 @@
     "user_id": 2142022,
     "username": "0xMikey",
     "user_owns": 36,
-    "system_owns": 33,
-    "points": 343,
+    "system_owns": 34,
+    "points": 372,
     "user_bloods": 0,
     "system_bloods": 0
   },
@@ -58,7 +58,7 @@
     ]
   },
   "attack_paths": {
-    "total_solved": 33,
+    "total_solved": 34,
     "paths": [
       {
         "name": "Reconnaissance",
@@ -104,8 +104,19 @@
   },
   "activity": [
     {
+      "date": "2026-06-16T17:11:29.000000Z",
+      "date_diff": "3 hours ago",
+      "object_type": "machine",
+      "type": "root",
+      "first_blood": false,
+      "id": 909,
+      "name": "Checkpoint",
+      "points": 30,
+      "machine_avatar": "/avatars/d90d9ba3228fb458485c03a1b4c2f6e5_thumb.png"
+    },
+    {
       "date": "2026-06-16T11:02:15.000000Z",
-      "date_diff": "5 hours ago",
+      "date_diff": "9 hours ago",
       "object_type": "machine",
       "type": "user",
       "first_blood": false,
@@ -311,22 +322,11 @@
       "name": "Silentium",
       "points": 10,
       "machine_avatar": "/avatars/601d72b592e6b78aee56dbc086ec7089_thumb.png"
-    },
-    {
-      "date": "2026-04-06T07:01:55.000000Z",
-      "date_diff": "2 months ago",
-      "object_type": "machine",
-      "type": "user",
-      "first_blood": false,
-      "id": 862,
-      "name": "Garfield",
-      "points": 20,
-      "machine_avatar": "/avatars/a7ee5b5ec5cb4c2bf96545fda71ea8e6_thumb.png"
     }
   ],
   "derived": {
     "user_owns": 36,
-    "system_owns": 35,
+    "system_owns": 36,
     "challenge_solves": 21,
     "unique_machines": [
       "Abducted",
@@ -379,7 +379,7 @@
       "2026-03": 60,
       "2026-04": 135,
       "2026-05": 75,
-      "2026-06": 152
+      "2026-06": 182
     }
   },
   "team": {
@@ -429,6 +429,15 @@
         "is_captain": false
       },
       {
+        "name": "0xMikey",
+        "rank": "Pro Hacker",
+        "points": 372,
+        "root_owns": 34,
+        "user_owns": 36,
+        "country": "IN",
+        "is_captain": true
+      },
+      {
         "name": "kanyo",
         "rank": "Pro Hacker",
         "points": 356,
@@ -436,15 +445,6 @@
         "user_owns": 56,
         "country": "DZ",
         "is_captain": false
-      },
-      {
-        "name": "0xMikey",
-        "rank": "Pro Hacker",
-        "points": 343,
-        "root_owns": 33,
-        "user_owns": 36,
-        "country": "IN",
-        "is_captain": true
       },
       {
         "name": "w3nch",
