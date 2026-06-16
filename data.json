@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-06-16T03:40:32Z",
+  "generated_at": "2026-06-16T11:04:19Z",
   "experience": {
     "rank": "Professional",
     "level": 53,
-    "xp": 36000,
+    "xp": 36390,
     "xp_next_level": 0,
-    "streak": 4
+    "streak": 5
   },
   "profile": {
     "user_id": 2142022,
     "username": "0xMikey",
-    "user_owns": 35,
+    "user_owns": 36,
     "system_owns": 33,
-    "points": 339,
+    "points": 343,
     "user_bloods": 0,
     "system_bloods": 0
   },
@@ -62,50 +62,61 @@
     "paths": [
       {
         "name": "Reconnaissance",
-        "solved": 11,
-        "total": 253
+        "solved": 12,
+        "total": 254
       },
       {
         "name": "Vulnerability Assessment",
-        "solved": 10,
-        "total": 387
+        "solved": 11,
+        "total": 388
       },
       {
         "name": "Web Application",
-        "solved": 9,
-        "total": 322
+        "solved": 10,
+        "total": 323
       },
       {
         "name": "Enterprise Network",
-        "solved": 7,
-        "total": 174
+        "solved": 8,
+        "total": 175
       },
       {
         "name": "Password Reuse",
-        "solved": 7,
-        "total": 139
+        "solved": 8,
+        "total": 140
       },
       {
         "name": "Password Cracking",
-        "solved": 7,
-        "total": 162
+        "solved": 8,
+        "total": 163
       },
       {
         "name": "SUDO Exploitation",
-        "solved": 6,
-        "total": 83
+        "solved": 7,
+        "total": 84
       },
       {
-        "name": "Custom Applications",
-        "solved": 6,
-        "total": 90
+        "name": "Protocols",
+        "solved": 7,
+        "total": 74
       }
     ]
   },
   "activity": [
     {
+      "date": "2026-06-16T11:02:15.000000Z",
+      "date_diff": "2 minutes ago",
+      "object_type": "machine",
+      "type": "user",
+      "first_blood": false,
+      "id": 909,
+      "name": "Checkpoint",
+      "points": 15,
+      "machine_avatar": "/avatars/d90d9ba3228fb458485c03a1b4c2f6e5_thumb.png"
+    },
+    {
       "date": "2026-06-13T06:42:47.000000Z",
-      "date_diff": "2 days ago",
+      "date_diff": "3 days ago",
       "object_type": "machine",
       "type": "user",
       "first_blood": false,
@@ -311,27 +322,17 @@
       "name": "Garfield",
       "points": 20,
       "machine_avatar": "/avatars/a7ee5b5ec5cb4c2bf96545fda71ea8e6_thumb.png"
-    },
-    {
-      "date": "2026-04-06T05:02:47.000000Z",
-      "date_diff": "2 months ago",
-      "object_type": "machine",
-      "type": "root",
-      "first_blood": false,
-      "id": 862,
-      "name": "Garfield",
-      "points": 40,
-      "machine_avatar": "/avatars/a7ee5b5ec5cb4c2bf96545fda71ea8e6_thumb.png"
     }
   ],
   "derived": {
-    "user_owns": 35,
+    "user_owns": 36,
     "system_owns": 35,
     "challenge_solves": 21,
     "unique_machines": [
       "Abducted",
       "CCTV",
       "Cap",
+      "Checkpoint",
       "CodePartTwo",
       "Connected",
       "Conversor",
@@ -378,7 +379,7 @@
       "2026-03": 60,
       "2026-04": 135,
       "2026-05": 75,
-      "2026-06": 137
+      "2026-06": 152
     }
   },
   "team": {
@@ -439,9 +440,9 @@
       {
         "name": "0xMikey",
         "rank": "Pro Hacker",
-        "points": 339,
+        "points": 343,
         "root_owns": 33,
-        "user_owns": 35,
+        "user_owns": 36,
         "country": "IN",
         "is_captain": true
       },
