@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-15T20:51:32Z",
+  "generated_at": "2026-06-16T03:40:32Z",
   "experience": {
     "rank": "Professional",
     "level": 53,
@@ -384,10 +384,10 @@
   "team": {
     "id": 7247,
     "name": "VXON",
-    "points": 1902,
-    "root_owns": 189,
-    "user_owns": 197,
-    "challenge_owns": 253,
+    "points": 1909,
+    "root_owns": 191,
+    "user_owns": 199,
+    "challenge_owns": 254,
     "ranking": 45,
     "member_count": 22,
     "members": [
@@ -431,7 +431,7 @@
         "name": "kanyo",
         "rank": "Pro Hacker",
         "points": 356,
-        "root_owns": 55,
+        "root_owns": 56,
         "user_owns": 56,
         "country": "DZ",
         "is_captain": false
@@ -457,9 +457,9 @@
       {
         "name": "Papalo007",
         "rank": "Pro Hacker",
-        "points": 206,
+        "points": 217,
         "root_owns": 69,
-        "user_owns": 69,
+        "user_owns": 70,
         "country": "GR",
         "is_captain": false
       },
@@ -482,6 +482,15 @@
         "is_captain": false
       },
       {
+        "name": "rootrose",
+        "rank": "Pro Hacker",
+        "points": 43,
+        "root_owns": 57,
+        "user_owns": 69,
+        "country": "GR",
+        "is_captain": false
+      },
+      {
         "name": "c3n7",
         "rank": "Script Kiddie",
         "points": 36,
@@ -497,15 +506,6 @@
         "root_owns": 24,
         "user_owns": 24,
         "country": "IN",
-        "is_captain": false
-      },
-      {
-        "name": "rootrose",
-        "rank": "Pro Hacker",
-        "points": 33,
-        "root_owns": 56,
-        "user_owns": 69,
-        "country": "GR",
         "is_captain": false
       },
       {
