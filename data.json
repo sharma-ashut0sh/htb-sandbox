@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-18T10:15:16Z",
+  "generated_at": "2026-06-18T14:58:40Z",
   "experience": {
     "rank": "Professional",
     "level": 54,
@@ -145,8 +145,8 @@
       {
         "name": "Papalo007",
         "rank": "Pro Hacker",
-        "points": 217,
-        "root_owns": 69,
+        "points": 241,
+        "root_owns": 70,
         "user_owns": 70,
         "country": "GR",
         "is_captain": false
