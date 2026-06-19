@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-18T20:21:08Z",
+  "generated_at": "2026-06-19T03:54:13Z",
   "experience": {
     "rank": "Professional",
     "level": 54,
@@ -75,8 +75,8 @@
     "points": 1909,
     "root_owns": 191,
     "user_owns": 199,
-    "challenge_owns": 254,
-    "ranking": 46,
+    "challenge_owns": 255,
+    "ranking": 47,
     "member_count": 22,
     "members": [
       {
@@ -129,7 +129,7 @@
         "rank": "Pro Hacker",
         "points": 356,
         "root_owns": 56,
-        "user_owns": 56,
+        "user_owns": 57,
         "country": "DZ",
         "is_captain": false
       },
