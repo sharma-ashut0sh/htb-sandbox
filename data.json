@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-19T14:56:17Z",
+  "generated_at": "2026-06-19T19:44:06Z",
   "experience": {
     "rank": "Professional",
     "level": 54,
-    "xp": 36945,
+    "xp": 36990,
     "xp_next_level": 0,
     "streak": 5
   },
@@ -46,8 +46,8 @@
       {
         "name": "Coding",
         "solved": 2,
-        "total": 16,
-        "completion": 13
+        "total": 17,
+        "completion": 12
       },
       {
         "name": "Quantum",
@@ -82,7 +82,7 @@
       {
         "name": "SOOBIKv2",
         "rank": "Elite Hacker",
-        "points": 1060,
+        "points": 1061,
         "root_owns": 38,
         "user_owns": 38,
         "country": "FR",
@@ -109,7 +109,7 @@
       {
         "name": "ANameNotMine",
         "rank": "Pro Hacker",
-        "points": 411,
+        "points": 414,
         "root_owns": 116,
         "user_owns": 127,
         "country": "HR",
@@ -134,21 +134,21 @@
         "is_captain": false
       },
       {
+        "name": "Papalo007",
+        "rank": "Pro Hacker",
+        "points": 276,
+        "root_owns": 71,
+        "user_owns": 71,
+        "country": "GR",
+        "is_captain": false
+      },
+      {
         "name": "w3nch",
         "rank": "Pro Hacker",
         "points": 258,
         "root_owns": 44,
         "user_owns": 47,
         "country": "IN",
-        "is_captain": false
-      },
-      {
-        "name": "Papalo007",
-        "rank": "Pro Hacker",
-        "points": 241,
-        "root_owns": 70,
-        "user_owns": 70,
-        "country": "GR",
         "is_captain": false
       },
       {
@@ -179,20 +179,20 @@
         "is_captain": false
       },
       {
+        "name": "6cloudguy",
+        "rank": "Hacker",
+        "points": 40,
+        "root_owns": 24,
+        "user_owns": 25,
+        "country": "IN",
+        "is_captain": false
+      },
+      {
         "name": "c3n7",
         "rank": "Script Kiddie",
         "points": 36,
         "root_owns": 13,
         "user_owns": 14,
-        "country": "IN",
-        "is_captain": false
-      },
-      {
-        "name": "6cloudguy",
-        "rank": "Hacker",
-        "points": 36,
-        "root_owns": 24,
-        "user_owns": 24,
         "country": "IN",
         "is_captain": false
       },
