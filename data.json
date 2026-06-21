@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-20T19:19:21Z",
+  "generated_at": "2026-06-21T03:42:38Z",
   "experience": {
     "rank": "Professional",
     "level": 54,
@@ -72,19 +72,19 @@
   "team": {
     "id": 7247,
     "name": "VXON",
-    "points": 1910,
-    "root_owns": 192,
-    "user_owns": 200,
-    "challenge_owns": 256,
-    "ranking": 46,
+    "points": 1925,
+    "root_owns": 194,
+    "user_owns": 202,
+    "challenge_owns": 258,
+    "ranking": 43,
     "member_count": 23,
     "members": [
       {
         "name": "SOOBIKv2",
         "rank": "Elite Hacker",
-        "points": 1006,
-        "root_owns": 38,
-        "user_owns": 38,
+        "points": 1061,
+        "root_owns": 39,
+        "user_owns": 39,
         "country": "FR",
         "is_captain": false
       },
@@ -109,9 +109,9 @@
       {
         "name": "ANameNotMine",
         "rank": "Pro Hacker",
-        "points": 372,
+        "points": 378,
         "root_owns": 116,
-        "user_owns": 127,
+        "user_owns": 128,
         "country": "HR",
         "is_captain": false
       },
@@ -125,21 +125,21 @@
         "is_captain": true
       },
       {
+        "name": "kanyo",
+        "rank": "Pro Hacker",
+        "points": 323,
+        "root_owns": 57,
+        "user_owns": 58,
+        "country": "DZ",
+        "is_captain": false
+      },
+      {
         "name": "w3nch",
         "rank": "Pro Hacker",
         "points": 320,
         "root_owns": 45,
         "user_owns": 48,
         "country": "IN",
-        "is_captain": false
-      },
-      {
-        "name": "kanyo",
-        "rank": "Pro Hacker",
-        "points": 317,
-        "root_owns": 57,
-        "user_owns": 57,
-        "country": "DZ",
         "is_captain": false
       },
       {
