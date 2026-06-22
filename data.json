@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-06-22T11:45:55Z",
+  "generated_at": "2026-06-22T16:48:27Z",
   "experience": {
     "rank": "Professional",
-    "level": 54,
-    "xp": 37810,
+    "level": 55,
+    "xp": 38395,
     "xp_next_level": 0,
-    "streak": 5
+    "streak": 6
   },
   "profile": {
     "user_id": 2142022,
     "username": "0xMikey",
     "user_owns": 37,
-    "system_owns": 34,
-    "points": 336,
+    "system_owns": 35,
+    "points": 370,
     "user_bloods": 0,
     "system_bloods": 0
   },
@@ -82,7 +82,7 @@
       {
         "name": "SOOBIKv2",
         "rank": "Elite Hacker",
-        "points": 1076,
+        "points": 1081,
         "root_owns": 39,
         "user_owns": 39,
         "country": "FR",
@@ -118,8 +118,8 @@
       {
         "name": "0xMikey",
         "rank": "Pro Hacker",
-        "points": 336,
-        "root_owns": 34,
+        "points": 370,
+        "root_owns": 35,
         "user_owns": 37,
         "country": "IN",
         "is_captain": true
