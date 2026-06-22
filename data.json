@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-22T16:48:27Z",
+  "generated_at": "2026-06-22T20:40:09Z",
   "experience": {
     "rank": "Professional",
     "level": 55,
@@ -152,21 +152,21 @@
         "is_captain": false
       },
       {
+        "name": "Marclos15",
+        "rank": "Hacker",
+        "points": 50,
+        "root_owns": 35,
+        "user_owns": 40,
+        "country": "ES",
+        "is_captain": false
+      },
+      {
         "name": "6cloudguy",
         "rank": "Hacker",
         "points": 49,
         "root_owns": 25,
         "user_owns": 25,
         "country": "IN",
-        "is_captain": false
-      },
-      {
-        "name": "Marclos15",
-        "rank": "Hacker",
-        "points": 44,
-        "root_owns": 35,
-        "user_owns": 39,
-        "country": "ES",
         "is_captain": false
       },
       {
