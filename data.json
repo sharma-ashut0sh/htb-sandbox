@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-24T14:22:09Z",
+  "generated_at": "2026-06-24T19:41:20Z",
   "experience": {
     "rank": "Professional",
     "level": 55,
@@ -83,8 +83,8 @@
         "name": "SOOBIKv2",
         "rank": "Elite Hacker",
         "points": 1086,
-        "root_owns": 39,
-        "user_owns": 39,
+        "root_owns": 40,
+        "user_owns": 40,
         "country": "FR",
         "is_captain": false
       },
@@ -111,7 +111,7 @@
         "rank": "Pro Hacker",
         "points": 414,
         "root_owns": 117,
-        "user_owns": 128,
+        "user_owns": 129,
         "country": "HR",
         "is_captain": false
       },
@@ -154,7 +154,7 @@
       {
         "name": "Marclos15",
         "rank": "Hacker",
-        "points": 62,
+        "points": 66,
         "root_owns": 37,
         "user_owns": 41,
         "country": "ES",
@@ -174,7 +174,7 @@
         "rank": "Hacker",
         "points": 44,
         "root_owns": 8,
-        "user_owns": 9,
+        "user_owns": 10,
         "country": "IN",
         "is_captain": false
       },
