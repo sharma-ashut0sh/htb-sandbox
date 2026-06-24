@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-24T02:50:56Z",
+  "generated_at": "2026-06-24T09:21:36Z",
   "experience": {
     "rank": "Professional",
     "level": 55,
-    "xp": 38395,
+    "xp": 38915,
     "xp_next_level": 0,
     "streak": 6
   },
@@ -12,12 +12,12 @@
     "username": "0xMikey",
     "user_owns": 37,
     "system_owns": 35,
-    "points": 370,
+    "points": 373,
     "user_bloods": 0,
     "system_bloods": 0
   },
   "challenges": {
-    "total_solved": 21,
+    "total_solved": 22,
     "categories": [
       {
         "name": "Reversing",
@@ -45,9 +45,9 @@
       },
       {
         "name": "Coding",
-        "solved": 2,
+        "solved": 3,
         "total": 17,
-        "completion": 12
+        "completion": 18
       },
       {
         "name": "Quantum",
@@ -91,8 +91,8 @@
       {
         "name": "knockingd00r",
         "rank": "Pro Hacker",
-        "points": 809,
-        "root_owns": 59,
+        "points": 863,
+        "root_owns": 60,
         "user_owns": 68,
         "country": "MA",
         "is_captain": false
@@ -118,7 +118,7 @@
       {
         "name": "0xMikey",
         "rank": "Pro Hacker",
-        "points": 370,
+        "points": 373,
         "root_owns": 35,
         "user_owns": 37,
         "country": "IN",
