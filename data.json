@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-25T14:23:00Z",
+  "generated_at": "2026-06-25T19:53:21Z",
   "experience": {
     "rank": "Professional",
     "level": 55,
@@ -84,7 +84,7 @@
         "rank": "Elite Hacker",
         "points": 1086,
         "root_owns": 40,
-        "user_owns": 40,
+        "user_owns": 41,
         "country": "FR",
         "is_captain": false
       },
@@ -173,7 +173,7 @@
         "name": "kincurio",
         "rank": "Hacker",
         "points": 44,
-        "root_owns": 8,
+        "root_owns": 9,
         "user_owns": 10,
         "country": "IN",
         "is_captain": false
