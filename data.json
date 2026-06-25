@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-24T19:41:20Z",
+  "generated_at": "2026-06-25T02:50:29Z",
   "experience": {
     "rank": "Professional",
     "level": 55,
@@ -73,8 +73,8 @@
     "id": 7247,
     "name": "VXON",
     "points": 1941,
-    "root_owns": 186,
-    "user_owns": 196,
+    "root_owns": 188,
+    "user_owns": 198,
     "challenge_owns": 260,
     "ranking": 44,
     "member_count": 22,
@@ -110,7 +110,7 @@
         "name": "ANameNotMine",
         "rank": "Pro Hacker",
         "points": 414,
-        "root_owns": 117,
+        "root_owns": 118,
         "user_owns": 129,
         "country": "HR",
         "is_captain": false
