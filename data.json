@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-27T13:24:03Z",
+  "generated_at": "2026-06-27T19:14:33Z",
   "experience": {
     "rank": "Professional",
     "level": 55,
@@ -12,7 +12,7 @@
     "username": "0xMikey",
     "user_owns": 37,
     "system_owns": 35,
-    "points": 373,
+    "points": 346,
     "user_bloods": 0,
     "system_bloods": 0
   },
@@ -82,16 +82,16 @@
       {
         "name": "SOOBIKv2",
         "rank": "Elite Hacker",
-        "points": 1102,
-        "root_owns": 41,
-        "user_owns": 41,
+        "points": 1070,
+        "root_owns": 42,
+        "user_owns": 42,
         "country": "FR",
         "is_captain": false
       },
       {
         "name": "knockingd00r",
         "rank": "Pro Hacker",
-        "points": 863,
+        "points": 824,
         "root_owns": 60,
         "user_owns": 68,
         "country": "MA",
@@ -100,7 +100,7 @@
       {
         "name": "atoontoto",
         "rank": "Pro Hacker",
-        "points": 496,
+        "points": 482,
         "root_owns": 77,
         "user_owns": 77,
         "country": "IQ",
@@ -109,16 +109,16 @@
       {
         "name": "ANameNotMine",
         "rank": "Pro Hacker",
-        "points": 414,
-        "root_owns": 118,
-        "user_owns": 130,
+        "points": 387,
+        "root_owns": 119,
+        "user_owns": 131,
         "country": "HR",
         "is_captain": false
       },
       {
         "name": "0xMikey",
         "rank": "Pro Hacker",
-        "points": 373,
+        "points": 346,
         "root_owns": 35,
         "user_owns": 37,
         "country": "IN",
@@ -127,7 +127,7 @@
       {
         "name": "w3nch",
         "rank": "Pro Hacker",
-        "points": 360,
+        "points": 333,
         "root_owns": 47,
         "user_owns": 50,
         "country": "IN",
@@ -136,7 +136,7 @@
       {
         "name": "Papalo007",
         "rank": "Pro Hacker",
-        "points": 226,
+        "points": 210,
         "root_owns": 72,
         "user_owns": 72,
         "country": "GR",
@@ -145,7 +145,7 @@
       {
         "name": "jbrgn",
         "rank": "Pro Hacker",
-        "points": 114,
+        "points": 91,
         "root_owns": 85,
         "user_owns": 86,
         "country": "GB",
@@ -154,37 +154,28 @@
       {
         "name": "Marclos15",
         "rank": "Hacker",
-        "points": 66,
-        "root_owns": 37,
-        "user_owns": 41,
+        "points": 68,
+        "root_owns": 38,
+        "user_owns": 42,
         "country": "ES",
-        "is_captain": false
-      },
-      {
-        "name": "6cloudguy",
-        "rank": "Hacker",
-        "points": 49,
-        "root_owns": 26,
-        "user_owns": 26,
-        "country": "IN",
         "is_captain": false
       },
       {
         "name": "kincurio",
         "rank": "Hacker",
-        "points": 44,
+        "points": 39,
         "root_owns": 9,
-        "user_owns": 10,
+        "user_owns": 11,
         "country": "IN",
         "is_captain": false
       },
       {
-        "name": "rootrose",
-        "rank": "Pro Hacker",
+        "name": "6cloudguy",
+        "rank": "Hacker",
         "points": 38,
-        "root_owns": 57,
-        "user_owns": 69,
-        "country": "GR",
+        "root_owns": 26,
+        "user_owns": 26,
+        "country": "IN",
         "is_captain": false
       },
       {
@@ -197,12 +188,12 @@
         "is_captain": false
       },
       {
-        "name": "deadlock00",
-        "rank": "Script Kiddie",
-        "points": 15,
-        "root_owns": 6,
-        "user_owns": 6,
-        "country": "IN",
+        "name": "rootrose",
+        "rank": "Pro Hacker",
+        "points": 27,
+        "root_owns": 57,
+        "user_owns": 69,
+        "country": "GR",
         "is_captain": false
       },
       {
@@ -212,6 +203,15 @@
         "root_owns": 34,
         "user_owns": 35,
         "country": "GR",
+        "is_captain": false
+      },
+      {
+        "name": "deadlock00",
+        "rank": "Script Kiddie",
+        "points": 9,
+        "root_owns": 6,
+        "user_owns": 6,
+        "country": "IN",
         "is_captain": false
       },
       {
