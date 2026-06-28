@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-27T19:14:33Z",
+  "generated_at": "2026-06-28T03:25:04Z",
   "experience": {
     "rank": "Professional",
     "level": 55,
@@ -73,27 +73,27 @@
     "id": 7247,
     "name": "VXON",
     "points": 1956,
-    "root_owns": 189,
-    "user_owns": 199,
+    "root_owns": 190,
+    "user_owns": 200,
     "challenge_owns": 263,
-    "ranking": 41,
+    "ranking": 38,
     "member_count": 22,
     "members": [
       {
         "name": "SOOBIKv2",
         "rank": "Elite Hacker",
-        "points": 1070,
-        "root_owns": 42,
-        "user_owns": 42,
+        "points": 1102,
+        "root_owns": 43,
+        "user_owns": 43,
         "country": "FR",
         "is_captain": false
       },
       {
         "name": "knockingd00r",
         "rank": "Pro Hacker",
-        "points": 824,
-        "root_owns": 60,
-        "user_owns": 68,
+        "points": 863,
+        "root_owns": 61,
+        "user_owns": 69,
         "country": "MA",
         "is_captain": false
       },
@@ -136,9 +136,9 @@
       {
         "name": "Papalo007",
         "rank": "Pro Hacker",
-        "points": 210,
+        "points": 213,
         "root_owns": 72,
-        "user_owns": 72,
+        "user_owns": 73,
         "country": "GR",
         "is_captain": false
       },
