@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-06-28T03:25:04Z",
+  "generated_at": "2026-06-28T08:46:25Z",
   "experience": {
     "rank": "Professional",
     "level": 55,
-    "xp": 38915,
+    "xp": 39500,
     "xp_next_level": 0,
     "streak": 6
   },
   "profile": {
     "user_id": 2142022,
     "username": "0xMikey",
-    "user_owns": 37,
-    "system_owns": 35,
-    "points": 346,
+    "user_owns": 38,
+    "system_owns": 36,
+    "points": 373,
     "user_bloods": 0,
     "system_bloods": 0
   },
@@ -109,27 +109,27 @@
       {
         "name": "ANameNotMine",
         "rank": "Pro Hacker",
-        "points": 387,
-        "root_owns": 119,
-        "user_owns": 131,
+        "points": 414,
+        "root_owns": 120,
+        "user_owns": 132,
         "country": "HR",
         "is_captain": false
       },
       {
         "name": "0xMikey",
         "rank": "Pro Hacker",
-        "points": 346,
-        "root_owns": 35,
-        "user_owns": 37,
+        "points": 373,
+        "root_owns": 36,
+        "user_owns": 38,
         "country": "IN",
         "is_captain": true
       },
       {
         "name": "w3nch",
         "rank": "Pro Hacker",
-        "points": 333,
+        "points": 335,
         "root_owns": 47,
-        "user_owns": 50,
+        "user_owns": 51,
         "country": "IN",
         "is_captain": false
       },
