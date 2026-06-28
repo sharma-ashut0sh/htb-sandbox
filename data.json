@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-28T13:27:43Z",
+  "generated_at": "2026-06-28T19:12:46Z",
   "experience": {
     "rank": "Professional",
     "level": 55,
@@ -77,14 +77,14 @@
     "user_owns": 200,
     "challenge_owns": 263,
     "ranking": 38,
-    "member_count": 22,
+    "member_count": 23,
     "members": [
       {
         "name": "SOOBIKv2",
         "rank": "Elite Hacker",
         "points": 1107,
-        "root_owns": 43,
-        "user_owns": 43,
+        "root_owns": 44,
+        "user_owns": 44,
         "country": "FR",
         "is_captain": false
       },
@@ -98,11 +98,20 @@
         "is_captain": false
       },
       {
+        "name": "CyberKareem",
+        "rank": "Pro Hacker",
+        "points": 775,
+        "root_owns": 183,
+        "user_owns": 196,
+        "country": "IQ",
+        "is_captain": false
+      },
+      {
         "name": "atoontoto",
         "rank": "Pro Hacker",
-        "points": 482,
-        "root_owns": 77,
-        "user_owns": 77,
+        "points": 511,
+        "root_owns": 78,
+        "user_owns": 78,
         "country": "IQ",
         "is_captain": false
       },
@@ -110,7 +119,7 @@
         "name": "ANameNotMine",
         "rank": "Pro Hacker",
         "points": 414,
-        "root_owns": 120,
+        "root_owns": 121,
         "user_owns": 132,
         "country": "HR",
         "is_captain": false
