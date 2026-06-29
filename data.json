@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-29T15:39:57Z",
+  "generated_at": "2026-06-29T19:51:08Z",
   "experience": {
     "rank": "Professional",
     "level": 55,
@@ -77,14 +77,14 @@
     "user_owns": 313,
     "challenge_owns": 296,
     "ranking": 37,
-    "member_count": 23,
+    "member_count": 24,
     "members": [
       {
         "name": "SOOBIKv2",
         "rank": "Elite Hacker",
         "points": 1107,
-        "root_owns": 44,
-        "user_owns": 44,
+        "root_owns": 45,
+        "user_owns": 45,
         "country": "FR",
         "is_captain": false
       },
@@ -172,9 +172,9 @@
       {
         "name": "kincurio",
         "rank": "Hacker",
-        "points": 39,
+        "points": 41,
         "root_owns": 9,
-        "user_owns": 11,
+        "user_owns": 12,
         "country": "IN",
         "is_captain": false
       },
@@ -248,6 +248,15 @@
         "root_owns": 15,
         "user_owns": 17,
         "country": "IN",
+        "is_captain": false
+      },
+      {
+        "name": "0xNafsec",
+        "rank": "Hacker",
+        "points": 1,
+        "root_owns": 28,
+        "user_owns": 30,
+        "country": "BD",
         "is_captain": false
       },
       {
