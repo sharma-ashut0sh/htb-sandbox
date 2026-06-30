@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-30T14:10:19Z",
+  "generated_at": "2026-06-30T19:49:18Z",
   "experience": {
     "rank": "Professional",
     "level": 55,
@@ -77,14 +77,14 @@
     "user_owns": 316,
     "challenge_owns": 296,
     "ranking": 39,
-    "member_count": 24,
+    "member_count": 25,
     "members": [
       {
         "name": "SOOBIKv2",
         "rank": "Elite Hacker",
         "points": 1107,
-        "root_owns": 45,
-        "user_owns": 45,
+        "root_owns": 47,
+        "user_owns": 47,
         "country": "FR",
         "is_captain": false
       },
@@ -164,16 +164,16 @@
         "name": "Marclos15",
         "rank": "Hacker",
         "points": 82,
-        "root_owns": 39,
-        "user_owns": 43,
+        "root_owns": 40,
+        "user_owns": 44,
         "country": "ES",
         "is_captain": false
       },
       {
         "name": "kincurio",
         "rank": "Hacker",
-        "points": 41,
-        "root_owns": 9,
+        "points": 50,
+        "root_owns": 10,
         "user_owns": 12,
         "country": "IN",
         "is_captain": false
@@ -221,6 +221,15 @@
         "root_owns": 6,
         "user_owns": 6,
         "country": "IN",
+        "is_captain": false
+      },
+      {
+        "name": "lacmac",
+        "rank": "Hacker",
+        "points": 8,
+        "root_owns": 46,
+        "user_owns": 51,
+        "country": null,
         "is_captain": false
       },
       {
