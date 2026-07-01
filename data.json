@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-01T14:26:28Z",
+  "generated_at": "2026-07-01T19:47:54Z",
   "experience": {
     "rank": "Professional",
     "level": 55,
@@ -77,7 +77,7 @@
     "user_owns": 324,
     "challenge_owns": 305,
     "ranking": 41,
-    "member_count": 25,
+    "member_count": 23,
     "members": [
       {
         "name": "SOOBIKv2",
@@ -92,8 +92,8 @@
         "name": "knockingd00r",
         "rank": "Pro Hacker",
         "points": 863,
-        "root_owns": 61,
-        "user_owns": 69,
+        "root_owns": 62,
+        "user_owns": 70,
         "country": "MA",
         "is_captain": false
       },
@@ -284,24 +284,6 @@
         "root_owns": 7,
         "user_owns": 8,
         "country": "JP",
-        "is_captain": false
-      },
-      {
-        "name": "Ivarhackme",
-        "rank": "Noob",
-        "points": 0,
-        "root_owns": 0,
-        "user_owns": 0,
-        "country": null,
-        "is_captain": false
-      },
-      {
-        "name": "owatron",
-        "rank": "Noob",
-        "points": 0,
-        "root_owns": 0,
-        "user_owns": 0,
-        "country": "IN",
         "is_captain": false
       }
     ],
