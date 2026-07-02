@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-02T02:51:15Z",
+  "generated_at": "2026-07-02T08:50:30Z",
   "experience": {
     "rank": "Professional",
     "level": 55,
@@ -83,8 +83,8 @@
         "name": "SOOBIKv2",
         "rank": "Elite Hacker",
         "points": 1111,
-        "root_owns": 48,
-        "user_owns": 48,
+        "root_owns": 49,
+        "user_owns": 49,
         "country": "FR",
         "is_captain": false
       },
