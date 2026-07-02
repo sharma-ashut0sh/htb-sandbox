@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-01T19:47:54Z",
+  "generated_at": "2026-07-02T02:51:15Z",
   "experience": {
     "rank": "Professional",
     "level": 55,
@@ -76,15 +76,15 @@
     "root_owns": 311,
     "user_owns": 324,
     "challenge_owns": 305,
-    "ranking": 41,
+    "ranking": 42,
     "member_count": 23,
     "members": [
       {
         "name": "SOOBIKv2",
         "rank": "Elite Hacker",
-        "points": 1107,
-        "root_owns": 47,
-        "user_owns": 47,
+        "points": 1111,
+        "root_owns": 48,
+        "user_owns": 48,
         "country": "FR",
         "is_captain": false
       },
@@ -93,7 +93,7 @@
         "rank": "Pro Hacker",
         "points": 863,
         "root_owns": 62,
-        "user_owns": 70,
+        "user_owns": 71,
         "country": "MA",
         "is_captain": false
       },
