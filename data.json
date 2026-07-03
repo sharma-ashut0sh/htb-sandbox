@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-03T02:34:15Z",
+  "generated_at": "2026-07-03T08:56:37Z",
   "experience": {
     "rank": "Professional",
     "level": 55,
-    "xp": 39500,
+    "xp": 39630,
     "xp_next_level": 0,
     "streak": 6
   },
@@ -12,18 +12,24 @@
     "username": "0xMikey",
     "user_owns": 38,
     "system_owns": 36,
-    "points": 373,
+    "points": 376,
     "user_bloods": 0,
     "system_bloods": 0
   },
   "challenges": {
-    "total_solved": 22,
+    "total_solved": 23,
     "categories": [
       {
         "name": "Reversing",
         "solved": 3,
         "total": 100,
         "completion": 3
+      },
+      {
+        "name": "Crypto",
+        "solved": 1,
+        "total": 131,
+        "completion": 1
       },
       {
         "name": "Web",
@@ -82,7 +88,7 @@
       {
         "name": "SOOBIKv2",
         "rank": "Elite Hacker",
-        "points": 1111,
+        "points": 1116,
         "root_owns": 50,
         "user_owns": 50,
         "country": "FR",
@@ -127,7 +133,7 @@
       {
         "name": "0xMikey",
         "rank": "Pro Hacker",
-        "points": 373,
+        "points": 376,
         "root_owns": 36,
         "user_owns": 38,
         "country": "IN",
