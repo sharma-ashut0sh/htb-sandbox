@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-03T13:53:51Z",
+  "generated_at": "2026-07-03T19:13:35Z",
   "experience": {
     "rank": "Professional",
     "level": 55,
@@ -221,21 +221,21 @@
         "is_captain": false
       },
       {
-        "name": "deadlock00",
-        "rank": "Script Kiddie",
-        "points": 9,
-        "root_owns": 6,
-        "user_owns": 6,
-        "country": "IN",
-        "is_captain": false
-      },
-      {
         "name": "lacmac",
         "rank": "Hacker",
         "points": 8,
         "root_owns": 46,
         "user_owns": 51,
         "country": null,
+        "is_captain": false
+      },
+      {
+        "name": "deadlock00",
+        "rank": "Script Kiddie",
+        "points": 8,
+        "root_owns": 6,
+        "user_owns": 7,
+        "country": "IN",
         "is_captain": false
       },
       {
