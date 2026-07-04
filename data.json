@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-04T13:15:27Z",
+  "generated_at": "2026-07-04T19:04:27Z",
   "experience": {
     "rank": "Professional",
     "level": 55,
@@ -12,7 +12,7 @@
     "username": "0xMikey",
     "user_owns": 38,
     "system_owns": 36,
-    "points": 376,
+    "points": 338,
     "user_bloods": 0,
     "system_bloods": 0
   },
@@ -88,7 +88,7 @@
       {
         "name": "SOOBIKv2",
         "rank": "Elite Hacker",
-        "points": 1121,
+        "points": 1069,
         "root_owns": 50,
         "user_owns": 50,
         "country": "FR",
@@ -97,7 +97,7 @@
       {
         "name": "knockingd00r",
         "rank": "Pro Hacker",
-        "points": 863,
+        "points": 808,
         "root_owns": 62,
         "user_owns": 71,
         "country": "MA",
@@ -106,7 +106,7 @@
       {
         "name": "CyberKareem",
         "rank": "Pro Hacker",
-        "points": 775,
+        "points": 729,
         "root_owns": 183,
         "user_owns": 196,
         "country": "IQ",
@@ -115,16 +115,16 @@
       {
         "name": "atoontoto",
         "rank": "Pro Hacker",
-        "points": 511,
-        "root_owns": 78,
-        "user_owns": 78,
+        "points": 469,
+        "root_owns": 79,
+        "user_owns": 79,
         "country": "IQ",
         "is_captain": false
       },
       {
         "name": "ANameNotMine",
         "rank": "Pro Hacker",
-        "points": 414,
+        "points": 378,
         "root_owns": 121,
         "user_owns": 132,
         "country": "HR",
@@ -133,7 +133,7 @@
       {
         "name": "0xMikey",
         "rank": "Pro Hacker",
-        "points": 376,
+        "points": 338,
         "root_owns": 36,
         "user_owns": 38,
         "country": "IN",
@@ -142,7 +142,7 @@
       {
         "name": "w3nch",
         "rank": "Pro Hacker",
-        "points": 360,
+        "points": 323,
         "root_owns": 48,
         "user_owns": 51,
         "country": "IN",
@@ -169,9 +169,9 @@
       {
         "name": "Marclos15",
         "rank": "Hacker",
-        "points": 82,
+        "points": 81,
         "root_owns": 40,
-        "user_owns": 44,
+        "user_owns": 45,
         "country": "ES",
         "is_captain": false
       },
