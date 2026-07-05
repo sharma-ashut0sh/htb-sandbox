@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-04T19:04:27Z",
+  "generated_at": "2026-07-05T02:41:31Z",
   "experience": {
     "rank": "Professional",
     "level": 55,
@@ -78,28 +78,28 @@
   "team": {
     "id": 7247,
     "name": "VXON",
-    "points": 1997,
-    "root_owns": 311,
-    "user_owns": 324,
-    "challenge_owns": 308,
-    "ranking": 43,
+    "points": 2014,
+    "root_owns": 312,
+    "user_owns": 325,
+    "challenge_owns": 311,
+    "ranking": 40,
     "member_count": 23,
     "members": [
       {
         "name": "SOOBIKv2",
         "rank": "Elite Hacker",
-        "points": 1069,
-        "root_owns": 50,
-        "user_owns": 50,
+        "points": 1125,
+        "root_owns": 51,
+        "user_owns": 51,
         "country": "FR",
         "is_captain": false
       },
       {
         "name": "knockingd00r",
         "rank": "Pro Hacker",
-        "points": 808,
-        "root_owns": 62,
-        "user_owns": 71,
+        "points": 860,
+        "root_owns": 63,
+        "user_owns": 72,
         "country": "MA",
         "is_captain": false
       },
@@ -124,9 +124,9 @@
       {
         "name": "ANameNotMine",
         "rank": "Pro Hacker",
-        "points": 378,
+        "points": 381,
         "root_owns": 121,
-        "user_owns": 132,
+        "user_owns": 133,
         "country": "HR",
         "is_captain": false
       },
@@ -158,21 +158,21 @@
         "is_captain": false
       },
       {
+        "name": "Marclos15",
+        "rank": "Hacker",
+        "points": 104,
+        "root_owns": 42,
+        "user_owns": 46,
+        "country": "ES",
+        "is_captain": false
+      },
+      {
         "name": "jbrgn",
         "rank": "Pro Hacker",
         "points": 91,
         "root_owns": 85,
         "user_owns": 86,
         "country": "GB",
-        "is_captain": false
-      },
-      {
-        "name": "Marclos15",
-        "rank": "Hacker",
-        "points": 81,
-        "root_owns": 40,
-        "user_owns": 45,
-        "country": "ES",
         "is_captain": false
       },
       {
@@ -233,7 +233,7 @@
         "name": "deadlock00",
         "rank": "Script Kiddie",
         "points": 8,
-        "root_owns": 6,
+        "root_owns": 7,
         "user_owns": 7,
         "country": "IN",
         "is_captain": false
