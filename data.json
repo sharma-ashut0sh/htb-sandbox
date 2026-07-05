@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-05T13:22:08Z",
+  "generated_at": "2026-07-05T19:10:50Z",
   "experience": {
     "rank": "Professional",
     "level": 55,
@@ -88,7 +88,7 @@
       {
         "name": "SOOBIKv2",
         "rank": "Elite Hacker",
-        "points": 1125,
+        "points": 1132,
         "root_owns": 51,
         "user_owns": 51,
         "country": "FR",
@@ -185,20 +185,20 @@
         "is_captain": false
       },
       {
-        "name": "6cloudguy",
-        "rank": "Hacker",
-        "points": 38,
-        "root_owns": 26,
-        "user_owns": 26,
-        "country": "IN",
-        "is_captain": false
-      },
-      {
         "name": "c3n7",
         "rank": "Script Kiddie",
         "points": 36,
         "root_owns": 13,
         "user_owns": 14,
+        "country": "IN",
+        "is_captain": false
+      },
+      {
+        "name": "6cloudguy",
+        "rank": "Hacker",
+        "points": 36,
+        "root_owns": 26,
+        "user_owns": 26,
         "country": "IN",
         "is_captain": false
       },
