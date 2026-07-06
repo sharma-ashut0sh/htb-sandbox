@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-06T15:22:30Z",
+  "generated_at": "2026-07-06T19:50:26Z",
   "experience": {
     "rank": "Professional",
     "level": 55,
@@ -83,7 +83,7 @@
     "user_owns": 325,
     "challenge_owns": 312,
     "ranking": 40,
-    "member_count": 23,
+    "member_count": 22,
     "members": [
       {
         "name": "SOOBIKv2",
@@ -151,8 +151,8 @@
       {
         "name": "Papalo007",
         "rank": "Pro Hacker",
-        "points": 213,
-        "root_owns": 72,
+        "points": 230,
+        "root_owns": 73,
         "user_owns": 73,
         "country": "GR",
         "is_captain": false
@@ -263,15 +263,6 @@
         "root_owns": 15,
         "user_owns": 17,
         "country": "IN",
-        "is_captain": false
-      },
-      {
-        "name": "0xNafsec",
-        "rank": "Hacker",
-        "points": 1,
-        "root_owns": 28,
-        "user_owns": 30,
-        "country": "BD",
         "is_captain": false
       },
       {
