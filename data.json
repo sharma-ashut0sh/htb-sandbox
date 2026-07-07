@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07T09:34:23Z",
+  "generated_at": "2026-07-07T14:22:34Z",
   "experience": {
     "rank": "Professional",
     "level": 55,
@@ -162,7 +162,7 @@
         "rank": "Hacker",
         "points": 104,
         "root_owns": 42,
-        "user_owns": 46,
+        "user_owns": 47,
         "country": "ES",
         "is_captain": false
       },
