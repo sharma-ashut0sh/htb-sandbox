@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-06T19:50:26Z",
+  "generated_at": "2026-07-07T02:42:18Z",
   "experience": {
     "rank": "Professional",
     "level": 55,
@@ -78,10 +78,10 @@
   "team": {
     "id": 7247,
     "name": "VXON",
-    "points": 2023,
-    "root_owns": 312,
-    "user_owns": 325,
-    "challenge_owns": 312,
+    "points": 2030,
+    "root_owns": 309,
+    "user_owns": 323,
+    "challenge_owns": 313,
     "ranking": 40,
     "member_count": 22,
     "members": [
@@ -214,8 +214,8 @@
       {
         "name": "b3st1m0s",
         "rank": "Hacker",
-        "points": 12,
-        "root_owns": 34,
+        "points": 16,
+        "root_owns": 35,
         "user_owns": 36,
         "country": "GR",
         "is_captain": false
