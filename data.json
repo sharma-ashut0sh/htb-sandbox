@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T09:27:45Z",
+  "generated_at": "2026-07-10T14:12:56Z",
   "experience": {
     "rank": "Professional",
     "level": 55,
@@ -106,9 +106,9 @@
       {
         "name": "CyberKareem",
         "rank": "Pro Hacker",
-        "points": 729,
-        "root_owns": 183,
-        "user_owns": 196,
+        "points": 772,
+        "root_owns": 184,
+        "user_owns": 197,
         "country": "IQ",
         "is_captain": false
       },
@@ -116,8 +116,8 @@
         "name": "atoontoto",
         "rank": "Pro Hacker",
         "points": 506,
-        "root_owns": 80,
-        "user_owns": 80,
+        "root_owns": 81,
+        "user_owns": 81,
         "country": "IQ",
         "is_captain": false
       },
