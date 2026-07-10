@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T14:12:56Z",
+  "generated_at": "2026-07-10T19:21:28Z",
   "experience": {
     "rank": "Professional",
     "level": 55,
@@ -22,7 +22,7 @@
       {
         "name": "Reversing",
         "solved": 3,
-        "total": 100,
+        "total": 101,
         "completion": 3
       },
       {
@@ -161,8 +161,8 @@
         "name": "Marclos15",
         "rank": "Hacker",
         "points": 104,
-        "root_owns": 42,
-        "user_owns": 47,
+        "root_owns": 43,
+        "user_owns": 48,
         "country": "ES",
         "is_captain": false
       },
