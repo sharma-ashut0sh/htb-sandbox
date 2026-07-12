@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T18:55:40Z",
+  "generated_at": "2026-07-12T02:22:34Z",
   "experience": {
     "rank": "Professional",
     "level": 56,
@@ -79,18 +79,18 @@
     "id": 7247,
     "name": "VXON",
     "points": 2029,
-    "root_owns": 309,
-    "user_owns": 323,
+    "root_owns": 310,
+    "user_owns": 324,
     "challenge_owns": 315,
-    "ranking": 39,
+    "ranking": 38,
     "member_count": 22,
     "members": [
       {
         "name": "SOOBIKv2",
         "rank": "Elite Hacker",
-        "points": 1159,
-        "root_owns": 52,
-        "user_owns": 52,
+        "points": 1192,
+        "root_owns": 53,
+        "user_owns": 53,
         "country": "FR",
         "is_captain": false
       },
@@ -117,7 +117,7 @@
         "rank": "Pro Hacker",
         "points": 477,
         "root_owns": 82,
-        "user_owns": 82,
+        "user_owns": 83,
         "country": "IQ",
         "is_captain": false
       },
@@ -230,20 +230,20 @@
         "is_captain": false
       },
       {
-        "name": "deadlock00",
-        "rank": "Script Kiddie",
-        "points": 4,
-        "root_owns": 7,
-        "user_owns": 7,
-        "country": "IN",
-        "is_captain": false
-      },
-      {
         "name": "Thennavan",
         "rank": "Hacker",
         "points": 4,
         "root_owns": 36,
         "user_owns": 41,
+        "country": "IN",
+        "is_captain": false
+      },
+      {
+        "name": "deadlock00",
+        "rank": "Script Kiddie",
+        "points": 4,
+        "root_owns": 7,
+        "user_owns": 7,
         "country": "IN",
         "is_captain": false
       },
