@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-12T18:59:28Z",
+  "generated_at": "2026-07-13T02:24:17Z",
   "experience": {
     "rank": "Professional",
     "level": 56,
@@ -82,7 +82,7 @@
     "root_owns": 310,
     "user_owns": 324,
     "challenge_owns": 315,
-    "ranking": 38,
+    "ranking": 39,
     "member_count": 22,
     "members": [
       {
@@ -98,8 +98,8 @@
         "name": "knockingd00r",
         "rank": "Pro Hacker",
         "points": 860,
-        "root_owns": 66,
-        "user_owns": 73,
+        "root_owns": 67,
+        "user_owns": 74,
         "country": "MA",
         "is_captain": false
       },
@@ -161,8 +161,8 @@
         "name": "Marclos15",
         "rank": "Hacker",
         "points": 124,
-        "root_owns": 44,
-        "user_owns": 49,
+        "root_owns": 45,
+        "user_owns": 50,
         "country": "ES",
         "is_captain": false
       },
