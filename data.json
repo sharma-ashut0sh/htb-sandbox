@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-15T19:04:31Z",
+  "generated_at": "2026-07-16T02:10:39Z",
   "experience": {
     "rank": "Professional",
     "level": 56,
@@ -78,11 +78,11 @@
   "team": {
     "id": 7247,
     "name": "VXON",
-    "points": 2037,
-    "root_owns": 311,
-    "user_owns": 325,
-    "challenge_owns": 316,
-    "ranking": 40,
+    "points": 2057,
+    "root_owns": 313,
+    "user_owns": 328,
+    "challenge_owns": 320,
+    "ranking": 38,
     "member_count": 22,
     "members": [
       {
@@ -221,6 +221,15 @@
         "is_captain": false
       },
       {
+        "name": "RedSecXX",
+        "rank": "Hacker",
+        "points": 9,
+        "root_owns": 20,
+        "user_owns": 34,
+        "country": "US",
+        "is_captain": false
+      },
+      {
         "name": "lacmac",
         "rank": "Hacker",
         "points": 8,
@@ -236,15 +245,6 @@
         "root_owns": 36,
         "user_owns": 41,
         "country": "IN",
-        "is_captain": false
-      },
-      {
-        "name": "RedSecXX",
-        "rank": "Hacker",
-        "points": 4,
-        "root_owns": 19,
-        "user_owns": 33,
-        "country": "US",
         "is_captain": false
       },
       {
