@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-17T13:18:37Z",
+  "generated_at": "2026-07-17T19:00:54Z",
   "experience": {
     "rank": "Professional",
     "level": 56,
@@ -34,7 +34,7 @@
       {
         "name": "Web",
         "solved": 7,
-        "total": 169,
+        "total": 170,
         "completion": 4
       },
       {
@@ -88,7 +88,7 @@
       {
         "name": "SOOBIKv2",
         "rank": "Elite Hacker",
-        "points": 1311,
+        "points": 1321,
         "root_owns": 54,
         "user_owns": 54,
         "country": "FR",
