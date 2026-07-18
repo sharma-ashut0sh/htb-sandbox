@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-18T07:42:01Z",
+  "generated_at": "2026-07-18T13:05:10Z",
   "experience": {
     "rank": "Professional",
     "level": 56,
@@ -221,21 +221,21 @@
         "is_captain": false
       },
       {
+        "name": "lacmac",
+        "rank": "Hacker",
+        "points": 14,
+        "root_owns": 47,
+        "user_owns": 52,
+        "country": null,
+        "is_captain": false
+      },
+      {
         "name": "RedSecXX",
         "rank": "Hacker",
         "points": 9,
         "root_owns": 21,
         "user_owns": 35,
         "country": "US",
-        "is_captain": false
-      },
-      {
-        "name": "lacmac",
-        "rank": "Hacker",
-        "points": 8,
-        "root_owns": 46,
-        "user_owns": 51,
-        "country": null,
         "is_captain": false
       },
       {
