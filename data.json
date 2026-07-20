@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-07-19T18:59:59Z",
+  "generated_at": "2026-07-20T03:16:05Z",
   "experience": {
     "rank": "Professional",
-    "level": 56,
-    "xp": 41216,
+    "level": 57,
+    "xp": 41606,
     "xp_next_level": 0,
-    "streak": 1
+    "streak": 2
   },
   "profile": {
     "user_id": 2142022,
     "username": "0xMikey",
-    "user_owns": 40,
+    "user_owns": 41,
     "system_owns": 38,
-    "points": 366,
+    "points": 370,
     "user_bloods": 0,
     "system_bloods": 0
   },
@@ -78,17 +78,17 @@
   "team": {
     "id": 7247,
     "name": "VXON",
-    "points": 2087,
+    "points": 2118,
     "root_owns": 315,
     "user_owns": 330,
-    "challenge_owns": 327,
-    "ranking": 38,
+    "challenge_owns": 331,
+    "ranking": 35,
     "member_count": 22,
     "members": [
       {
         "name": "SOOBIKv2",
         "rank": "Elite Hacker",
-        "points": 1351,
+        "points": 1378,
         "root_owns": 55,
         "user_owns": 55,
         "country": "FR",
@@ -133,9 +133,9 @@
       {
         "name": "0xMikey",
         "rank": "Pro Hacker",
-        "points": 366,
+        "points": 370,
         "root_owns": 38,
-        "user_owns": 40,
+        "user_owns": 41,
         "country": "IN",
         "is_captain": true
       },
