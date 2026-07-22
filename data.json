@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21T19:14:11Z",
+  "generated_at": "2026-07-22T02:11:23Z",
   "experience": {
     "rank": "Professional",
     "level": 57,
@@ -78,17 +78,17 @@
   "team": {
     "id": 7247,
     "name": "VXON",
-    "points": 2140,
+    "points": 2150,
     "root_owns": 315,
     "user_owns": 330,
-    "challenge_owns": 334,
-    "ranking": 35,
+    "challenge_owns": 336,
+    "ranking": 33,
     "member_count": 22,
     "members": [
       {
         "name": "SOOBIKv2",
         "rank": "Elite Hacker",
-        "points": 1397,
+        "points": 1403,
         "root_owns": 55,
         "user_owns": 55,
         "country": "FR",
@@ -194,6 +194,15 @@
         "is_captain": false
       },
       {
+        "name": "b3st1m0s",
+        "rank": "Hacker",
+        "points": 29,
+        "root_owns": 36,
+        "user_owns": 38,
+        "country": "GR",
+        "is_captain": false
+      },
+      {
         "name": "rootrose",
         "rank": "Pro Hacker",
         "points": 27,
@@ -209,15 +218,6 @@
         "root_owns": 13,
         "user_owns": 14,
         "country": "IN",
-        "is_captain": false
-      },
-      {
-        "name": "b3st1m0s",
-        "rank": "Hacker",
-        "points": 25,
-        "root_owns": 36,
-        "user_owns": 37,
-        "country": "GR",
         "is_captain": false
       },
       {
@@ -239,21 +239,21 @@
         "is_captain": false
       },
       {
-        "name": "Thennavan",
-        "rank": "Hacker",
-        "points": 4,
-        "root_owns": 36,
-        "user_owns": 41,
-        "country": "IN",
-        "is_captain": false
-      },
-      {
         "name": "hackoverback",
         "rank": "Script Kiddie",
         "points": 4,
         "root_owns": 4,
         "user_owns": 4,
         "country": "EG",
+        "is_captain": false
+      },
+      {
+        "name": "Thennavan",
+        "rank": "Hacker",
+        "points": 4,
+        "root_owns": 36,
+        "user_owns": 41,
+        "country": "IN",
         "is_captain": false
       },
       {
