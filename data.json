@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-23T13:47:12Z",
+  "generated_at": "2026-07-23T19:08:26Z",
   "experience": {
     "rank": "Professional",
     "level": 57,
-    "xp": 42061,
+    "xp": 42191,
     "xp_next_level": 0,
     "streak": 3
   },
@@ -17,7 +17,7 @@
     "system_bloods": 0
   },
   "challenges": {
-    "total_solved": 23,
+    "total_solved": 24,
     "categories": [
       {
         "name": "Reversing",
@@ -33,9 +33,9 @@
       },
       {
         "name": "Web",
-        "solved": 7,
+        "solved": 8,
         "total": 170,
-        "completion": 4
+        "completion": 5
       },
       {
         "name": "OSINT",
@@ -196,8 +196,8 @@
       {
         "name": "b3st1m0s",
         "rank": "Hacker",
-        "points": 29,
-        "root_owns": 36,
+        "points": 38,
+        "root_owns": 37,
         "user_owns": 38,
         "country": "GR",
         "is_captain": false
