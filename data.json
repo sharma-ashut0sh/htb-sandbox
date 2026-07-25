@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-25T13:15:24Z",
+  "generated_at": "2026-07-25T19:01:41Z",
   "experience": {
     "rank": "Professional",
     "level": 57,
@@ -12,7 +12,7 @@
     "username": "0xMikey",
     "user_owns": 41,
     "system_owns": 39,
-    "points": 401,
+    "points": 360,
     "user_bloods": 0,
     "system_bloods": 0
   },
@@ -88,7 +88,7 @@
       {
         "name": "SOOBIKv2",
         "rank": "Elite Hacker",
-        "points": 1414,
+        "points": 1356,
         "root_owns": 55,
         "user_owns": 55,
         "country": "FR",
@@ -131,15 +131,6 @@
         "is_captain": false
       },
       {
-        "name": "0xMikey",
-        "rank": "Pro Hacker",
-        "points": 401,
-        "root_owns": 39,
-        "user_owns": 41,
-        "country": "IN",
-        "is_captain": true
-      },
-      {
         "name": "w3nch",
         "rank": "Pro Hacker",
         "points": 400,
@@ -149,9 +140,18 @@
         "is_captain": false
       },
       {
+        "name": "0xMikey",
+        "rank": "Pro Hacker",
+        "points": 360,
+        "root_owns": 39,
+        "user_owns": 41,
+        "country": "IN",
+        "is_captain": true
+      },
+      {
         "name": "Papalo007",
         "rank": "Pro Hacker",
-        "points": 208,
+        "points": 167,
         "root_owns": 73,
         "user_owns": 73,
         "country": "GR",
@@ -169,7 +169,7 @@
       {
         "name": "jbrgn",
         "rank": "Pro Hacker",
-        "points": 91,
+        "points": 65,
         "root_owns": 85,
         "user_owns": 86,
         "country": "GB",
