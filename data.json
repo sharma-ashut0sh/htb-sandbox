@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-30T19:18:43Z",
+  "generated_at": "2026-07-31T02:25:00Z",
   "experience": {
     "rank": "Professional",
     "level": 57,
@@ -78,11 +78,11 @@
   "team": {
     "id": 7247,
     "name": "VXON",
-    "points": 2198,
+    "points": 2190,
     "root_owns": 315,
     "user_owns": 330,
     "challenge_owns": 340,
-    "ranking": 30,
+    "ranking": 33,
     "member_count": 21,
     "members": [
       {
