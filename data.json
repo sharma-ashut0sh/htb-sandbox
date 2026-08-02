@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-01T19:02:10Z",
+  "generated_at": "2026-08-02T02:23:08Z",
   "experience": {
     "rank": "Professional",
     "level": 57,
@@ -79,27 +79,27 @@
     "id": 7247,
     "name": "VXON",
     "points": 2206,
-    "root_owns": 315,
-    "user_owns": 330,
-    "challenge_owns": 343,
-    "ranking": 31,
+    "root_owns": 316,
+    "user_owns": 331,
+    "challenge_owns": 345,
+    "ranking": 30,
     "member_count": 21,
     "members": [
       {
         "name": "SOOBIKv2",
         "rank": "Guru",
-        "points": 1414,
-        "root_owns": 61,
-        "user_owns": 61,
+        "points": 1446,
+        "root_owns": 62,
+        "user_owns": 62,
         "country": "FR",
         "is_captain": false
       },
       {
         "name": "knockingd00r",
         "rank": "Pro Hacker",
-        "points": 817,
-        "root_owns": 69,
-        "user_owns": 76,
+        "points": 856,
+        "root_owns": 70,
+        "user_owns": 77,
         "country": "MA",
         "is_captain": false
       },
@@ -117,7 +117,7 @@
         "rank": "Pro Hacker",
         "points": 442,
         "root_owns": 125,
-        "user_owns": 136,
+        "user_owns": 137,
         "country": "HR",
         "is_captain": false
       },
@@ -176,6 +176,15 @@
         "is_captain": false
       },
       {
+        "name": "b3st1m0s",
+        "rank": "Hacker",
+        "points": 38,
+        "root_owns": 37,
+        "user_owns": 38,
+        "country": "GR",
+        "is_captain": false
+      },
+      {
         "name": "kincurio",
         "rank": "Hacker",
         "points": 38,
@@ -185,12 +194,12 @@
         "is_captain": false
       },
       {
-        "name": "b3st1m0s",
+        "name": "RedSecXX",
         "rank": "Hacker",
-        "points": 38,
-        "root_owns": 37,
-        "user_owns": 38,
-        "country": "GR",
+        "points": 30,
+        "root_owns": 25,
+        "user_owns": 39,
+        "country": "US",
         "is_captain": false
       },
       {
@@ -209,15 +218,6 @@
         "root_owns": 49,
         "user_owns": 54,
         "country": null,
-        "is_captain": false
-      },
-      {
-        "name": "RedSecXX",
-        "rank": "Hacker",
-        "points": 20,
-        "root_owns": 24,
-        "user_owns": 38,
-        "country": "US",
         "is_captain": false
       },
       {
