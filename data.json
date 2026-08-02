@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-02T13:11:07Z",
+  "generated_at": "2026-08-02T19:03:18Z",
   "experience": {
     "rank": "Professional",
     "level": 57,
@@ -151,9 +151,9 @@
       {
         "name": "Marclos15",
         "rank": "Hacker",
-        "points": 133,
-        "root_owns": 46,
-        "user_owns": 51,
+        "points": 152,
+        "root_owns": 47,
+        "user_owns": 52,
         "country": "ES",
         "is_captain": false
       },
