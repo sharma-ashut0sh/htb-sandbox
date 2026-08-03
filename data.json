@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-03T09:35:18Z",
+  "generated_at": "2026-08-03T14:29:03Z",
   "experience": {
     "rank": "Professional",
     "level": 57,
@@ -124,9 +124,9 @@
       {
         "name": "w3nch",
         "rank": "Pro Hacker",
-        "points": 370,
-        "root_owns": 51,
-        "user_owns": 54,
+        "points": 397,
+        "root_owns": 52,
+        "user_owns": 55,
         "country": "IN",
         "is_captain": false
       },
@@ -194,6 +194,15 @@
         "is_captain": false
       },
       {
+        "name": "lacmac",
+        "rank": "Hacker",
+        "points": 35,
+        "root_owns": 50,
+        "user_owns": 55,
+        "country": null,
+        "is_captain": false
+      },
+      {
         "name": "RedSecXX",
         "rank": "Hacker",
         "points": 30,
@@ -209,15 +218,6 @@
         "root_owns": 57,
         "user_owns": 69,
         "country": "GR",
-        "is_captain": false
-      },
-      {
-        "name": "lacmac",
-        "rank": "Hacker",
-        "points": 24,
-        "root_owns": 49,
-        "user_owns": 54,
-        "country": null,
         "is_captain": false
       },
       {
