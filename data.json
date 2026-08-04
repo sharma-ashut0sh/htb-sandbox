@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04T08:29:59Z",
+  "generated_at": "2026-08-04T14:00:21Z",
   "experience": {
     "rank": "Professional",
     "level": 57,
@@ -125,8 +125,8 @@
         "name": "w3nch",
         "rank": "Pro Hacker",
         "points": 397,
-        "root_owns": 52,
-        "user_owns": 55,
+        "root_owns": 53,
+        "user_owns": 56,
         "country": "IN",
         "is_captain": false
       },
