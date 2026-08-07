@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07T07:07:54Z",
+  "generated_at": "2026-08-07T12:53:25Z",
   "experience": {
     "rank": "Professional",
     "level": 57,
@@ -89,8 +89,8 @@
         "name": "SOOBIKv2",
         "rank": "Guru",
         "points": 1445,
-        "root_owns": 62,
-        "user_owns": 62,
+        "root_owns": 63,
+        "user_owns": 63,
         "country": "FR",
         "is_captain": false
       },
