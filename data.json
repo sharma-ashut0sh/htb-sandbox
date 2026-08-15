@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-15T12:28:27Z",
+  "generated_at": "2026-08-15T18:21:18Z",
   "experience": {
     "rank": "Professional",
     "level": 57,
@@ -88,7 +88,7 @@
       {
         "name": "SOOBIKv2",
         "rank": "Guru",
-        "points": 1586,
+        "points": 1521,
         "root_owns": 64,
         "user_owns": 64,
         "country": "FR",
@@ -97,7 +97,7 @@
       {
         "name": "knockingd00r",
         "rank": "Pro Hacker",
-        "points": 845,
+        "points": 784,
         "root_owns": 71,
         "user_owns": 78,
         "country": "MA",
@@ -106,9 +106,9 @@
       {
         "name": "CyberKareem",
         "rank": "Pro Hacker",
-        "points": 664,
-        "root_owns": 186,
-        "user_owns": 199,
+        "points": 648,
+        "root_owns": 187,
+        "user_owns": 200,
         "country": "IQ",
         "is_captain": false
       },
@@ -124,7 +124,7 @@
       {
         "name": "w3nch",
         "rank": "Pro Hacker",
-        "points": 391,
+        "points": 343,
         "root_owns": 54,
         "user_owns": 57,
         "country": "IN",
@@ -140,15 +140,6 @@
         "is_captain": true
       },
       {
-        "name": "Papalo007",
-        "rank": "Pro Hacker",
-        "points": 227,
-        "root_owns": 75,
-        "user_owns": 75,
-        "country": "GR",
-        "is_captain": false
-      },
-      {
         "name": "Marclos15",
         "rank": "Hacker",
         "points": 219,
@@ -158,12 +149,12 @@
         "is_captain": false
       },
       {
-        "name": "jbrgn",
+        "name": "Papalo007",
         "rank": "Pro Hacker",
-        "points": 62,
-        "root_owns": 86,
-        "user_owns": 87,
-        "country": "GB",
+        "points": 188,
+        "root_owns": 75,
+        "user_owns": 75,
+        "country": "GR",
         "is_captain": false
       },
       {
@@ -182,6 +173,15 @@
         "root_owns": 11,
         "user_owns": 13,
         "country": "IN",
+        "is_captain": false
+      },
+      {
+        "name": "jbrgn",
+        "rank": "Pro Hacker",
+        "points": 42,
+        "root_owns": 86,
+        "user_owns": 87,
+        "country": "GB",
         "is_captain": false
       },
       {
@@ -212,21 +212,21 @@
         "is_captain": false
       },
       {
-        "name": "rootrose",
-        "rank": "Pro Hacker",
-        "points": 27,
-        "root_owns": 57,
-        "user_owns": 69,
-        "country": "GR",
-        "is_captain": false
-      },
-      {
         "name": "c3n7",
         "rank": "Script Kiddie",
         "points": 17,
         "root_owns": 13,
         "user_owns": 14,
         "country": "IN",
+        "is_captain": false
+      },
+      {
+        "name": "rootrose",
+        "rank": "Pro Hacker",
+        "points": 12,
+        "root_owns": 57,
+        "user_owns": 69,
+        "country": "GR",
         "is_captain": false
       },
       {
@@ -241,7 +241,7 @@
       {
         "name": "Thennavan",
         "rank": "Hacker",
-        "points": 4,
+        "points": 0,
         "root_owns": 36,
         "user_owns": 41,
         "country": "IN",
@@ -250,7 +250,7 @@
       {
         "name": "XoXoRiTi",
         "rank": "Hacker",
-        "points": 3,
+        "points": 0,
         "root_owns": 15,
         "user_owns": 17,
         "country": "IN",
