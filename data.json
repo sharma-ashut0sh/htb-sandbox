@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-16T12:29:50Z",
+  "generated_at": "2026-08-16T18:21:05Z",
   "experience": {
     "rank": "Professional",
     "level": 57,
@@ -158,21 +158,21 @@
         "is_captain": false
       },
       {
+        "name": "kincurio",
+        "rank": "Hacker",
+        "points": 56,
+        "root_owns": 11,
+        "user_owns": 14,
+        "country": "IN",
+        "is_captain": false
+      },
+      {
         "name": "b3st1m0s",
         "rank": "Hacker",
         "points": 52,
         "root_owns": 38,
         "user_owns": 39,
         "country": "GR",
-        "is_captain": false
-      },
-      {
-        "name": "kincurio",
-        "rank": "Hacker",
-        "points": 50,
-        "root_owns": 11,
-        "user_owns": 13,
-        "country": "IN",
         "is_captain": false
       },
       {
@@ -194,12 +194,12 @@
         "is_captain": false
       },
       {
-        "name": "lacmac",
+        "name": "J0cK284",
         "rank": "Hacker",
         "points": 36,
         "root_owns": 50,
         "user_owns": 55,
-        "country": null,
+        "country": "GB",
         "is_captain": false
       },
       {
