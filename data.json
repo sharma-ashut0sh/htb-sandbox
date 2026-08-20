@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-20T12:38:05Z",
+  "generated_at": "2026-08-20T18:32:21Z",
   "experience": {
     "rank": "Professional",
     "level": 57,
@@ -89,8 +89,8 @@
         "name": "SOOBIKv2",
         "rank": "Guru",
         "points": 1576,
-        "root_owns": 65,
-        "user_owns": 65,
+        "root_owns": 66,
+        "user_owns": 66,
         "country": "FR",
         "is_captain": false
       },
@@ -140,21 +140,21 @@
         "is_captain": true
       },
       {
+        "name": "Papalo007",
+        "rank": "Pro Hacker",
+        "points": 242,
+        "root_owns": 76,
+        "user_owns": 76,
+        "country": "GR",
+        "is_captain": false
+      },
+      {
         "name": "Marclos15",
         "rank": "Hacker",
         "points": 219,
         "root_owns": 49,
         "user_owns": 54,
         "country": "ES",
-        "is_captain": false
-      },
-      {
-        "name": "Papalo007",
-        "rank": "Pro Hacker",
-        "points": 206,
-        "root_owns": 75,
-        "user_owns": 75,
-        "country": "GR",
         "is_captain": false
       },
       {
