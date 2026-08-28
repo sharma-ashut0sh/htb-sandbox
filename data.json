@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-28T08:46:38Z",
+  "generated_at": "2026-08-28T21:40:44Z",
   "experience": {
     "rank": "Professional",
     "level": 57,
@@ -52,8 +52,8 @@
       {
         "name": "Coding",
         "solved": 3,
-        "total": 17,
-        "completion": 18
+        "total": 18,
+        "completion": 17
       },
       {
         "name": "Quantum",
@@ -88,7 +88,7 @@
       {
         "name": "SOOBIKv2",
         "rank": "Guru",
-        "points": 1608,
+        "points": 1611,
         "root_owns": 66,
         "user_owns": 66,
         "country": "FR",
@@ -115,7 +115,7 @@
       {
         "name": "ANameNotMine",
         "rank": "Pro Hacker",
-        "points": 464,
+        "points": 479,
         "root_owns": 127,
         "user_owns": 138,
         "country": "HR",
