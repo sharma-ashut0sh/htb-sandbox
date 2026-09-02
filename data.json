@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01T20:27:25Z",
+  "generated_at": "2026-09-02T02:36:22Z",
   "experience": {
     "rank": "Professional",
     "level": 57,
@@ -78,11 +78,11 @@
   "team": {
     "id": 7247,
     "name": "VXON",
-    "points": 2360,
+    "points": 2368,
     "root_owns": 319,
     "user_owns": 334,
-    "challenge_owns": 385,
-    "ranking": 19,
+    "challenge_owns": 387,
+    "ranking": 20,
     "member_count": 22,
     "members": [
       {
@@ -133,7 +133,7 @@
       {
         "name": "Papalo007",
         "rank": "Pro Hacker",
-        "points": 316,
+        "points": 319,
         "root_owns": 78,
         "user_owns": 78,
         "country": "GR",
@@ -176,6 +176,15 @@
         "is_captain": false
       },
       {
+        "name": "RedSecXX",
+        "rank": "Hacker",
+        "points": 49,
+        "root_owns": 26,
+        "user_owns": 40,
+        "country": "US",
+        "is_captain": false
+      },
+      {
         "name": "jbrgn",
         "rank": "Pro Hacker",
         "points": 41,
@@ -200,15 +209,6 @@
         "root_owns": 50,
         "user_owns": 55,
         "country": "GB",
-        "is_captain": false
-      },
-      {
-        "name": "RedSecXX",
-        "rank": "Hacker",
-        "points": 29,
-        "root_owns": 25,
-        "user_owns": 39,
-        "country": "US",
         "is_captain": false
       },
       {
