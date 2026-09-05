@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-04T20:11:54Z",
+  "generated_at": "2026-09-05T02:41:06Z",
   "experience": {
     "rank": "Professional",
     "level": 57,
@@ -78,11 +78,11 @@
   "team": {
     "id": 7247,
     "name": "VXON",
-    "points": 2376,
+    "points": 2384,
     "root_owns": 319,
     "user_owns": 334,
-    "challenge_owns": 388,
-    "ranking": 20,
+    "challenge_owns": 389,
+    "ranking": 19,
     "member_count": 22,
     "members": [
       {
@@ -133,7 +133,7 @@
       {
         "name": "Papalo007",
         "rank": "Pro Hacker",
-        "points": 319,
+        "points": 322,
         "root_owns": 78,
         "user_owns": 78,
         "country": "GR",
