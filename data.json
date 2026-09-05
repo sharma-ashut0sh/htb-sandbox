@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-05T14:28:05Z",
+  "generated_at": "2026-09-05T19:51:00Z",
   "experience": {
     "rank": "Professional",
     "level": 57,
@@ -12,7 +12,7 @@
     "username": "0xMikey",
     "user_owns": 41,
     "system_owns": 39,
-    "points": 278,
+    "points": 276,
     "user_bloods": 0,
     "system_bloods": 0
   },
@@ -88,7 +88,7 @@
       {
         "name": "SOOBIKv2",
         "rank": "Guru",
-        "points": 1717,
+        "points": 1657,
         "root_owns": 67,
         "user_owns": 67,
         "country": "FR",
@@ -97,7 +97,7 @@
       {
         "name": "knockingd00r",
         "rank": "Pro Hacker",
-        "points": 848,
+        "points": 794,
         "root_owns": 72,
         "user_owns": 79,
         "country": "MA",
@@ -106,7 +106,7 @@
       {
         "name": "CyberKareem",
         "rank": "Pro Hacker",
-        "points": 648,
+        "points": 625,
         "root_owns": 187,
         "user_owns": 200,
         "country": "IQ",
@@ -115,7 +115,7 @@
       {
         "name": "ANameNotMine",
         "rank": "Pro Hacker",
-        "points": 534,
+        "points": 488,
         "root_owns": 128,
         "user_owns": 139,
         "country": "HR",
@@ -124,7 +124,7 @@
       {
         "name": "w3nch",
         "rank": "Pro Hacker",
-        "points": 341,
+        "points": 292,
         "root_owns": 54,
         "user_owns": 57,
         "country": "IN",
@@ -133,7 +133,7 @@
       {
         "name": "Papalo007",
         "rank": "Pro Hacker",
-        "points": 322,
+        "points": 283,
         "root_owns": 78,
         "user_owns": 78,
         "country": "GR",
@@ -142,7 +142,7 @@
       {
         "name": "0xMikey",
         "rank": "Pro Hacker",
-        "points": 278,
+        "points": 276,
         "root_owns": 39,
         "user_owns": 41,
         "country": "IN",
@@ -151,7 +151,7 @@
       {
         "name": "Marclos15",
         "rank": "Hacker",
-        "points": 219,
+        "points": 226,
         "root_owns": 49,
         "user_owns": 54,
         "country": "ES",
@@ -178,19 +178,10 @@
       {
         "name": "RedSecXX",
         "rank": "Hacker",
-        "points": 49,
+        "points": 50,
         "root_owns": 26,
         "user_owns": 40,
         "country": "US",
-        "is_captain": false
-      },
-      {
-        "name": "jbrgn",
-        "rank": "Pro Hacker",
-        "points": 41,
-        "root_owns": 86,
-        "user_owns": 87,
-        "country": "GB",
         "is_captain": false
       },
       {
@@ -208,6 +199,15 @@
         "points": 37,
         "root_owns": 50,
         "user_owns": 55,
+        "country": "GB",
+        "is_captain": false
+      },
+      {
+        "name": "jbrgn",
+        "rank": "Pro Hacker",
+        "points": 24,
+        "root_owns": 86,
+        "user_owns": 87,
         "country": "GB",
         "is_captain": false
       },
