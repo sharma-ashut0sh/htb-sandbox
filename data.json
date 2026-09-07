@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-06T19:55:10Z",
+  "generated_at": "2026-09-07T02:36:21Z",
   "experience": {
     "rank": "Professional",
     "level": 57,
@@ -82,7 +82,7 @@
     "root_owns": 320,
     "user_owns": 335,
     "challenge_owns": 389,
-    "ranking": 12,
+    "ranking": 13,
     "member_count": 22,
     "members": [
       {
@@ -133,7 +133,7 @@
       {
         "name": "Papalo007",
         "rank": "Pro Hacker",
-        "points": 277,
+        "points": 280,
         "root_owns": 78,
         "user_owns": 78,
         "country": "GR",
@@ -178,9 +178,9 @@
       {
         "name": "RedSecXX",
         "rank": "Hacker",
-        "points": 50,
-        "root_owns": 26,
-        "user_owns": 40,
+        "points": 49,
+        "root_owns": 27,
+        "user_owns": 41,
         "country": "US",
         "is_captain": false
       },
