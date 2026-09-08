@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-08T15:53:52Z",
+  "generated_at": "2026-09-08T20:37:58Z",
   "experience": {
     "rank": "Professional",
     "level": 57,
@@ -83,7 +83,7 @@
     "user_owns": 335,
     "challenge_owns": 389,
     "ranking": 13,
-    "member_count": 22,
+    "member_count": 19,
     "members": [
       {
         "name": "SOOBIKv2",
@@ -194,15 +194,6 @@
         "is_captain": false
       },
       {
-        "name": "J0cK284",
-        "rank": "Hacker",
-        "points": 37,
-        "root_owns": 50,
-        "user_owns": 55,
-        "country": "GB",
-        "is_captain": false
-      },
-      {
         "name": "jbrgn",
         "rank": "Pro Hacker",
         "points": 24,
@@ -227,15 +218,6 @@
         "root_owns": 57,
         "user_owns": 69,
         "country": "GR",
-        "is_captain": false
-      },
-      {
-        "name": "hackoverback",
-        "rank": "Script Kiddie",
-        "points": 4,
-        "root_owns": 4,
-        "user_owns": 4,
-        "country": "EG",
         "is_captain": false
       },
       {
@@ -272,15 +254,6 @@
         "root_owns": 2,
         "user_owns": 2,
         "country": "IN",
-        "is_captain": false
-      },
-      {
-        "name": "cheerybliss",
-        "rank": "Hacker",
-        "points": 0,
-        "root_owns": 7,
-        "user_owns": 8,
-        "country": "JP",
         "is_captain": false
       }
     ],
