@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-10T20:21:51Z",
+  "generated_at": "2026-09-11T02:43:54Z",
   "experience": {
     "rank": "Professional",
     "level": 57,
@@ -78,11 +78,11 @@
   "team": {
     "id": 7247,
     "name": "VXON",
-    "points": 2384,
+    "points": 2376,
     "root_owns": 311,
     "user_owns": 327,
     "challenge_owns": 374,
-    "ranking": 15,
+    "ranking": 17,
     "member_count": 19,
     "members": [
       {
@@ -179,8 +179,8 @@
         "name": "RedSecXX",
         "rank": "Hacker",
         "points": 49,
-        "root_owns": 27,
-        "user_owns": 41,
+        "root_owns": 28,
+        "user_owns": 42,
         "country": "US",
         "is_captain": false
       },
@@ -223,9 +223,9 @@
       {
         "name": "LordGreb",
         "rank": "Script Kiddie",
-        "points": 2,
+        "points": 3,
         "root_owns": 7,
-        "user_owns": 16,
+        "user_owns": 17,
         "country": "GB",
         "is_captain": false
       },
