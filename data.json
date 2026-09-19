@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-19T10:13:16Z",
+  "generated_at": "2026-09-19T15:15:09Z",
   "experience": {
     "rank": "Professional",
     "level": 57,
-    "xp": 42709,
+    "xp": 42844,
     "xp_next_level": 0,
     "streak": 1
   },
@@ -83,12 +83,12 @@
     "user_owns": 329,
     "challenge_owns": 381,
     "ranking": 14,
-    "member_count": 19,
+    "member_count": 18,
     "members": [
       {
         "name": "SOOBIKv2",
         "rank": "Guru",
-        "points": 1754,
+        "points": 1762,
         "root_owns": 70,
         "user_owns": 70,
         "country": "FR",
@@ -147,15 +147,6 @@
         "user_owns": 41,
         "country": "IN",
         "is_captain": true
-      },
-      {
-        "name": "Marclos15",
-        "rank": "Hacker",
-        "points": 197,
-        "root_owns": 49,
-        "user_owns": 54,
-        "country": "ES",
-        "is_captain": false
       },
       {
         "name": "b3st1m0s",
