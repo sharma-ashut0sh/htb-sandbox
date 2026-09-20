@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-20T03:06:31Z",
+  "generated_at": "2026-09-20T10:31:48Z",
   "experience": {
     "rank": "Professional",
     "level": 58,
@@ -185,6 +185,15 @@
         "is_captain": false
       },
       {
+        "name": "LordGreb",
+        "rank": "Script Kiddie",
+        "points": 11,
+        "root_owns": 9,
+        "user_owns": 18,
+        "country": "GB",
+        "is_captain": false
+      },
+      {
         "name": "c3n7",
         "rank": "Script Kiddie",
         "points": 10,
@@ -199,15 +208,6 @@
         "points": 10,
         "root_owns": 86,
         "user_owns": 87,
-        "country": "GB",
-        "is_captain": false
-      },
-      {
-        "name": "LordGreb",
-        "rank": "Script Kiddie",
-        "points": 7,
-        "root_owns": 8,
-        "user_owns": 18,
         "country": "GB",
         "is_captain": false
       },
