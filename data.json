@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19T19:57:46Z",
+  "generated_at": "2026-09-20T03:06:31Z",
   "experience": {
     "rank": "Professional",
     "level": 58,
@@ -78,10 +78,10 @@
   "team": {
     "id": 7247,
     "name": "VXON",
-    "points": 2412,
-    "root_owns": 313,
-    "user_owns": 329,
-    "challenge_owns": 381,
+    "points": 2421,
+    "root_owns": 311,
+    "user_owns": 327,
+    "challenge_owns": 382,
     "ranking": 14,
     "member_count": 18,
     "members": [
@@ -160,9 +160,9 @@
       {
         "name": "RedSec0x",
         "rank": "Hacker",
-        "points": 44,
-        "root_owns": 30,
-        "user_owns": 44,
+        "points": 58,
+        "root_owns": 31,
+        "user_owns": 45,
         "country": "US",
         "is_captain": false
       },
