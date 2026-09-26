@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-26T10:43:43Z",
+  "generated_at": "2026-09-26T15:38:39Z",
   "experience": {
     "rank": "Professional",
     "level": 58,
@@ -12,7 +12,7 @@
     "username": "0xMikey",
     "user_owns": 41,
     "system_owns": 39,
-    "points": 243,
+    "points": 208,
     "user_bloods": 0,
     "system_bloods": 0
   },
@@ -88,7 +88,7 @@
       {
         "name": "SOOBIKv2",
         "rank": "Guru",
-        "points": 1784,
+        "points": 1750,
         "root_owns": 70,
         "user_owns": 70,
         "country": "FR",
@@ -97,7 +97,7 @@
       {
         "name": "knockingd00r",
         "rank": "Pro Hacker",
-        "points": 853,
+        "points": 806,
         "root_owns": 74,
         "user_owns": 81,
         "country": "MA",
@@ -106,7 +106,7 @@
       {
         "name": "ANameNotMine",
         "rank": "Pro Hacker",
-        "points": 537,
+        "points": 499,
         "root_owns": 130,
         "user_owns": 141,
         "country": "HR",
@@ -115,7 +115,7 @@
       {
         "name": "CyberKareem",
         "rank": "Pro Hacker",
-        "points": 498,
+        "points": 445,
         "root_owns": 187,
         "user_owns": 200,
         "country": "IQ",
@@ -142,7 +142,7 @@
       {
         "name": "0xMikey",
         "rank": "Pro Hacker",
-        "points": 243,
+        "points": 208,
         "root_owns": 39,
         "user_owns": 41,
         "country": "IN",
