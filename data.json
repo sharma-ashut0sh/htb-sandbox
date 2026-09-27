@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-27T16:17:38Z",
+  "generated_at": "2026-09-27T20:46:52Z",
   "experience": {
     "rank": "Professional",
     "level": 58,
@@ -88,7 +88,7 @@
       {
         "name": "SOOBIKv2",
         "rank": "Guru",
-        "points": 1796,
+        "points": 1802,
         "root_owns": 71,
         "user_owns": 71,
         "country": "FR",
@@ -106,9 +106,9 @@
       {
         "name": "ANameNotMine",
         "rank": "Pro Hacker",
-        "points": 499,
-        "root_owns": 130,
-        "user_owns": 141,
+        "points": 537,
+        "root_owns": 131,
+        "user_owns": 142,
         "country": "HR",
         "is_captain": false
       },
