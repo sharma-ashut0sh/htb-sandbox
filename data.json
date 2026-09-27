@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-26T20:35:08Z",
+  "generated_at": "2026-09-27T03:22:24Z",
   "experience": {
     "rank": "Professional",
     "level": 58,
@@ -78,28 +78,28 @@
   "team": {
     "id": 7247,
     "name": "VXON",
-    "points": 2430,
-    "root_owns": 311,
-    "user_owns": 327,
-    "challenge_owns": 385,
-    "ranking": 13,
-    "member_count": 18,
+    "points": 2438,
+    "root_owns": 316,
+    "user_owns": 332,
+    "challenge_owns": 390,
+    "ranking": 11,
+    "member_count": 19,
     "members": [
       {
         "name": "SOOBIKv2",
         "rank": "Guru",
-        "points": 1750,
-        "root_owns": 70,
-        "user_owns": 70,
+        "points": 1796,
+        "root_owns": 71,
+        "user_owns": 71,
         "country": "FR",
         "is_captain": false
       },
       {
         "name": "knockingd00r",
         "rank": "Pro Hacker",
-        "points": 806,
-        "root_owns": 74,
-        "user_owns": 81,
+        "points": 853,
+        "root_owns": 75,
+        "user_owns": 82,
         "country": "MA",
         "is_captain": false
       },
@@ -110,6 +110,15 @@
         "root_owns": 130,
         "user_owns": 141,
         "country": "HR",
+        "is_captain": false
+      },
+      {
+        "name": "atoontoto",
+        "rank": "Pro Hacker",
+        "points": 447,
+        "root_owns": 94,
+        "user_owns": 94,
+        "country": "IQ",
         "is_captain": false
       },
       {
