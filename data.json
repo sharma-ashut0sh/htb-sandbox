@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-27T11:17:03Z",
+  "generated_at": "2026-09-27T16:17:38Z",
   "experience": {
     "rank": "Professional",
     "level": 58,
@@ -97,7 +97,7 @@
       {
         "name": "knockingd00r",
         "rank": "Pro Hacker",
-        "points": 853,
+        "points": 857,
         "root_owns": 75,
         "user_owns": 82,
         "country": "MA",
@@ -115,9 +115,9 @@
       {
         "name": "atoontoto",
         "rank": "Pro Hacker",
-        "points": 447,
-        "root_owns": 94,
-        "user_owns": 94,
+        "points": 483,
+        "root_owns": 95,
+        "user_owns": 95,
         "country": "IQ",
         "is_captain": false
       },
@@ -133,9 +133,9 @@
       {
         "name": "Papalo007",
         "rank": "Pro Hacker",
-        "points": 296,
-        "root_owns": 79,
-        "user_owns": 79,
+        "points": 338,
+        "root_owns": 80,
+        "user_owns": 80,
         "country": "GR",
         "is_captain": false
       },
@@ -160,18 +160,18 @@
       {
         "name": "b3st1m0s",
         "rank": "Hacker",
-        "points": 71,
-        "root_owns": 39,
-        "user_owns": 40,
+        "points": 85,
+        "root_owns": 40,
+        "user_owns": 41,
         "country": "GR",
         "is_captain": false
       },
       {
         "name": "RedSec0x",
         "rank": "Hacker",
-        "points": 59,
-        "root_owns": 32,
-        "user_owns": 46,
+        "points": 79,
+        "root_owns": 33,
+        "user_owns": 47,
         "country": "US",
         "is_captain": false
       },
