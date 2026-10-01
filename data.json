@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-30T21:48:24Z",
+  "generated_at": "2026-10-01T03:50:56Z",
   "experience": {
     "rank": "Professional",
     "level": 58,
@@ -79,10 +79,10 @@
     "id": 7247,
     "name": "VXON",
     "points": 2454,
-    "root_owns": 316,
+    "root_owns": 317,
     "user_owns": 333,
     "challenge_owns": 392,
-    "ranking": 11,
+    "ranking": 12,
     "member_count": 19,
     "members": [
       {
@@ -196,9 +196,9 @@
       {
         "name": "LordGreb",
         "rank": "Script Kiddie",
-        "points": 11,
-        "root_owns": 9,
-        "user_owns": 18,
+        "points": 21,
+        "root_owns": 10,
+        "user_owns": 19,
         "country": "GB",
         "is_captain": false
       },
