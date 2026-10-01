@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T12:19:23Z",
+  "generated_at": "2026-10-01T22:16:26Z",
   "experience": {
     "rank": "Professional",
     "level": 58,
@@ -160,9 +160,9 @@
       {
         "name": "b3st1m0s",
         "rank": "Hacker",
-        "points": 85,
+        "points": 94,
         "root_owns": 40,
-        "user_owns": 41,
+        "user_owns": 42,
         "country": "GR",
         "is_captain": false
       },
