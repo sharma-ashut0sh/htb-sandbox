@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-03T20:32:01Z",
+  "generated_at": "2026-10-04T04:02:22Z",
   "experience": {
     "rank": "Professional",
     "level": 58,
@@ -78,11 +78,11 @@
   "team": {
     "id": 7247,
     "name": "VXON",
-    "points": 2472,
-    "root_owns": 317,
-    "user_owns": 333,
-    "challenge_owns": 396,
-    "ranking": 11,
+    "points": 2487,
+    "root_owns": 318,
+    "user_owns": 334,
+    "challenge_owns": 398,
+    "ranking": 9,
     "member_count": 19,
     "members": [
       {
@@ -97,9 +97,9 @@
       {
         "name": "knockingd00r",
         "rank": "Pro Hacker",
-        "points": 819,
-        "root_owns": 75,
-        "user_owns": 82,
+        "points": 857,
+        "root_owns": 76,
+        "user_owns": 83,
         "country": "MA",
         "is_captain": false
       },
@@ -117,7 +117,7 @@
         "rank": "Pro Hacker",
         "points": 455,
         "root_owns": 95,
-        "user_owns": 95,
+        "user_owns": 96,
         "country": "IQ",
         "is_captain": false
       },
@@ -133,9 +133,9 @@
       {
         "name": "Papalo007",
         "rank": "Pro Hacker",
-        "points": 313,
-        "root_owns": 80,
-        "user_owns": 80,
+        "points": 338,
+        "root_owns": 81,
+        "user_owns": 81,
         "country": "GR",
         "is_captain": false
       },
@@ -158,21 +158,21 @@
         "is_captain": true
       },
       {
-        "name": "b3st1m0s",
-        "rank": "Hacker",
-        "points": 79,
-        "root_owns": 40,
-        "user_owns": 42,
-        "country": "GR",
-        "is_captain": false
-      },
-      {
         "name": "RedSec0x",
         "rank": "Hacker",
         "points": 79,
         "root_owns": 35,
         "user_owns": 49,
         "country": "US",
+        "is_captain": false
+      },
+      {
+        "name": "b3st1m0s",
+        "rank": "Hacker",
+        "points": 79,
+        "root_owns": 40,
+        "user_owns": 42,
+        "country": "GR",
         "is_captain": false
       },
       {
