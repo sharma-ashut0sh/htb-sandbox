@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-07T12:32:56Z",
+  "generated_at": "2026-10-07T22:35:29Z",
   "experience": {
     "rank": "Professional",
     "level": 58,
@@ -196,9 +196,9 @@
       {
         "name": "LordGreb",
         "rank": "Script Kiddie",
-        "points": 13,
+        "points": 15,
         "root_owns": 10,
-        "user_owns": 19,
+        "user_owns": 20,
         "country": "GB",
         "is_captain": false
       },
