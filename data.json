@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-07T22:35:29Z",
+  "generated_at": "2026-10-08T04:13:35Z",
   "experience": {
     "rank": "Professional",
     "level": 58,
@@ -81,7 +81,7 @@
     "points": 2487,
     "root_owns": 318,
     "user_owns": 334,
-    "challenge_owns": 398,
+    "challenge_owns": 399,
     "ranking": 9,
     "member_count": 19,
     "members": [
@@ -196,8 +196,8 @@
       {
         "name": "LordGreb",
         "rank": "Script Kiddie",
-        "points": 15,
-        "root_owns": 10,
+        "points": 21,
+        "root_owns": 11,
         "user_owns": 20,
         "country": "GB",
         "is_captain": false
