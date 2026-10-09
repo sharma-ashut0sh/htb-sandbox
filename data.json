@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T22:47:32Z",
+  "generated_at": "2026-10-09T04:19:44Z",
   "experience": {
     "rank": "Professional",
     "level": 58,
@@ -81,7 +81,7 @@
     "points": 2487,
     "root_owns": 318,
     "user_owns": 334,
-    "challenge_owns": 399,
+    "challenge_owns": 400,
     "ranking": 9,
     "member_count": 19,
     "members": [
@@ -161,7 +161,7 @@
         "name": "RedSec0x",
         "rank": "Hacker",
         "points": 97,
-        "root_owns": 37,
+        "root_owns": 38,
         "user_owns": 50,
         "country": "US",
         "is_captain": false
