@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-10-09T12:29:24Z",
+  "generated_at": "2026-10-09T22:10:13Z",
   "experience": {
     "rank": "Professional",
     "level": 58,
-    "xp": 44226,
+    "xp": 44551,
     "xp_next_level": 0,
-    "streak": 1
+    "streak": 2
   },
   "profile": {
     "user_id": 2142022,
     "username": "0xMikey",
     "user_owns": 43,
-    "system_owns": 40,
-    "points": 216,
+    "system_owns": 41,
+    "points": 236,
     "user_bloods": 0,
     "system_bloods": 0
   },
@@ -46,7 +46,7 @@
       {
         "name": "Hardware",
         "solved": 1,
-        "total": 43,
+        "total": 44,
         "completion": 2
       },
       {
@@ -151,8 +151,8 @@
       {
         "name": "0xMikey",
         "rank": "Pro Hacker",
-        "points": 216,
-        "root_owns": 40,
+        "points": 236,
+        "root_owns": 41,
         "user_owns": 43,
         "country": "IN",
         "is_captain": true
