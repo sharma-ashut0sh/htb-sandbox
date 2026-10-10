@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-10T16:51:53Z",
+  "generated_at": "2026-10-10T21:04:33Z",
   "experience": {
     "rank": "Professional",
     "level": 58,
@@ -88,18 +88,18 @@
       {
         "name": "SOOBIKv2",
         "rank": "Omniscient",
-        "points": 1913,
-        "root_owns": 73,
-        "user_owns": 73,
+        "points": 1958,
+        "root_owns": 74,
+        "user_owns": 74,
         "country": "FR",
         "is_captain": false
       },
       {
         "name": "knockingd00r",
         "rank": "Pro Hacker",
-        "points": 815,
+        "points": 814,
         "root_owns": 76,
-        "user_owns": 83,
+        "user_owns": 84,
         "country": "MA",
         "is_captain": false
       },
@@ -142,8 +142,8 @@
       {
         "name": "w3nch",
         "rank": "Pro Hacker",
-        "points": 236,
-        "root_owns": 55,
+        "points": 257,
+        "root_owns": 56,
         "user_owns": 59,
         "country": "IN",
         "is_captain": false
@@ -169,8 +169,8 @@
       {
         "name": "b3st1m0s",
         "rank": "Hacker",
-        "points": 82,
-        "root_owns": 40,
+        "points": 94,
+        "root_owns": 41,
         "user_owns": 43,
         "country": "GR",
         "is_captain": false
