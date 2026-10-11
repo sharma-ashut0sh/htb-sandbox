@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-10T21:04:33Z",
+  "generated_at": "2026-10-11T03:40:02Z",
   "experience": {
     "rank": "Professional",
     "level": 58,
@@ -79,8 +79,8 @@
     "id": 7247,
     "name": "VXON",
     "points": 2487,
-    "root_owns": 318,
-    "user_owns": 334,
+    "root_owns": 319,
+    "user_owns": 335,
     "challenge_owns": 401,
     "ranking": 9,
     "member_count": 19,
@@ -97,8 +97,8 @@
       {
         "name": "knockingd00r",
         "rank": "Pro Hacker",
-        "points": 814,
-        "root_owns": 76,
+        "points": 862,
+        "root_owns": 77,
         "user_owns": 84,
         "country": "MA",
         "is_captain": false
