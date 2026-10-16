@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-16T15:58:45Z",
+  "generated_at": "2026-10-16T20:26:23Z",
   "experience": {
     "rank": "Professional",
     "level": 58,
@@ -97,7 +97,7 @@
       {
         "name": "knockingd00r",
         "rank": "Pro Hacker",
-        "points": 862,
+        "points": 869,
         "root_owns": 77,
         "user_owns": 84,
         "country": "MA",
@@ -142,9 +142,9 @@
       {
         "name": "w3nch",
         "rank": "Pro Hacker",
-        "points": 257,
-        "root_owns": 56,
-        "user_owns": 59,
+        "points": 287,
+        "root_owns": 57,
+        "user_owns": 60,
         "country": "IN",
         "is_captain": false
       },
