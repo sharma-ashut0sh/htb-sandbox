@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-17T20:00:37Z",
+  "generated_at": "2026-10-18T02:47:33Z",
   "experience": {
     "rank": "Professional",
     "level": 59,
@@ -78,19 +78,19 @@
   "team": {
     "id": 7247,
     "name": "VXON",
-    "points": 2487,
+    "points": 2388,
     "root_owns": 319,
-    "user_owns": 335,
+    "user_owns": 336,
     "challenge_owns": 405,
-    "ranking": 10,
+    "ranking": 11,
     "member_count": 19,
     "members": [
       {
         "name": "SOOBIKv2",
         "rank": "Omniscient",
-        "points": 2043,
+        "points": 2026,
         "root_owns": 75,
-        "user_owns": 75,
+        "user_owns": 76,
         "country": "FR",
         "is_captain": false
       },
@@ -161,7 +161,7 @@
         "name": "RedSec0x",
         "rank": "Hacker",
         "points": 121,
-        "root_owns": 41,
+        "root_owns": 42,
         "user_owns": 52,
         "country": "US",
         "is_captain": false
@@ -212,21 +212,21 @@
         "is_captain": false
       },
       {
-        "name": "jbrgn",
-        "rank": "Pro Hacker",
-        "points": 1,
-        "root_owns": 86,
-        "user_owns": 87,
-        "country": "GB",
-        "is_captain": false
-      },
-      {
         "name": "c3n7",
         "rank": "Script Kiddie",
         "points": 1,
         "root_owns": 13,
         "user_owns": 14,
         "country": "IN",
+        "is_captain": false
+      },
+      {
+        "name": "jbrgn",
+        "rank": "Pro Hacker",
+        "points": 1,
+        "root_owns": 86,
+        "user_owns": 87,
+        "country": "GB",
         "is_captain": false
       },
       {
