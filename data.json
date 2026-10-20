@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-19T18:26:53Z",
+  "generated_at": "2026-10-20T03:10:12Z",
   "experience": {
     "rank": "Professional",
     "level": 59,
@@ -79,11 +79,11 @@
     "id": 7247,
     "name": "VXON",
     "points": 2487,
-    "root_owns": 320,
-    "user_owns": 336,
-    "challenge_owns": 405,
+    "root_owns": 319,
+    "user_owns": 335,
+    "challenge_owns": 399,
     "ranking": 10,
-    "member_count": 19,
+    "member_count": 17,
     "members": [
       {
         "name": "SOOBIKv2",
@@ -230,29 +230,11 @@
         "is_captain": false
       },
       {
-        "name": "Thennavan",
-        "rank": "Hacker",
-        "points": 0,
-        "root_owns": 36,
-        "user_owns": 41,
-        "country": "IN",
-        "is_captain": false
-      },
-      {
         "name": "XoXoRiTi",
         "rank": "Hacker",
         "points": 0,
         "root_owns": 15,
         "user_owns": 17,
-        "country": "IN",
-        "is_captain": false
-      },
-      {
-        "name": "Valkyri3x",
-        "rank": "Script Kiddie",
-        "points": 0,
-        "root_owns": 2,
-        "user_owns": 2,
         "country": "IN",
         "is_captain": false
       }
