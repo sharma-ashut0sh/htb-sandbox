@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T15:17:54Z",
+  "generated_at": "2026-10-24T20:07:08Z",
   "experience": {
     "rank": "Professional",
     "level": 59,
@@ -88,9 +88,9 @@
       {
         "name": "SOOBIKv2",
         "rank": "Omniscient",
-        "points": 2073,
-        "root_owns": 77,
-        "user_owns": 77,
+        "points": 2118,
+        "root_owns": 78,
+        "user_owns": 78,
         "country": "FR",
         "is_captain": false
       },
