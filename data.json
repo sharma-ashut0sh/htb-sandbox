@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-26T12:09:17Z",
+  "generated_at": "2026-10-26T22:13:31Z",
   "experience": {
     "rank": "Professional",
     "level": 59,
@@ -160,9 +160,9 @@
       {
         "name": "RedSec0x",
         "rank": "Hacker",
-        "points": 158,
-        "root_owns": 43,
-        "user_owns": 53,
+        "points": 186,
+        "root_owns": 44,
+        "user_owns": 54,
         "country": "US",
         "is_captain": false
       },
