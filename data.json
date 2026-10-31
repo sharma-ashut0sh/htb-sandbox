@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T16:43:47Z",
+  "generated_at": "2026-10-31T20:55:09Z",
   "experience": {
     "rank": "Professional",
     "level": 59,
@@ -88,9 +88,9 @@
       {
         "name": "SOOBIKv2",
         "rank": "Omniscient",
-        "points": 2074,
-        "root_owns": 78,
-        "user_owns": 78,
+        "points": 2134,
+        "root_owns": 79,
+        "user_owns": 79,
         "country": "FR",
         "is_captain": false
       },
@@ -122,6 +122,15 @@
         "is_captain": false
       },
       {
+        "name": "Papalo007",
+        "rank": "Pro Hacker",
+        "points": 252,
+        "root_owns": 82,
+        "user_owns": 82,
+        "country": "GR",
+        "is_captain": false
+      },
+      {
         "name": "w3nch",
         "rank": "Pro Hacker",
         "points": 220,
@@ -137,15 +146,6 @@
         "root_owns": 187,
         "user_owns": 200,
         "country": "IQ",
-        "is_captain": false
-      },
-      {
-        "name": "Papalo007",
-        "rank": "Pro Hacker",
-        "points": 210,
-        "root_owns": 81,
-        "user_owns": 81,
-        "country": "GR",
         "is_captain": false
       },
       {
