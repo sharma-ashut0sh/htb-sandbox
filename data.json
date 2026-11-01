@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T12:35:04Z",
+  "generated_at": "2026-11-01T21:37:30Z",
   "experience": {
     "rank": "Professional",
     "level": 59,
@@ -115,9 +115,9 @@
       {
         "name": "atoontoto",
         "rank": "Pro Hacker",
-        "points": 444,
-        "root_owns": 101,
-        "user_owns": 101,
+        "points": 489,
+        "root_owns": 102,
+        "user_owns": 102,
         "country": "IQ",
         "is_captain": false
       },
@@ -128,6 +128,15 @@
         "root_owns": 82,
         "user_owns": 82,
         "country": "GR",
+        "is_captain": false
+      },
+      {
+        "name": "RedSec0x",
+        "rank": "Hacker",
+        "points": 227,
+        "root_owns": 46,
+        "user_owns": 56,
+        "country": "US",
         "is_captain": false
       },
       {
@@ -146,15 +155,6 @@
         "root_owns": 187,
         "user_owns": 200,
         "country": "IQ",
-        "is_captain": false
-      },
-      {
-        "name": "RedSec0x",
-        "rank": "Hacker",
-        "points": 188,
-        "root_owns": 45,
-        "user_owns": 55,
-        "country": "US",
         "is_captain": false
       },
       {
