@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T21:37:30Z",
+  "generated_at": "2026-11-02T04:05:21Z",
   "experience": {
     "rank": "Professional",
     "level": 59,
@@ -131,6 +131,15 @@
         "is_captain": false
       },
       {
+        "name": "CyberKareem",
+        "rank": "Pro Hacker",
+        "points": 242,
+        "root_owns": 188,
+        "user_owns": 201,
+        "country": "IQ",
+        "is_captain": false
+      },
+      {
         "name": "RedSec0x",
         "rank": "Hacker",
         "points": 227,
@@ -146,15 +155,6 @@
         "root_owns": 57,
         "user_owns": 60,
         "country": "IN",
-        "is_captain": false
-      },
-      {
-        "name": "CyberKareem",
-        "rank": "Pro Hacker",
-        "points": 211,
-        "root_owns": 187,
-        "user_owns": 200,
-        "country": "IQ",
         "is_captain": false
       },
       {
