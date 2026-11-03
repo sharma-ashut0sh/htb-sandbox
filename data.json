@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-02T14:37:52Z",
+  "generated_at": "2026-11-03T00:25:31Z",
   "experience": {
     "rank": "Professional",
     "level": 59,
@@ -122,21 +122,21 @@
         "is_captain": false
       },
       {
+        "name": "CyberKareem",
+        "rank": "Pro Hacker",
+        "points": 354,
+        "root_owns": 191,
+        "user_owns": 204,
+        "country": "IQ",
+        "is_captain": false
+      },
+      {
         "name": "Papalo007",
         "rank": "Pro Hacker",
         "points": 252,
         "root_owns": 82,
         "user_owns": 82,
         "country": "GR",
-        "is_captain": false
-      },
-      {
-        "name": "CyberKareem",
-        "rank": "Pro Hacker",
-        "points": 242,
-        "root_owns": 188,
-        "user_owns": 201,
-        "country": "IQ",
         "is_captain": false
       },
       {
