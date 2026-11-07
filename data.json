@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T12:20:36Z",
+  "generated_at": "2026-11-07T21:22:14Z",
   "experience": {
     "rank": "Professional",
     "level": 59,
@@ -12,7 +12,7 @@
     "username": "0xMikey",
     "user_owns": 44,
     "system_owns": 42,
-    "points": 175,
+    "points": 140,
     "user_bloods": 0,
     "system_bloods": 0
   },
@@ -88,16 +88,16 @@
       {
         "name": "SOOBIKv2",
         "rank": "Omniscient",
-        "points": 2136,
-        "root_owns": 79,
-        "user_owns": 79,
+        "points": 2121,
+        "root_owns": 80,
+        "user_owns": 80,
         "country": "FR",
         "is_captain": false
       },
       {
         "name": "knockingd00r",
         "rank": "Pro Hacker",
-        "points": 851,
+        "points": 768,
         "root_owns": 78,
         "user_owns": 86,
         "country": "MA",
@@ -106,16 +106,16 @@
       {
         "name": "ANameNotMine",
         "rank": "Pro Hacker",
-        "points": 617,
+        "points": 570,
         "root_owns": 137,
-        "user_owns": 148,
+        "user_owns": 149,
         "country": "HR",
         "is_captain": false
       },
       {
         "name": "atoontoto",
         "rank": "Pro Hacker",
-        "points": 489,
+        "points": 441,
         "root_owns": 102,
         "user_owns": 102,
         "country": "IQ",
@@ -124,7 +124,7 @@
       {
         "name": "CyberKareem",
         "rank": "Pro Hacker",
-        "points": 354,
+        "points": 314,
         "root_owns": 191,
         "user_owns": 204,
         "country": "IQ",
@@ -133,34 +133,34 @@
       {
         "name": "Papalo007",
         "rank": "Pro Hacker",
-        "points": 252,
+        "points": 208,
         "root_owns": 82,
         "user_owns": 82,
         "country": "GR",
         "is_captain": false
       },
       {
-        "name": "RedSec0x",
-        "rank": "Hacker",
-        "points": 227,
-        "root_owns": 47,
-        "user_owns": 57,
-        "country": "US",
-        "is_captain": false
-      },
-      {
         "name": "w3nch",
         "rank": "Pro Hacker",
-        "points": 220,
+        "points": 205,
         "root_owns": 57,
         "user_owns": 60,
         "country": "IN",
         "is_captain": false
       },
       {
+        "name": "RedSec0x",
+        "rank": "Hacker",
+        "points": 194,
+        "root_owns": 47,
+        "user_owns": 57,
+        "country": "US",
+        "is_captain": false
+      },
+      {
         "name": "0xMikey",
         "rank": "Pro Hacker",
-        "points": 175,
+        "points": 140,
         "root_owns": 42,
         "user_owns": 44,
         "country": "IN",
@@ -185,20 +185,20 @@
         "is_captain": false
       },
       {
-        "name": "kincurio",
-        "rank": "Hacker",
-        "points": 19,
-        "root_owns": 11,
-        "user_owns": 14,
-        "country": "IN",
-        "is_captain": false
-      },
-      {
         "name": "6cloudguy",
         "rank": "Hacker",
         "points": 16,
         "root_owns": 28,
         "user_owns": 28,
+        "country": "IN",
+        "is_captain": false
+      },
+      {
+        "name": "kincurio",
+        "rank": "Hacker",
+        "points": 15,
+        "root_owns": 11,
+        "user_owns": 14,
         "country": "IN",
         "is_captain": false
       },
