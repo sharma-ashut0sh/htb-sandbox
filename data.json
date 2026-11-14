@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T12:53:32Z",
+  "generated_at": "2026-11-14T21:55:26Z",
   "experience": {
     "rank": "Professional",
     "level": 59,
@@ -12,7 +12,7 @@
     "username": "0xMikey",
     "user_owns": 45,
     "system_owns": 42,
-    "points": 144,
+    "points": 117,
     "user_bloods": 0,
     "system_bloods": 0
   },
@@ -88,16 +88,16 @@
       {
         "name": "SOOBIKv2",
         "rank": "Omniscient",
-        "points": 2121,
-        "root_owns": 80,
-        "user_owns": 80,
+        "points": 2061,
+        "root_owns": 81,
+        "user_owns": 81,
         "country": "FR",
         "is_captain": false
       },
       {
         "name": "knockingd00r",
         "rank": "Pro Hacker",
-        "points": 814,
+        "points": 757,
         "root_owns": 79,
         "user_owns": 87,
         "country": "MA",
@@ -106,25 +106,25 @@
       {
         "name": "ANameNotMine",
         "rank": "Pro Hacker",
-        "points": 608,
-        "root_owns": 138,
-        "user_owns": 149,
+        "points": 559,
+        "root_owns": 139,
+        "user_owns": 150,
         "country": "HR",
         "is_captain": false
       },
       {
         "name": "atoontoto",
         "rank": "Pro Hacker",
-        "points": 477,
-        "root_owns": 103,
-        "user_owns": 103,
+        "points": 420,
+        "root_owns": 104,
+        "user_owns": 104,
         "country": "IQ",
         "is_captain": false
       },
       {
         "name": "CyberKareem",
         "rank": "Pro Hacker",
-        "points": 314,
+        "points": 267,
         "root_owns": 191,
         "user_owns": 204,
         "country": "IQ",
@@ -151,7 +151,7 @@
       {
         "name": "w3nch",
         "rank": "Pro Hacker",
-        "points": 205,
+        "points": 168,
         "root_owns": 57,
         "user_owns": 60,
         "country": "IN",
@@ -160,7 +160,7 @@
       {
         "name": "0xMikey",
         "rank": "Pro Hacker",
-        "points": 144,
+        "points": 117,
         "root_owns": 42,
         "user_owns": 45,
         "country": "IN",
@@ -196,7 +196,7 @@
       {
         "name": "kincurio",
         "rank": "Hacker",
-        "points": 15,
+        "points": 12,
         "root_owns": 11,
         "user_owns": 14,
         "country": "IN",
