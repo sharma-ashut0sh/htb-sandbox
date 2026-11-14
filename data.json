@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-11-14T04:43:00Z",
+  "generated_at": "2026-11-14T12:53:32Z",
   "experience": {
     "rank": "Professional",
     "level": 59,
-    "xp": 45396,
+    "xp": 45786,
     "xp_next_level": 0,
-    "streak": 0
+    "streak": 1
   },
   "profile": {
     "user_id": 2142022,
     "username": "0xMikey",
-    "user_owns": 44,
+    "user_owns": 45,
     "system_owns": 42,
-    "points": 140,
+    "points": 144,
     "user_bloods": 0,
     "system_bloods": 0
   },
@@ -160,9 +160,9 @@
       {
         "name": "0xMikey",
         "rank": "Pro Hacker",
-        "points": 140,
+        "points": 144,
         "root_owns": 42,
-        "user_owns": 44,
+        "user_owns": 45,
         "country": "IN",
         "is_captain": true
       },
