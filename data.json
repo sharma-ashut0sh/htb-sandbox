@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T13:21:36Z",
+  "generated_at": "2026-11-15T22:25:32Z",
   "experience": {
     "rank": "Professional",
     "level": 59,
@@ -106,9 +106,9 @@
       {
         "name": "ANameNotMine",
         "rank": "Pro Hacker",
-        "points": 559,
-        "root_owns": 139,
-        "user_owns": 150,
+        "points": 608,
+        "root_owns": 140,
+        "user_owns": 151,
         "country": "HR",
         "is_captain": false
       },
