@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T21:55:26Z",
+  "generated_at": "2026-11-15T04:34:20Z",
   "experience": {
     "rank": "Professional",
     "level": 59,
@@ -79,18 +79,18 @@
     "id": 7247,
     "name": "VXON",
     "points": 2489,
-    "root_owns": 324,
-    "user_owns": 339,
+    "root_owns": 327,
+    "user_owns": 342,
     "challenge_owns": 439,
-    "ranking": 9,
+    "ranking": 6,
     "member_count": 17,
     "members": [
       {
         "name": "SOOBIKv2",
         "rank": "Omniscient",
-        "points": 2061,
-        "root_owns": 81,
-        "user_owns": 81,
+        "points": 2121,
+        "root_owns": 82,
+        "user_owns": 82,
         "country": "FR",
         "is_captain": false
       },
@@ -143,8 +143,8 @@
         "name": "RedSec0x",
         "rank": "Hacker",
         "points": 223,
-        "root_owns": 49,
-        "user_owns": 59,
+        "root_owns": 50,
+        "user_owns": 60,
         "country": "US",
         "is_captain": false
       },
