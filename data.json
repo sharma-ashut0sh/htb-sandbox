@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T14:36:34Z",
+  "generated_at": "2026-11-17T01:29:10Z",
   "experience": {
     "rank": "Professional",
     "level": 59,
@@ -82,7 +82,7 @@
     "root_owns": 327,
     "user_owns": 342,
     "challenge_owns": 439,
-    "ranking": 7,
+    "ranking": 8,
     "member_count": 17,
     "members": [
       {
@@ -133,9 +133,9 @@
       {
         "name": "Papalo007",
         "rank": "Pro Hacker",
-        "points": 238,
-        "root_owns": 83,
-        "user_owns": 83,
+        "points": 237,
+        "root_owns": 84,
+        "user_owns": 84,
         "country": "GR",
         "is_captain": false
       },
