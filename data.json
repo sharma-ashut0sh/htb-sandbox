@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T22:42:38Z",
+  "generated_at": "2026-11-22T04:49:16Z",
   "experience": {
     "rank": "Professional",
     "level": 59,
@@ -78,17 +78,17 @@
   "team": {
     "id": 7247,
     "name": "VXON",
-    "points": 2496,
+    "points": 2348,
     "root_owns": 327,
     "user_owns": 342,
-    "challenge_owns": 441,
-    "ranking": 7,
+    "challenge_owns": 442,
+    "ranking": 9,
     "member_count": 17,
     "members": [
       {
         "name": "SOOBIKv2",
         "rank": "Omniscient",
-        "points": 2123,
+        "points": 1986,
         "root_owns": 82,
         "user_owns": 82,
         "country": "FR",
