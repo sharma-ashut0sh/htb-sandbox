@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-22T23:09:09Z",
+  "generated_at": "2026-11-23T05:28:59Z",
   "experience": {
     "rank": "Professional",
     "level": 59,
     "xp": 45786,
     "xp_next_level": 0,
-    "streak": 1
+    "streak": 0
   },
   "profile": {
     "user_id": 2142022,
@@ -82,7 +82,7 @@
     "root_owns": 327,
     "user_owns": 342,
     "challenge_owns": 442,
-    "ranking": 9,
+    "ranking": 17,
     "member_count": 17,
     "members": [
       {
