@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T03:44:15Z",
+  "generated_at": "2026-11-24T16:53:49Z",
   "experience": {
     "rank": "Professional",
     "level": 59,
@@ -88,9 +88,9 @@
       {
         "name": "SOOBIKv2",
         "rank": "Omniscient",
-        "points": 1986,
-        "root_owns": 82,
-        "user_owns": 82,
+        "points": 2123,
+        "root_owns": 83,
+        "user_owns": 83,
         "country": "FR",
         "is_captain": false
       },
@@ -106,9 +106,9 @@
       {
         "name": "ANameNotMine",
         "rank": "Pro Hacker",
-        "points": 608,
+        "points": 558,
         "root_owns": 140,
-        "user_owns": 151,
+        "user_owns": 152,
         "country": "HR",
         "is_captain": false
       },
