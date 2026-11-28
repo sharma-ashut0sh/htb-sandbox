@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T16:01:01Z",
+  "generated_at": "2026-11-28T00:59:33Z",
   "experience": {
     "rank": "Professional",
     "level": 59,
@@ -22,7 +22,7 @@
       {
         "name": "Reversing",
         "solved": 3,
-        "total": 102,
+        "total": 103,
         "completion": 3
       },
       {
@@ -88,7 +88,7 @@
       {
         "name": "SOOBIKv2",
         "rank": "Omniscient",
-        "points": 2123,
+        "points": 2122,
         "root_owns": 83,
         "user_owns": 83,
         "country": "FR",
